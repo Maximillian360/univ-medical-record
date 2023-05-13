@@ -7,7 +7,7 @@ using UniversityMedicalRecord.Data;
 
 namespace UniversityMedicalRecord.Pages.Login;
 
-public class IndexModel : PageModel
+public class IndexModel : PageModel 
 {
     private readonly DatabaseContext _context;
 
@@ -24,7 +24,7 @@ public class IndexModel : PageModel
     [Display(Name = "Password")]
     public string Password { get; set; }
 
-    public async Task<IActionResult> OnPostAsync()
+    public IActionResult OnPost()
     {
         if (!ModelState.IsValid)
         {
@@ -33,14 +33,11 @@ public class IndexModel : PageModel
         
         var user = _context.GetUsers().FirstOrDefault(x => x.Username == Username);
         var passwordHash = Password.ComputeHash(Convert.FromBase64String(user?.PasswordSalt ?? ""));
-        
-        if (user != null && user.PasswordHash == passwordHash)
-        {
-            return RedirectToPage("./Homepage/Index");
-        }
-        
-        return Page();
-        
+
+        if (user == null || user.PasswordHash != passwordHash) return Page();
+        HttpContext.Session.Login(user);
+        return RedirectToPage("../Homepage/Index");
+
     }
 
 }

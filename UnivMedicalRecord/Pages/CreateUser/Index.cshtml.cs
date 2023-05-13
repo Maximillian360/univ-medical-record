@@ -41,13 +41,25 @@ public class IndexModel : PageModel
     [Display(Name = "Password")]
     public string Password { get; set; }
     
-    public void OnGetAsync()
+    public IActionResult OnGet()
     {
         HasSuperAdmin = _context.HasSuperAdmin();
-        PageTitle = !HasSuperAdmin ? "Create admin" : "Create user";
+
+        if (HasSuperAdmin)
+        {
+            var user = HttpContext.Session.GetLoggedInUser(_context);
+            if (user == null) return RedirectToPage("../Login/Index");
+
+            if (user.Type != Models.UserType.Admin ||
+                _context.GetAdminRoles(user).All(x => x.Position != Position.SuperAdmin))
+                return RedirectToPage("../HomePage/Index"); // TODO: Show an error that they should be a super admin
+        }
+
+        PageTitle = !HasSuperAdmin ? "Create super admin" : "Create user";
+        return Page();
     }
     
-    public async Task<IActionResult> OnPostAsync()
+    public IActionResult OnPost()
     {
         //TODO: REMOVE REDUNDANCY
         HasSuperAdmin = _context.HasSuperAdmin();
@@ -61,39 +73,68 @@ public class IndexModel : PageModel
         var passwordSalt = PasswordHash.GenerateSalt();
         var passwordHash = Password.ComputeHash(passwordSalt);
 
-        var user = UserType == "admin" || !HasSuperAdmin
-            ? new Admin()
-            {
-                Firstname = FirstName,
-                Middlename = MiddleName,
-                Lastname = LastName,
-                Username = Username,
-                PasswordHash = passwordHash,
-                PasswordSalt = Convert.ToBase64String(passwordSalt)
-            }
-            : new Employee()
-            {
-                Firstname = FirstName,
-                Middlename = MiddleName,
-                Lastname = LastName,
-                Username = Username,
-                PasswordHash = passwordHash,
-                PasswordSalt = Convert.ToBase64String(passwordSalt)
-            } as User;
+        var user = new User
+        {
+            Type = UserType == "admin" || !HasSuperAdmin ? Models.UserType.Admin : Models.UserType.Regular,
+            Firstname = FirstName,
+            Middlename = MiddleName,
+            Lastname = LastName,
+            Username = Username,
+            PasswordHash = passwordHash,
+            PasswordSalt = Convert.ToBase64String(passwordSalt)
+        };
 
         _context.AddUser(user);
 
-        var superAdminRole = new AdminRole
+        if (!HasSuperAdmin)
         {
-            Admin = (user as Admin)!,
-            Position = Position.SuperAdmin
-        };
+            var superAdminRole = new AdminRole
+            {
+                Admin = user,
+                Position = Position.SuperAdmin
+            };
         
-        _context.AdminRoles.Add(superAdminRole);
+            _context.AdminRoles.Add(superAdminRole);
+        }
+        else switch (UserType)
+        {
+            case "student":
+            {
+                var newStudent = new EmployeeRole()
+                {
+                    Employee = user,
+                    EmployeePosition = EmployeePosition.Student
+                };
         
-        await _context.SaveChangesAsync();
+                _context.EmployeeRoles.Add(newStudent);
+                break;
+            }
+            case "faculty":
+            {
+                var newFaculty = new EmployeeRole()
+                {
+                    Employee = user,
+                    EmployeePosition = EmployeePosition.Faculty
+                };
         
-        return RedirectToPage("./Index");
+                _context.EmployeeRoles.Add(newFaculty);
+                break;
+            }
+        }
+        
+        
+        _context.SaveChanges();
+        
+        var isNotLoggedIn = !HttpContext.Session.IsLoggedIn();
+        if (isNotLoggedIn)
+        {
+            HttpContext.Session.Login(user);
+        }
+        
+        return RedirectToPage("../Login/Index");
     }
-    
+    public void SetUserType(string userType)
+    {
+        UserType = userType;
+    }
 }

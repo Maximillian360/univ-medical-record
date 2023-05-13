@@ -16,10 +16,8 @@ public class DatabaseContext: DbContext
     {
     }
     
-    public DbSet<Admin> Admins { get; set; }
+    public DbSet<User> Users { get; set; }
     public DbSet<AdminRole> AdminRoles { get; set; }
-
-    public DbSet<Employee> Employees { get; set; }
     public DbSet<EmployeeRole> EmployeeRoles { get; set; }
     
     
@@ -28,11 +26,9 @@ public class DatabaseContext: DbContext
         optionsBuilder.UseSqlServer(CONNECTION_STRING);
     }
     
-    public List<User> GetUsers()
+    public  IEnumerable<User> GetUsers()
     {
-        var users = Admins.Select(x => x as User).ToList();
-        var employees = Employees.Select(x => x as User).ToList();
-        users.AddRange(employees);
+        var users = Users.ToList();
         return users;
     }
     
@@ -48,17 +44,18 @@ public class DatabaseContext: DbContext
     
     public bool AddUser(User user)
     {
-        switch (user)
-        {
-            case Admin admin:
-                Admins.Add(admin);
-                break;
-            case Employee employee:
-                Employees.Add(employee);
-                break;
-        }
+        Users.Add(user);
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
+    public List<User> GetAdmins()
+    {
+        return Users.Where(x => x.Type == UserType.Admin).ToList();
+    }
+    public List<AdminRole> GetAdminRoles(User admin)
+    {
+        return AdminRoles.Where(x => x.Admin == admin).ToList();
+    }
+
 
 }
