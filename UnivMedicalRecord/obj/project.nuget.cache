@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X0jfU4C/SVJXpCramVCptILzeyMLcOkwZe5u2SFEnPhTX/Z0Kx7jSdnHOGwA51H845aqrUeUfIYzz7NDfWbdHQ==",
+  "dgSpecHash": "X3tHFt+cMg93JX7gDuMteS9WR/GkQfjd4ZAdNuKeduMtdungclhhsTp7kXfqj5m7VCwX2Efa9eRAm3k2fHXZSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\blythePC\\RiderProjects\\UnivMedicalRecord\\UnivMedicalRecord\\UnivMedicalRecord.csproj",
+  "projectFilePath": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\UnivMedicalRecord.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\blythePC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\blythePC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

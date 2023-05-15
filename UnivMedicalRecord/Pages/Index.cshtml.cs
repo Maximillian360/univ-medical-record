@@ -22,7 +22,7 @@ public class IndexModel : PageModel
     {
         if (!_context.HasSuperAdmin())
         {
-            return RedirectToPage("./CreateAdmin/Index");
+            return RedirectToPage("./CreateUser/Index");
         }
 
         await HttpContext.SignOutAsync(
