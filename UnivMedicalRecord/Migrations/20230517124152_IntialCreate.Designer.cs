@@ -12,8 +12,8 @@ using UniversityMedicalRecord.Data;
 namespace UnivMedicalRecord.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20230517113502_optimized_medical_record")]
-    partial class optimized_medical_record
+    [Migration("20230517124152_IntialCreate")]
+    partial class IntialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -226,6 +226,9 @@ namespace UnivMedicalRecord.Migrations
 
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IdNumber")
                         .IsRequired()

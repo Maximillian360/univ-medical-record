@@ -1,0 +1,432 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.EntityFrameworkCore
+@using UniversityMedicalRecord.Data
+@using UniversityMedicalRecord.Models
+@model UnivMedicalRecord.Pages.Homepage.IndexModel
+
+@{
+    ViewData["Title"] = "General Records";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+ 
+    <style>
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #fff;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 		
+      
+        /* Styling form-control input and
+        select*/
+        .form-control input[type=text],
+      	.form-control select,
+      	.form-control textarea{
+        width: 95%;
+        padding: 5px 8px;
+        margin: 5px 0;
+        //box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+      
+      
+        /* Styling form-control dropdown*/
+        .form-control input[type=dropdown],
+      	.form-control select,
+      	.form-control textarea{
+        width: 35%;
+        padding: 5px 8px;
+        margin: 5px 0;
+        //box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+      
+        .form-control input[id=age],
+      	.form-control textarea{
+        width: 45%;
+        padding: 5px 8px;
+        margin: 5px 0;
+        //box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+      
+        .form-control input[id=email],
+      	.form-control textarea{
+        width: 95%;
+        padding: 5px 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+      
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: #fff;
+            border: 2px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+    <h2>Personal Information</h2>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+      
+         <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+      
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+      
+        <div class="form-control">
+            <label for="mobile" id="label-name">
+                Mobile Number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="mobile"
+                   placeholder="Enter your Mobile Number" />
+        </div>
+      
+        <div class="form-control">
+            <label for="idNumber" id="label-name">
+                ID Number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="idNumber"
+                   placeholder="Enter your ID Number" />
+        </div>
+      
+        <div class="form-control">
+            <label for="dateOfBirth" id="label-name">
+                Date of Birth
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="date"
+                   id="dateOfBirth"
+                   placeholder="Enter your Date of Birth" />
+        </div>
+      
+        <div class="form-control">
+            <label for="placeOfBirth" id="label-name">
+                Place of Birth
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="placeOfBirth"
+                   placeholder="Enter your Place of Birth" />
+        </div>
+      
+        <div class="form-control">
+            <label for="Address" id="label-name">
+                Address
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="Address"
+                   placeholder="Enter your Addresss" />
+        </div>
+      
+        <div class="form-control">
+            <label for="personalDoctor" id="label-name">
+                Personal Doctor
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="personalDoctor"
+                   placeholder="Enter your Personal Doctor" />
+        </div>
+      
+        <div class="form-control">
+            <label for="insurance" id="label-name">
+                Insurance
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="insurance"
+                   placeholder="Enter your Insurance" />
+        </div>
+      
+      <h2>Family Information</h2>
+      
+        <div class="form-control">
+            <label for="motherName" id="label-name">
+                Mother's Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="motherName"
+                   placeholder="Enter your Mother's Name" />
+        </div>
+      
+        <div class="form-control">
+            <label for="motherStatus" id="label-role">
+                Civil Status of Mother
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="motherStatus" id="role">
+                <option value="married">Married</option>
+                <option value="intern">Single</option>
+              	<option value="separated">Separated</option>
+                <option value="widowed">Widowed</option>
+            </select>
+        </div>
+      
+        <div class="form-control">
+            <label for="motherAddress" id="label-name">
+                Mother's Address
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="motherAddress"
+                   placeholder="Enter your Mother's Address" />
+        </div>
+      
+        <div class="form-control">
+            <label for="motherOccupation" id="label-name">
+                Mother's Occupation
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="motherOccupation"
+                   placeholder="Enter your Mother's Occupation" />
+        </div>
+      
+              <div class="form-control">
+            <label for="motherMobile" id="label-name">
+                Mother's Mobile Number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="motherMobile"
+                   placeholder="Enter your Mother's Mobile Number" />
+        </div>
+      
+      &nbsp;
+    
+        <div class="form-control">
+            <label for="fatherName" id="label-name">
+                Father's Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="fatherName"
+                   placeholder="Enter your Father's Name" />
+        </div>
+      
+        <div class="form-control">
+            <label for="fatherStatus" id="label-role">
+                Civil Status of Father
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="fatherStatus" id="role">
+                <option value="married">Married</option>
+                <option value="intern">Single</option>
+              	<option value="separated">Separated</option>
+                <option value="widowed">Widowed</option>
+            </select>
+        </div>
+      
+        <div class="form-control">
+            <label for="fatherAddress" id="label-name">
+                Father's Address
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="fatherAddress"
+                   placeholder="Enter your Father's Address" />
+        </div>
+      
+        <div class="form-control">
+            <label for="fatherOccupation" id="label-name">
+                Father's Occupation
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="fatherOccupation"
+                   placeholder="Enter your Father's Occupation" />
+        </div>
+      
+              <div class="form-control">
+            <label for="fatherMobile" id="label-name">
+                Father's Mobile Number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="fatherMobile"
+                   placeholder="Enter your Father's Mobile Number" />
+        </div>
+      
+       &nbsp;
+      
+              <div class="form-control">
+            <label for="guardianName" id="label-name">
+                Guardian's Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="guardianName"
+                   placeholder="Enter your Guardian's Name" />
+        </div>
+      
+        <div class="form-control">
+            <label for="guardianStatus" id="label-role">
+                Civil Status of Guardian
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="guardianStatus" id="role">
+                <option value="married">Married</option>
+                <option value="intern">Single</option>
+              	<option value="separated">Separated</option>
+                <option value="widowed">Widowed</option>
+            </select>
+        </div>
+      
+        <div class="form-control">
+            <label for="guardianAddress" id="label-name">
+                Guardian's Address
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="guardianAddress"
+                   placeholder="Enter your Guardian's Address" />
+        </div>
+      
+        <div class="form-control">
+            <label for="guardianOccupation" id="label-name">
+                Guardian's Occupation
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="guardianOccupation"
+                   placeholder="Enter your Guardian's Occupation" />
+        </div>
+      
+        <div class="form-control">
+            <label for="guardianMobile" id="label-name">
+                Guardian's Mobile Number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="guardianMobile"
+                   placeholder="Enter your Guardian's Mobile Number" />
+        </div>
+ 
+      
+      
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
