@@ -24,8 +24,8 @@ public class DatabaseContext: DbContext
     public DbSet<CBC> BloodCounts { get; set; }
     public DbSet<MicroUrinalysis> MicroUrinalysis { get; set; }
     public DbSet<Urinalysis> Urinalyses { get; set; }
-    public DbSet<GeneralRecord> GeneralRecords { get; set; }
-
+    public DbSet<FamilyInfo> FamilyInfos { get; set; }
+    public DbSet<Personal> Personals { get; set; }
     public DbSet<Allergy> Allergies { get; set; }
     public DbSet<Illness> Illnesses { get; set; }
 

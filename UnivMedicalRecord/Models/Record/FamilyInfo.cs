@@ -1,24 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Components.Forms;
-using UniversityMedicalRecord.Models;
+﻿using UniversityMedicalRecord.Models;
 
 namespace UnivMedicalRecord.Models.Record;
 
-public class GeneralRecord
+public class FamilyInfo
 {
     public int Id { get; set; }
     public User User { get; set; }
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public string Sex { get; set; }
-    public string MobileNumber { get; set; }
-    public string IdNumber { get; set; }
-    [DataType(DataType.Date)]
-    public DateTime DateOfBirth { get; set; }
-    public string? PlaceOfBirth { get; set; }
-    public string Address { get; set; }
-    public string? PersonalDoctor { get; set; }
-    public string? Insurance { get; set; }
     public string? MotherName { get; set; }
     public string? MotherStatus { get; set; }
     public string? MotherAddress { get; set; }
@@ -34,8 +21,4 @@ public class GeneralRecord
     public string GurdianAddress { get; set; }
     public string GurdianOccupation { get; set; }
     public string GurdianRelation { get; set; }
-    [DataType(DataType.Date)]
-    public DateTime DateSigned { get; set; }
-    
-    
 }
