@@ -2,6 +2,7 @@
 using UniversityMedicalRecord.Models;
 using UniversityMedicalRecord.Models.Admin;
 using UniversityMedicalRecord.Models.Employee;
+using UnivMedicalRecord.Models.Record;
 
 namespace UniversityMedicalRecord.Data;
 
@@ -20,7 +21,15 @@ public class DatabaseContext: DbContext
     public DbSet<AdminRole> AdminRoles { get; set; }
     public DbSet<EmployeeRole> EmployeeRoles { get; set; }
     
-    
+    public DbSet<CBC> BloodCounts { get; set; }
+    public DbSet<MicroUrinalysis> MicroUrinalysis { get; set; }
+    public DbSet<Urinalysis> Urinalyses { get; set; }
+    public DbSet<GeneralRecord> GeneralRecords { get; set; }
+
+    public DbSet<Allergy> Allergies { get; set; }
+    public DbSet<Illness> Illnesses { get; set; }
+
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(CONNECTION_STRING);

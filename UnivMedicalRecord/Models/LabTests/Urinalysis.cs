@@ -1,4 +1,5 @@
-﻿using UniversityMedicalRecord.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using UniversityMedicalRecord.Models;
 
 namespace UnivMedicalRecord.Models.Record;
 
@@ -6,7 +7,8 @@ public class Urinalysis
 {
     public int Id { get; set; }
     public User User { get; set; }
-    public DateOnly DateRetrieved { get; set; }
+    [DataType(DataType.Date)]
+    public DateTime DateRetrieved { get; set; }
     public string Color { get; set; }
     public string Appearance { get; set; }
     public string Glucose { get; set; }
