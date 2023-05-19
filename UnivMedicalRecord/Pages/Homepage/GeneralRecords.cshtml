@@ -3,9 +3,11 @@
 @using Microsoft.EntityFrameworkCore
 @using UniversityMedicalRecord.Data
 @using UniversityMedicalRecord.Models
-@model UnivMedicalRecord.Pages.Homepage.IndexModel
+@model UnivMedicalRecord.Pages.Homepage.GeneralRecords
 
-@{
+
+
+    @{
     ViewData["Title"] = "General Records";
 }
 
@@ -124,309 +126,259 @@
 </head>
   
 <body>
-    <h2>Personal Information</h2>
-  
+    <h2>Personal Information of @Model.Name</h2>
+    
     <!-- Create Form -->
-    <form id="form">
- 
+    <form id="form" method="post">
+            
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <!-- Details -->
         <div class="form-control">
-            <label for="name" id="label-name">
-                Name
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="name"
-                   placeholder="Enter your name" />
+            <label asp-for="FullName" class="control-label"></label>
+            <input asp-for="FullName" class="form-control"/>
+            <span asp-validation-for="FullName" class="text-danger"></span>
         </div>
       
+        <div class="form-control">
+            <label asp-for="Age" class="control-label"></label>
+            <input asp-for="Age" class="form-control"/>
+            <span asp-validation-for="Age" class="text-danger"></span>
+        </div>
+        
          <div class="form-control">
-            <label for="age" id="label-age">
-                Age
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="number"
-                   id="age"
-                   placeholder="Enter your age" />
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" value="Male" asp-for="Gender" id="Gender1" autocomplete="off" checked>
+                    <label class="form-check-label" for="Gender1">Male</label>
+                </div>
+                 <div class="form-check">
+                     <input type="radio" class="form-check-input" value="Female" asp-for="Gender" id="Gender2" autocomplete="off">
+                     <label class="form-check-label" for="Gender2">Female</label>
+                 </div>
+         </div>
+        
+        <div class="form-control">
+            <label asp-for="Email" class="control-label"></label>
+            <input asp-for="Email" class="form-control"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="email" id="label-email">
-                Email
-            </label>
- 
-            <!-- Input Type Email-->
-            <input type="email"
-                   id="email"
-                   placeholder="Enter your email" />
+                
+            <label asp-for="MobileNumber" class="control-label"></label>
+            <input asp-for="MobileNumber" class="form-control"/>
+            <span asp-validation-for="MobileNumber" class="text-danger"></span>
+        </div>
+        
+          
+        <div class="form-control">
+            
+            <label asp-for="IdNumber" class="control-label"></label>
+            <input asp-for="IdNumber" class="form-control"/>
+            <span asp-validation-for="IdNumber" class="text-danger"></span>
+        </div>
+
+        <div class="form-control">
+               
+            <label asp-for="Date" class="control-label"></label>
+            <input asp-for="Date" type="date" class="form-control"/>
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
+    
+      
+        <div class="form-control">
+            <label asp-for="BirthPlace" class="control-label"></label>
+            <input asp-for="BirthPlace" class="form-control"/>
+            <span asp-validation-for="BirthPlace" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="mobile" id="label-name">
-                Mobile Number
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="mobile"
-                   placeholder="Enter your Mobile Number" />
+             <label asp-for="Address" class="control-label"></label>
+            <input asp-for="Address" class="form-control"/>
+            <span asp-validation-for="Address" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="idNumber" id="label-name">
-                ID Number
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="idNumber"
-                   placeholder="Enter your ID Number" />
+             <label asp-for="Doctor" class="control-label"></label>
+            <input asp-for= "Doctor" class="form-control"/>
+            <span asp-validation-for="Doctor" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="dateOfBirth" id="label-name">
-                Date of Birth
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="date"
-                   id="dateOfBirth"
-                   placeholder="Enter your Date of Birth" />
-        </div>
-      
-        <div class="form-control">
-            <label for="placeOfBirth" id="label-name">
-                Place of Birth
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="placeOfBirth"
-                   placeholder="Enter your Place of Birth" />
-        </div>
-      
-        <div class="form-control">
-            <label for="Address" id="label-name">
-                Address
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="Address"
-                   placeholder="Enter your Addresss" />
-        </div>
-      
-        <div class="form-control">
-            <label for="personalDoctor" id="label-name">
-                Personal Doctor
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="personalDoctor"
-                   placeholder="Enter your Personal Doctor" />
-        </div>
-      
-        <div class="form-control">
-            <label for="insurance" id="label-name">
-                Insurance
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="insurance"
-                   placeholder="Enter your Insurance" />
+            <label asp-for="Insurance" class="control-label"></label>
+            <input asp-for="Insurance" class="form-control"/>
+            <span asp-validation-for="Insurance" class="text-danger"></span>
         </div>
       
       <h2>Family Information</h2>
       
         <div class="form-control">
-            <label for="motherName" id="label-name">
-                Mother's Name
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="motherName"
-                   placeholder="Enter your Mother's Name" />
+            <label asp-for="MotherName" class="control-label"></label>
+            <input asp-for="MotherName" class="form-control"/>
+            <span asp-validation-for="MotherName" class="text-danger"></span>
+        </div>
+      
+    <div class="form-control">
+        <div class="form-check">
+            <input type="radio" class="form-check-input" value="Married" asp-for="MotherStatus" id="Mother1" autocomplete="off" checked>
+            <label class="form-check-label" for="Mother1">Married</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" value="Single" asp-for="MotherStatus" id="Mother2" autocomplete="off">
+            <label class="form-check-label" for="Mother2">Single</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" value="Separated" asp-for="MotherStatus" id="Mother3" autocomplete="off">
+            <label class="form-check-label" for="Mother3">Separated</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" value="Widowed" asp-for="MotherStatus" id="Mother3" autocomplete="off">
+            <label class="form-check-label" for="Mother4">Widowed</label>
+        </div>
+    </div>
+      
+        <div class="form-control">
+            <label asp-for="MotherAddress" class="control-label"></label>
+            <input asp-for="MotherAddress" class="form-control"/>
+            <span asp-validation-for="MotherAddress" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="motherStatus" id="label-role">
-                Civil Status of Mother
-            </label>
-             
-            <!-- Dropdown options -->
-            <select name="motherStatus" id="role">
-                <option value="married">Married</option>
-                <option value="intern">Single</option>
-              	<option value="separated">Separated</option>
-                <option value="widowed">Widowed</option>
-            </select>
+             <label asp-for="MotherOccupation" class="control-label"></label>
+            <input asp-for="MotherOccupation" class="form-control"/>
+            <span asp-validation-for="MotherOccupation" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="motherAddress" id="label-name">
-                Mother's Address
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="motherAddress"
-                   placeholder="Enter your Mother's Address" />
+            <label asp-for="MotherNumber" class="control-label"></label>
+            <input asp-for="MotherNumber" class="form-control"/>
+            <span asp-validation-for="MotherNumber" class="text-danger"></span>
         </div>
-      
-        <div class="form-control">
-            <label for="motherOccupation" id="label-name">
-                Mother's Occupation
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="motherOccupation"
-                   placeholder="Enter your Mother's Occupation" />
-        </div>
-      
-              <div class="form-control">
-            <label for="motherMobile" id="label-name">
-                Mother's Mobile Number
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="motherMobile"
-                   placeholder="Enter your Mother's Mobile Number" />
-        </div>
-      
-      &nbsp;
+    &nbsp;
     
         <div class="form-control">
-            <label for="fatherName" id="label-name">
-                Father's Name
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="fatherName"
-                   placeholder="Enter your Father's Name" />
+           <label asp-for="FatherName" class="control-label"></label>
+            <input asp-for="FatherName" class="form-control"/>
+            <span asp-validation-for="FatherName" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="fatherStatus" id="label-role">
-                Civil Status of Father
-            </label>
-             
-            <!-- Dropdown options -->
-            <select name="fatherStatus" id="role">
-                <option value="married">Married</option>
-                <option value="intern">Single</option>
-              	<option value="separated">Separated</option>
-                <option value="widowed">Widowed</option>
-            </select>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" value="Married" asp-for="FatherStatus" id="Father1" autocomplete="off" checked>
+                <label class="form-check-label" for="Father1">Married</label>
+            </div>
+            
+            <div class="form-check">
+                <input type="radio" class="form-check-input" value="Single" asp-for="FatherStatus" id="Father2" autocomplete="off">
+                <label class="form-check-label" for="Father2">Single</label>
+            </div>
+            
+            <div class="form-check">
+                <input type="radio" class="form-check-input" value="Separated" asp-for="FatherStatus" id="Father3" autocomplete="off">
+                <label class="form-check-label" for="Father3">Separated</label>
+            </div>
+            
+            <div class="form-check">
+                <input type="radio" class="form-check-input" value="Widowed" asp-for="FatherStatus" id="Father4" autocomplete="off">
+                <label class="form-check-label" for="Father4">Widowed</label>
+            </div>
         </div>
       
         <div class="form-control">
-            <label for="fatherAddress" id="label-name">
-                Father's Address
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="fatherAddress"
-                   placeholder="Enter your Father's Address" />
+            <label asp-for="FatherAddress" class="control-label"></label>
+            <input asp-for="FatherAddress" class="form-control"/>
+            <span asp-validation-for="FatherAddress" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="fatherOccupation" id="label-name">
-                Father's Occupation
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="fatherOccupation"
-                   placeholder="Enter your Father's Occupation" />
+            <label asp-for="FatherOccupation" class="control-label"></label>
+            <input asp-for="FatherOccupation" class="form-control"/>
+            <span asp-validation-for=FatherOccupation class="text-danger"></span>
         </div>
       
-              <div class="form-control">
-            <label for="fatherMobile" id="label-name">
-                Father's Mobile Number
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="fatherMobile"
-                   placeholder="Enter your Father's Mobile Number" />
+        <div class="form-control">
+            <label asp-for="FatherNumber" class="control-label"></label>
+            <input asp-for="FatherNumber" class="form-control"/>
+            <span asp-validation-for="FatherNumber" class="text-danger"></span>
         </div>
+        
       
        &nbsp;
       
-              <div class="form-control">
-            <label for="guardianName" id="label-name">
-                Guardian's Name
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="guardianName"
-                   placeholder="Enter your Guardian's Name" />
+        <div class="form-control">
+            <label asp-for="GurdianName" class="control-label"></label>
+            <input asp-for="GurdianName" class="form-control"/>
+            <span asp-validation-for="GurdianName" class="text-danger"></span>
+        </div>
+
+        <div class="form-control">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" value="Married" asp-for="GurdianStatus" id="Gurdian1" autocomplete="off" checked>
+                <label class="form-check-label" for="Gurdian1">Married</label>
+            </div>
+                            
+            <div class="form-check">
+                <input type="radio" class="form-check-input" value="Single" asp-for="GurdianStatus" id="Gurdian2" autocomplete="off">
+                <label class="form-check-label" for="Gurdian2">Single</label>
+            </div>
+                            
+            <div class="form-check">
+                <input type="radio" class="form-check-input" value="Separated" asp-for="GurdianStatus" id="Gurdian3" autocomplete="off">
+                <label class="form-check-label" for="Gurdian3">Separated</label>
+            </div>
+                            
+            <div class="form-check">
+                <input type="radio" class="form-check-input" value="Widowed" asp-for="GurdianStatus" id="Gurdian4" autocomplete="off">
+                <label class="form-check-label" for="Gurdian4">Widowed</label>
+            </div>
+        </div>
+    
+      
+        <div class="form-control">
+            <label asp-for="GurdianAddress" class="control-label"></label>
+            <input asp-for="GurdianAddress" class="form-control"/>
+            <span asp-validation-for="GurdianAddress" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="guardianStatus" id="label-role">
-                Civil Status of Guardian
-            </label>
-             
-            <!-- Dropdown options -->
-            <select name="guardianStatus" id="role">
-                <option value="married">Married</option>
-                <option value="intern">Single</option>
-              	<option value="separated">Separated</option>
-                <option value="widowed">Widowed</option>
-            </select>
+            <label asp-for="GurdianOccupation" class="control-label"></label>
+            <input asp-for="GurdianOccupation" class="form-control"/>
+            <span asp-validation-for="GurdianOccupation" class="text-danger"></span>
         </div>
       
         <div class="form-control">
-            <label for="guardianAddress" id="label-name">
-                Guardian's Address
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="guardianAddress"
-                   placeholder="Enter your Guardian's Address" />
+           <label asp-for="GurdianNumber" class="control-label"></label>
+            <input asp-for="GurdianNumber" class="form-control"/>
+            <span asp-validation-for="GurdianNumber" class="text-danger"></span>
         </div>
-      
+ 
         <div class="form-control">
-            <label for="guardianOccupation" id="label-name">
-                Guardian's Occupation
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="guardianOccupation"
-                   placeholder="Enter your Guardian's Occupation" />
+            <label asp-for="GurdianRelation" class="control-label"></label>
+            <input asp-for="GurdianRelation" class="form-control"/>
+            <span asp-validation-for="GurdianRelation" class="text-danger"></span>
         </div>
-      
+        
+        <h2>Medical Information</h2>
+    
         <div class="form-control">
-            <label for="guardianMobile" id="label-name">
-                Guardian's Mobile Number
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="guardianMobile"
-                   placeholder="Enter your Guardian's Mobile Number" />
+            <label asp-for="Allergy" class="control-label"></label>
+            <input asp-for="Allergy" class="form-control"/>
+            <span asp-validation-for="Allergy" class="text-danger"></span>
         </div>
- 
-      
+    
+        <div class="form-control">
+            <label asp-for="Illness" class="control-label"></label>
+            <input asp-for="Illness" class="form-control"/>
+            <span asp-validation-for="Illness" class="text-danger"></span>
+        </div>
+    
       
   
-        <!-- Multi-line Text Input Control -->
-        <button type="submit" value="submit">
-            Submit
-        </button>
+    <!-- Multi-line Text Input Control -->
+    <button type="submit" value="submit">
+        Submit
+    </button>
+    
+    <button type="submit" class="btn btn-outline-dark" asp-page-handler="Test">Test</button>
     </form>
 </body>
 </html>

@@ -21,6 +21,7 @@ public static class Session
         return databaseContext.GetUser(userId ?? -1);
     }
 
+
     public static bool IsLoggedIn(this ISession session)
     {
         var username = session.GetString(UserIdKey);

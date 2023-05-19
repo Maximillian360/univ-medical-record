@@ -8,15 +8,7 @@ namespace UnivMedicalRecord.Pages.Homepage;
 public class IndexModel : PageModel
 {
     private readonly DatabaseContext _context;
-
-    public IndexModel(DatabaseContext context)  {
-        _context = context;
-    }
     
-    [BindProperty]
-    public string Name { get; set; }
-    [BindProperty]
-    public string Type { get; set; }
     public IActionResult OnGet()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
@@ -31,6 +23,15 @@ public class IndexModel : PageModel
         }
         
     }
+    public IndexModel(DatabaseContext context)  {
+        _context = context;
+    }
+    
+    [BindProperty]
+    public string Name { get; set; }
+    [BindProperty]
+    public string Type { get; set; }
+    
 
     public IActionResult OnPostLogout()
     {
@@ -43,6 +44,11 @@ public class IndexModel : PageModel
         
         return RedirectToPage("../CreateUser/Index");
         
+    }
+
+    public IActionResult OnPostMedicalRecord()
+    {
+        return RedirectToPage("./GeneralRecords");
     }
     
 }

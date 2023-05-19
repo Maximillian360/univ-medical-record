@@ -6,7 +6,6 @@ namespace UnivMedicalRecord.Models.Record;
 public class Personal
 {
     public int Id { get; set; }
-    public User User { get; set; }
     public string Name { get; set; }
     public int Age { get; set; }
     public string Sex { get; set; }

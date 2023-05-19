@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using UniversityMedicalRecord.Models;
 using UniversityMedicalRecord.Models.Admin;
 using UniversityMedicalRecord.Models.Employee;
@@ -16,11 +17,10 @@ public class DatabaseContext: DbContext
         : base(options)
     {
     }
-    
+    public DbSet<UserRecord>UserRecords { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<AdminRole> AdminRoles { get; set; }
     public DbSet<EmployeeRole> EmployeeRoles { get; set; }
-    
     public DbSet<CBC> BloodCounts { get; set; }
     public DbSet<MicroUrinalysis> MicroUrinalysis { get; set; }
     public DbSet<Urinalysis> Urinalyses { get; set; }
@@ -28,6 +28,9 @@ public class DatabaseContext: DbContext
     public DbSet<Personal> Personals { get; set; }
     public DbSet<Allergy> Allergies { get; set; }
     public DbSet<Illness> Illnesses { get; set; }
+    
+
+
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -40,7 +43,7 @@ public class DatabaseContext: DbContext
         var users = Users.ToList();
         return users;
     }
-    
+
     public  IEnumerable<FamilyInfo> GetFamilyInfo()
     {
         var family = FamilyInfos.ToList();
@@ -64,7 +67,7 @@ public class DatabaseContext: DbContext
         return allergy;
     }
     
-    public User? GetUser(int id)
+    public User? GetUser(int? id)
     {
         return GetUsers().FirstOrDefault(x => x.Id == id);
     }
@@ -78,6 +81,12 @@ public class DatabaseContext: DbContext
     public bool AddUser(User user)
     {
         Users.Add(user);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
+    public bool UpdateUser(User user)
+    {
+        Users.Update(user);
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
@@ -99,6 +108,16 @@ public class DatabaseContext: DbContext
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
+
+    public bool AddUserRecord(UserRecord userRecord)
+    {
+        UserRecords.Add(userRecord);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
+    
+
+   
     public List<User> GetAdmins()
     {
         return Users.Where(x => x.Type == UserType.Admin).ToList();
