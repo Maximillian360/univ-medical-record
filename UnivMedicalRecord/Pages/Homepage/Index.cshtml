@@ -23,12 +23,30 @@
                 </a>
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <form class="form-inline" method="post">
-                        <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="MedicalRecord">Medical Record</button>
-                      </form>
-                    </a>
+                  
+                  @{
+                    if (Model.Type == "Admin")
+                    {
+                      <li>
+                        <a href="#" class="nav-link text-white">
+                          <form class="form-inline" method="post">
+                            <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="ViewMedical">View Medical Records</button>
+                          </form>
+                        </a>
+                      </li>
+                    }
+                    else
+                    {
+                      <li>
+                        <a href="#" class="nav-link text-white">
+                          <form class="form-inline" method="post">
+                            <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="MedicalRecord">Medical Record</button>
+                          </form>
+                        </a>
+                      </li>
+                    }
+                      
+                  }
                 </ul>
                 <hr>
                 <div class="dropdown">

@@ -63,6 +63,7 @@ public class DatabaseContext: DbContext
         return AdminRoles.Any(x => x.Position == Position.SuperAdmin);
     }
     
+    
     public bool AddUser(User user)
     {
         Users.Add(user);
@@ -87,6 +88,6 @@ public class DatabaseContext: DbContext
     {
         return AdminRoles.Where(x => x.Admin == admin).ToList();
     }
-
+    
 
 }

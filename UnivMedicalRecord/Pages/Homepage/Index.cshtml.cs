@@ -50,5 +50,10 @@ public class IndexModel : PageModel
     {
         return RedirectToPage("./GeneralRecords");
     }
+
+    public IActionResult OnPostViewMedical()
+    {
+        return RedirectToPage("./ViewRecords");
+    }
     
 }

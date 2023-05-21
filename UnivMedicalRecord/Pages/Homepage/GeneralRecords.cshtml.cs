@@ -141,13 +141,28 @@ public class GeneralRecords : PageModel
 
     public string Name { get; set; }
     
-    
-
+    public List<Personal> Personals { get; set; }
+    public User User { get; set; }
+        
     public IActionResult OnGet()
     {
+        var user = HttpContext.Session.GetLoggedInUser(_context);
+        Personals = (List<Personal>)_context.GetPersonals();
+        User = user;
+        
+        if (HasRecord())
+        {
+            //WIP: ViewOnly record
+            return RedirectToPage("../Homepage/Index");
+        }
         Name = HttpContext.Session.GetLoggedInUser(_context).Firstname;
         return Page();
-        
+
+    }
+
+    public bool HasRecord()
+    {
+        return Personals.Any(x => x.user == User);
     }
 
     public IActionResult OnPost()
