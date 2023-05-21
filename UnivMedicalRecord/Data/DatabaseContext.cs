@@ -17,7 +17,7 @@ public class DatabaseContext: DbContext
         : base(options)
     {
     }
-    public DbSet<UserRecord>UserRecords { get; set; }
+   
     public DbSet<User> Users { get; set; }
     public DbSet<AdminRole> AdminRoles { get; set; }
     public DbSet<EmployeeRole> EmployeeRoles { get; set; }
@@ -26,11 +26,7 @@ public class DatabaseContext: DbContext
     public DbSet<Urinalysis> Urinalyses { get; set; }
     public DbSet<FamilyInfo> FamilyInfos { get; set; }
     public DbSet<Personal> Personals { get; set; }
-    public DbSet<Allergy> Allergies { get; set; }
-    public DbSet<Illness> Illnesses { get; set; }
-    
-
-
+   public DbSet<Medical>Medicals { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -56,17 +52,6 @@ public class DatabaseContext: DbContext
         return personal;
     }
     
-    public  IEnumerable<Illness> GetIllness()
-    {
-        var illness = Illnesses.ToList();
-        return illness;
-    }
-    public  IEnumerable<Allergy> GetAllergies()
-    {
-        var allergy = Allergies.ToList();
-        return allergy;
-    }
-    
     public User? GetUser(int? id)
     {
         return GetUsers().FirstOrDefault(x => x.Id == id);
@@ -84,40 +69,16 @@ public class DatabaseContext: DbContext
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
-    public bool UpdateUser(User user)
-    {
-        Users.Update(user);
-        var changesSaved = SaveChanges();
-        return changesSaved > 0;
-    }
-    public bool AddRecord(Personal personal, Allergy allergy, FamilyInfo familyInfo, Illness illness)
+    
+    public bool AddRecord(Personal personal, Medical medical, FamilyInfo familyInfo)
     {
         Personals.Add(personal);
         FamilyInfos.Add(familyInfo);
-        Allergies.Add(allergy);
-        Illnesses.Add(illness);
-        var changesSaved = SaveChanges();
-        return changesSaved > 0;
-    }
-    public bool UpdateRecord(Personal personal, Allergy allergy, FamilyInfo familyInfo, Illness illness)
-    {
-        Personals.Update(personal);
-        FamilyInfos.Update(familyInfo);
-        Allergies.Update(allergy);
-        Illnesses.Update(illness);
-        var changesSaved = SaveChanges();
-        return changesSaved > 0;
-    }
-
-    public bool AddUserRecord(UserRecord userRecord)
-    {
-        UserRecords.Add(userRecord);
+        Medicals.Add(medical);
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
     
-
-   
     public List<User> GetAdmins()
     {
         return Users.Where(x => x.Type == UserType.Admin).ToList();

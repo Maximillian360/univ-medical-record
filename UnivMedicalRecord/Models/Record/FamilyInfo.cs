@@ -5,6 +5,7 @@ namespace UnivMedicalRecord.Models.Record;
 public class FamilyInfo
 {
     public int Id { get; set; }
+    public User user { get; set; }
     public string? MotherName { get; set; }
     public string? MotherStatus { get; set; }
     public string? MotherAddress { get; set; }

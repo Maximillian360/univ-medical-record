@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using UniversityMedicalRecord.Data;
 using UniversityMedicalRecord.Models;
 using UnivMedicalRecord.Models.Record;
@@ -151,10 +152,11 @@ public class GeneralRecords : PageModel
 
     public IActionResult OnPost()
     {
-        
+        var user = HttpContext.Session.GetLoggedInUser(_context);
         
         var personal = new Personal()
             {
+                user = user,
                 Name = FullName,
                 Age = Age,
                 Sex = Gender,
@@ -170,6 +172,7 @@ public class GeneralRecords : PageModel
             
             var family = new FamilyInfo()
             {
+                user = user,
                 MotherName = MotherName,
              MotherStatus = MotherStatus,
              MotherAddress = MotherAddress,
@@ -186,52 +189,20 @@ public class GeneralRecords : PageModel
              GurdianStatus = GurdianStatus,
              GurdianRelation = GurdianRelation
             };
-            
-            var allergy = new Allergy()
-            {
-                
-                AllergyName = Allergy
-            };
 
-            var illness = new Illness()
+            var medical = new Medical()
             {
-                
-                IllnessName = Insurance
+                user = user,
+                Allergy = Allergy,
+                Illness = Illness
             };
             
-            _context.AddRecord(personal, allergy, family, illness);
-
-            var record = new UserRecord()
-            {
-                Personal = personal,
-                Allergy = allergy,
-                FamilyInfo = family,
-                Illness = illness,
-                HasRecord = true
-            };
-
-            _context.AddUserRecord(record);
-            
-            var user = HttpContext.Session.GetLoggedInUser(_context);
-            
-            //NOTE: HOW TF IS THIS NULL
-            //TODO: CONNECT RECORDS TO CURRENT USER 
-            user.UserRecord = record;
+            _context.AddRecord(personal, medical, family);
 
             _context.SaveChanges();
             
             return RedirectToPage("../Homepage/Index");
 
     }
-
-    //BUT ITS NOT NULL HERE WTF
-    public IActionResult OnPostTest()
-    {
-        
-        var user = HttpContext.Session.GetLoggedInUser(_context);
-        user.Firstname = "Jen Jen";
-        Name = user.Firstname;
-        _context.SaveChanges();
-        return Page();
-    }
+    
 }
