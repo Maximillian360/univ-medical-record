@@ -153,13 +153,13 @@ public class GeneralRecords : PageModel
         if (HasRecord())
         {
             //WIP: ViewOnly record
-            return RedirectToPage("../Homepage/Index");
+            return RedirectToPage("./ViewMedical");
         }
         Name = HttpContext.Session.GetLoggedInUser(_context).Firstname;
         return Page();
 
     }
-
+    
     public bool HasRecord()
     {
         return Personals.Any(x => x.user == User);

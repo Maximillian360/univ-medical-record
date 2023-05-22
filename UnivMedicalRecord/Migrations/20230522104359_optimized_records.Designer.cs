@@ -12,8 +12,8 @@ using UniversityMedicalRecord.Data;
 namespace UnivMedicalRecord.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20230522062416_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230522104359_optimized_records")]
+    partial class optimized_records
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
