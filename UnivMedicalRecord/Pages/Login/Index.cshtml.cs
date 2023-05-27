@@ -33,7 +33,7 @@ public class IndexModel : PageModel
         
         var user = _context.GetUsers().FirstOrDefault(x => x.Username == Username);
         var passwordHash = Password.ComputeHash(Convert.FromBase64String(user?.PasswordSalt ?? ""));
-
+        
         if (user == null || user.PasswordHash != passwordHash) return Page();
         HttpContext.Session.Login(user);
         return RedirectToPage("../Homepage/Index");

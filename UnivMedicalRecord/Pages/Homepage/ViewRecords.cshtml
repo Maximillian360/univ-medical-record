@@ -21,18 +21,25 @@
       <th scope="col">Name</th>
       <th scope="col">Id</th>
       <th scope="col">Number</th>
+      <th scope="col">  </th>
     </tr>
     </thead>
     <tbody>
+    
     @foreach(var x in Model.Personals)
     {
+      
       <tr>
-        <th scope="row">@x.Id</th>
-        <td>@x.Name</td>
-        <td>@x.IdNumber</td>
-        <td>@x.IdNumber</td>
+        
+          <th scope="row">@x.Id</th>
+          <td>@x.Name</td>
+          <td>@x.IdNumber</td>
+          <td>@x.IdNumber</td>
+        <td><a class = btn-close-white asp-page="./EditRecord" asp-route-id="@x.Id">Edit</a></td>
       </tr>
+     
     }
+    
   
     </tbody>
   </table>
