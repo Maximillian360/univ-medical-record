@@ -12,8 +12,8 @@ using UniversityMedicalRecord.Data;
 namespace UnivMedicalRecord.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20230528022458_optimized_records")]
-    partial class optimized_records
+    [Migration("20230531111929_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,8 +33,35 @@ namespace UnivMedicalRecord.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Activity")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Basophil")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Blast")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("BleedingTime")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("BloodType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("ClottingTime")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Control")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("DateRetrieved")
                         .HasColumnType("datetime2");
+
+                    b.Property<decimal?>("Eosinophil")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Esr")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal?>("Hb")
                         .HasColumnType("decimal(18,2)");
@@ -42,20 +69,50 @@ namespace UnivMedicalRecord.Migrations
                     b.Property<decimal?>("Hct")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal?>("Mch")
+                    b.Property<string>("Inr")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Lymphocyte")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal?>("Mchc")
+                    b.Property<string>("Malaria")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Metamyelocyte")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal?>("Mcv")
+                    b.Property<decimal?>("Monocyte")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Myelocyte")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("PatientRatio")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal?>("Plt")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<decimal?>("Promyelocyte")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<decimal?>("Rbc")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("RedCellMorphology")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Reticulocyte")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Segmenter")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Stab")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Test")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -68,6 +125,126 @@ namespace UnivMedicalRecord.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("BloodCounts");
+                });
+
+            modelBuilder.Entity("UnivMedicalRecord.Models.Record.Cholesterol", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DateRetrieved")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OtherRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("TradBua")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TradBun")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TradCholesterol")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TradCreatinine")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TradDhdl")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TradFbs")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TradLdl")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TradTriglyceride")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Cholesterols");
+                });
+
+            modelBuilder.Entity("UnivMedicalRecord.Models.Record.CholesterolSI", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal?>("Amylase")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Chloride")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Ckmb")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("DateRetrieved")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal?>("IonizedCalcium")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Potassium")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Sgot")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Sgpt")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SiBua")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SiBun")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SiCholesterol")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SiCreatinine")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SiDhdl")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SiFbs")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SiLdl")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SiTriglyceride")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("Sodium")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("CholesterolSis");
                 });
 
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.FamilyInfo", b =>
@@ -93,23 +270,23 @@ namespace UnivMedicalRecord.Migrations
                     b.Property<string>("FatherStatus")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("GurdianAddress")
+                    b.Property<string>("GuardianAddress")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("GurdianName")
+                    b.Property<string>("GuardianName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("GurdianOccupation")
+                    b.Property<string>("GuardianOccupation")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("GurdianRelation")
+                    b.Property<string>("GuardianRelation")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("GurdianStatus")
+                    b.Property<string>("GuardianStatus")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -138,6 +315,57 @@ namespace UnivMedicalRecord.Migrations
                     b.ToTable("FamilyInfos");
                 });
 
+            modelBuilder.Entity("UnivMedicalRecord.Models.Record.Fecalysis", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Color")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Consistency")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateRetrieved")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FurtherRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MicroOtherFindings")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MicroRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OccultBlood")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OtherFindings")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("StoolPusCells")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("StoolRbc")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("StoolRemarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Fecalyses");
+                });
+
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.Medical", b =>
                 {
                     b.Property<int>("Id")
@@ -160,35 +388,6 @@ namespace UnivMedicalRecord.Migrations
                     b.HasIndex("userId");
 
                     b.ToTable("Medicals");
-                });
-
-            modelBuilder.Entity("UnivMedicalRecord.Models.Record.MicroUrinalysis", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Bacteria")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EpithelialCells")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("RBC")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("MicroUrinalysis");
                 });
 
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.Personal", b =>
@@ -255,55 +454,68 @@ namespace UnivMedicalRecord.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Albumin")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AmorphousPhosphates")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AmorphousUrates")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Appearance")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Bilirubin")
-                        .IsRequired()
+                    b.Property<string>("Bacteria")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Blood")
-                        .IsRequired()
+                    b.Property<string>("Casts")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Color")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Crystals")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateRetrieved")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Glucose")
-                        .IsRequired()
+                    b.Property<string>("EpithelialCells")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Ketone")
-                        .IsRequired()
+                    b.Property<string>("MucusThread")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Leukesterase")
-                        .IsRequired()
+                    b.Property<string>("OthersMicroAnalysis")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Nitrite")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("Ph")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Protein")
-                        .IsRequired()
+                    b.Property<string>("OthersUrinalysis")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Specgrav")
+                    b.Property<decimal?>("Ph")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal>("Urobilinogen")
+                    b.Property<string>("Pregnancy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PusCells")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Rbc")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Specgrav")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Sugar")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
+
+                    b.Property<string>("YeastCells")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -404,6 +616,28 @@ namespace UnivMedicalRecord.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("UnivMedicalRecord.Models.Record.Cholesterol", b =>
+                {
+                    b.HasOne("UniversityMedicalRecord.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("UnivMedicalRecord.Models.Record.CholesterolSI", b =>
+                {
+                    b.HasOne("UniversityMedicalRecord.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.FamilyInfo", b =>
                 {
                     b.HasOne("UniversityMedicalRecord.Models.User", "user")
@@ -415,6 +649,17 @@ namespace UnivMedicalRecord.Migrations
                     b.Navigation("user");
                 });
 
+            modelBuilder.Entity("UnivMedicalRecord.Models.Record.Fecalysis", b =>
+                {
+                    b.HasOne("UniversityMedicalRecord.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.Medical", b =>
                 {
                     b.HasOne("UniversityMedicalRecord.Models.User", "user")
@@ -424,17 +669,6 @@ namespace UnivMedicalRecord.Migrations
                         .IsRequired();
 
                     b.Navigation("user");
-                });
-
-            modelBuilder.Entity("UnivMedicalRecord.Models.Record.MicroUrinalysis", b =>
-                {
-                    b.HasOne("UniversityMedicalRecord.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.Personal", b =>

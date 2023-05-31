@@ -16,9 +16,9 @@ public class FamilyInfo
     public string? FatherAddress { get; set; }
     public string? FatherOccupation { get; set; }
     public string? FatherNumber { get; set; }
-    public string GurdianName { get; set; }
-    public string GurdianStatus { get; set; }
-    public string GurdianAddress { get; set; }
-    public string GurdianOccupation { get; set; }
-    public string GurdianRelation { get; set; }
+    public string GuardianName { get; set; }
+    public string GuardianStatus { get; set; }
+    public string GuardianAddress { get; set; }
+    public string GuardianOccupation { get; set; }
+    public string GuardianRelation { get; set; }
 }

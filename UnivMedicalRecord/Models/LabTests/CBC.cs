@@ -21,10 +21,42 @@ public class CBC
     [Column(TypeName = "decimal(18,2)")]
     public decimal? Plt { get; set; }
     [Column(TypeName = "decimal(18,2)")]
-    public decimal? Mcv { get; set; }
+    public decimal? Blast { get; set; }
     [Column(TypeName = "decimal(18,2)")]
-    public decimal? Mch { get; set; }
+    public decimal? Promyelocyte { get; set; }
     [Column(TypeName = "decimal(18,2)")]
-    public decimal? Mchc { get; set; }
+    public decimal? Myelocyte { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Metamyelocyte { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Stab { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Segmenter { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Lymphocyte { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Monocyte { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Eosinophil { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Basophil { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Esr { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Reticulocyte { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? BleedingTime { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? ClottingTime { get; set; }
+    public string? Malaria { get; set; }
+    public string? RedCellMorphology { get; set; }
+    public string? Test { get; set; }
+    public string? Control { get; set; }
+    public string? Activity { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? PatientRatio { get; set; }
+    public string? Inr { get; set; }
+    public string? BloodType { get; set; }
+    
     
 }

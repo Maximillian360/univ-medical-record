@@ -1,0 +1,621 @@
+﻿@page
+@model UnivMedicalRecord.Pages.Homepage.AddLabTest
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<style>
+    
+</style>
+<script>
+    function showHideLabTests(){
+        if (document.getElementById('ckBoxCBC').checked){ 
+            document.getElementById('CBC').style.display='block';
+         }
+        else{
+            document.getElementById('CBC').style.display='none';
+        }
+        
+        if (document.getElementById('ckBoxUrinalysis').checked){ 
+            document.getElementById('Urinalysis').style.display='block';
+         }
+        else{
+            document.getElementById('Urinalysis').style.display='none';
+        }   
+ 
+        if (document.getElementById('ckBoxCholesterol').checked){ 
+            document.getElementById('Cholesterol').style.display='block';
+         }
+        else{
+            document.getElementById('Cholesterol').style.display='none';
+        }
+        
+        if (document.getElementById('ckBoxFecalysis').checked){ 
+            document.getElementById('Fecalysis').style.display='block';
+         }
+        else{
+            document.getElementById('Fecalysis').style.display='none';
+        }        
+    }
+
+</script>
+<body>
+<div>
+    <form class="form-inline" id="form" method="post">
+        <div class="ckBoxCollection" display>
+            <b><h1>Lab Tests</h1><br/>
+                <h2>Click the checkboxes for the lab tests you want to submit.</h2><br/></b>
+            CBC <input type="checkbox" id="ckBoxCBC" name="ckBoxCBC" onclick="showHideLabTests()">
+            Urinalysis <input type="checkbox" id="ckBoxUrinalysis" name="ckBoxUrinalysis" onclick="showHideLabTests()">
+            Cholesterol <input type="checkbox" id="ckBoxCholesterol" name="ckBoxCholesterol" onclick="showHideLabTests()">
+            Fecalysis <input type="checkbox" id="ckBoxFecalysis" name="ckBoxFecalysis" onclick="showHideLabTests()">
+            <br/>
+        </div>
+        <div class="form-control" display>
+            <fieldset id="CBC" style="display:none">
+                <h3>CBC</h3><br/>
+                <table class="table table-striped table-dark">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">EXAMINATIONS</th>
+                        <th scope="col">RESULTS</th>
+                        <th scope="col">NORMAL RANGE</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <td>WBC Count</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>5.0 - 10.0 x 10/L</td>
+                    </tr>
+
+                    <tr>
+                        <td>Blast</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Promyelocyte</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Myelocyte</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Metamyelocyte</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Stab</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td>0.01 - 0.05</td>
+                    </tr>
+
+                    <tr>
+                        <td>Segmenter</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td>0.50 - 0.70</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lymphocyte</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td>0.20 - 0.40</td>
+                    </tr>
+
+                    <tr>
+                        <td>Monocyte</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td>0.01 - 0.06</td>
+                    </tr>
+
+                    <tr>
+                        <td>Eosinophil</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td>0.01 - 0.05</td>
+                    </tr>
+
+                    <tr>
+                        <td>Basophil</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td>0.0 - 0.01</td>
+                    </tr>
+
+                    <tr>
+                        <td>RBC Count</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td>M: 4.5 - 6.2 x 10/L
+                            F: 4.2 - 5.4 x 10/L</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hemoglobin</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>M: 140.0 - 180.0G/L
+                            F: 120.0 - 160.0G/L
+                            C: 100.0 - 140.0G/L
+                            NB: 140.0 - 230.0G/L</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hematocrit</td>
+                        <td><input type="number" step=".01" min="0"></td>
+                        <td>M: 0.40 - 0.54
+                            F: 0.37 - 0.47</td>
+                    </tr>
+
+                    <tr>
+                        <td>ESR</td>
+                        <td><input type="number" min="0"></td>
+                        <td>M: 1-10mm/hr
+                            F: 0-20mm/hr</td>
+                    </tr>
+
+                    <tr>
+                        <td>Platelets</td>
+                        <td><input type="number" min="0"></td>
+                        <td>A: 150 - 450 x 10/L
+                            NB: 84 - 450 x 10/L</td>
+                    </tr>
+
+                    <tr>
+                        <td>Reticulocyte</td>
+                        <td><input type="number" min="0"></td>
+                        <td>A: 5 - 15 x 10/L
+                            NB: 15 - 65 x 10/L</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bleeding Time</td>
+                        <td><input type="number" min="0"></td>
+                        <td>1 - 5 minutes</td>
+                    </tr>
+
+                    <tr>
+                        <td>Clotting Time</td>
+                        <td><input type="number" min="0"></td>
+                        <td>2 - 7 minutes</td>
+                    </tr>
+
+                    <tr>
+                        <td>Malaria</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Red Cell Morphology</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Test</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Control</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>%Activity</td>
+                        <td><input type="number" min="0"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Patient Ratio</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>INR</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Blood Type</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+            <fieldset id="Urinalysis" style="display:none">
+                <h3>Urinalysis</h3><br/>
+                <table class="table table-striped table-dark">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">PHYSICAL EXAMINATION</th>
+                        <th scope="col">RESULTS</th>
+                    </tr>
+                    </thead>
+                    <tbody>               
+                        <tr>
+                            <td>Color</td>
+                            <td><input type="text"></td>
+                        </tr>      
+                    
+                        <tr>
+                            <td>Appearance</td>
+                            <td><input type="text"></td>
+                        </tr>                     
+                    
+                        <tr>
+                            <td>pH</td>
+                            <td><input type="number" step="0.1" min="0"></td>
+                        </tr>                     
+                    
+                        <tr>
+                            <td>Specific Gravity</td>
+                            <td><input type="number" step="0.001" min="0"></td>
+                        </tr>                     
+                    
+                        <tr>
+                            <td>Epithelial Cells</td>
+                            <td><input type="text"></td>
+                        </tr>      
+                    
+                        <tr>
+                            <td>Mucus Thread</td>
+                            <td><input type="text"></td>
+                        </tr>  
+                    
+                        <tr>
+                            <td>Amorphous Urates</td>
+                            <td><input type="text"></td>
+                        </tr>      
+                    
+                        <tr>
+                            <td>Amorphous Phosphates</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </tbody> 
+                    
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">CHEMICAL EXAMINATION</th>
+                        <th scope="col">Results</th>
+                    </tr>
+                    </thead>
+                    <tbody>               
+                        <tr>
+                            <td>Albumin</td>
+                            <td><input type="text"></td>
+                        </tr>      
+                    
+                        <tr>
+                            <td>Sugar</td>
+                            <td><input type="text"></td>
+                        </tr>                     
+                    
+                        <tr>
+                            <td>Others:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </tbody>                     
+                    
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">MICROSCOPIC EXAMINATION</th>
+                        <th scope="col">Results</th>
+                    </tr>
+                    </thead>
+                    <tbody>               
+                        <tr>
+                            <td>Pus Cells</td>
+                            <td><input type="text"></td>
+                        </tr>      
+                    
+                        <tr>
+                            <td>Red Blood Cells</td>
+                            <td><input type="text"></td>
+                        </tr>                     
+                    
+                        <tr>
+                            <td>Bacteria</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Yeast Cells</td>
+                            <td><input type="text"></td>
+                        </tr>                     
+                    
+                        <tr>
+                            <td>Others:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </tbody>                             
+                    
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">OTHER EXAMINATION</th>
+                        <th scope="col">Results</th>
+                    </tr>
+                    </thead>
+                    <tbody>               
+                        <tr>
+                            <td>Pregnancy</td>
+                            <td><input type="text"></td>
+                        </tr>      
+                    
+                        <tr>
+                            <td>Crystals</td>
+                            <td><input type="text"></td>
+                        </tr>                     
+                    
+                        <tr>
+                            <td>Cast</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+            <fieldset id="Cholesterol" style="display:none">
+                <h3>Cholesterol</h3><br/>
+                <table class="table table-striped table-dark">
+                <thead class="thead-dark">
+                      <tr>
+                      	<th scope="col">ANALYTE</th>
+                        <th scope="col">RESULT</th>
+                        <th scope="col">NORMAL RANGE</th>
+                      </tr>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Traditional</th>
+                        <th scope="col">S.I.</th>
+                        <th scope="col">Traditional</th>
+                        <th scope="col">S.I.</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FBS</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>74 - 106 mg/dl
+                            4.1 - 5.9 mmol/L</td>
+                    </tr>                
+
+                    <tr>
+                        <td>BUN</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>M: 9 - 20 mg/dl
+                            F: 3.2 - 7.1 mg/dl</td>
+                        <td>M: 7 - 17 mmol/L
+                            F: 2.5 - 6.1 mmol/L</td>
+                    </tr>                   
+                
+                    <tr>
+                        <td>Creatinine</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>M: 0.8 - 1.5 mg/dl
+                            F: 0.7 - 1.2 mg/dl</td>
+                        <td>M: 71 - 133 ummol/L
+                            F: 62 - 106 ummol/L</td>
+                    </tr>                 
+                
+                    <tr>
+                        <td>BUA</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>M: 3.5 - 8.5 mg/dl
+                            F: 2.5 - 6.2 mg/dl</td>
+                        <td>M: 208 - 506 ummol/L
+                            F: 149 - 369 ummol/L</td>
+                    </tr>                  
+                    <tr>
+                        <td>Cholesterol</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>< 200 mg/dl
+                            < 5.2 mmol/L</td>
+                    </tr>                 
+                
+                    <tr>
+                        <td>Triglyceride</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>< 150 mg/dl
+                            < 1.7 mmol/L</td>
+                    </tr>                  
+                
+                    <tr>
+                        <td>dHDL</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>> 40 mg/dl
+                            > 1.0 mmol/L</td>
+                    </tr>                  
+                
+                    <tr>
+                        <td>LDL</td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td>110 - 130 mg/dl
+                            2.8 - 3.4 mmol/L</td>
+                    </tr>                   
+                
+                    <tr>
+                        <td>SGOT</td>
+                        <td></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td></td>
+                        <td>M: 17 - 59 u/L
+                            F: 14 - 36 u/L</td>
+                    </tr>                 
+                
+                    <tr>
+                        <td>SGPT</td>
+                        <td></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td></td>
+                        <td>M: 21 - 72 u/L
+                            F: 9 - 52 u/L</td>
+                    </tr>                
+                
+                    <tr>
+                        <td>Amylase</td>
+                        <td></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td></td>
+                        <td>330 - 110 mmol/L</td>
+                    </tr>
+                
+                    <tr>
+                        <td>CKMB</td>
+                        <td></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td></td>
+                        <td>up to 16 u/L</td>
+                    </tr>                
+                
+                    <tr>
+                        <td>Sodium</td>
+                        <td></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td></td>
+                        <td>135 - 148 mmol/L</td>
+                    </tr>                
+                
+                    <tr>
+                        <td>Potassium</td>
+                        <td></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td></td>
+                        <td>3.5 - 5.3 mmol/L</td>
+                    </tr>    
+                
+                    <tr>
+                        <td>Chloride</td>
+                        <td></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td></td>
+                        <td>98 - 107 mmol/L</td>
+                    </tr>                 
+                
+                    <tr>
+                        <td>Ionized Calcium</td>
+                        <td></td>
+                        <td><input type="number" step=".1" min="0"></td>
+                        <td></td>
+                        <td>1.13 - 1.31 mmol/L</td>
+                    </tr>                 
+                
+                    <tr>
+                        <td>Remarks</td>
+                        <td><input type="text"></td>
+                    </tr>                     
+                
+                    <tr>
+                        <td>Other Remarks</td>
+                        <td><input type="text"></td>
+                    </tr>                
+                
+                </tbody>
+                </table>
+                
+                
+            </fieldset>
+        
+            <fieldset id="Fecalysis" style="display:none">
+                <h3>Fecalysis</h3><br/>
+                <table class="table table-striped table-dark">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">GROSS EXAMINATION</th>
+                    </tr>                    
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Color</td>
+                    <td><input type="text"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Consistency</td>
+                    <td><input type="text"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Other findings</td>
+                    <td><input type="text"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Occult Blood</td>
+                    <td><input type="text"/></td>
+                </tr>                
+                </tbody>
+                <br/>
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">MICROSCOPIC EXAMINATION</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                <tr>
+                    <td>Pus cells/HPF</td>
+                    <td><input type="number" min="0"/></td>
+                </tr>
+                
+                <tr>
+                    <td>RBC/HPF</td>
+                    <td><input type="number" min="0"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Other findings</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <br/>
+                <tr>
+                    <td>Remarks</td>
+                    <td><input type="text"/></td>
+                </tr>                  
+                </tbody>                
+                
+                
+                </table>
+                <i>Remarks</i>
+                <input type="text"/>
+                <br/>
+                <h4>OTHERS</h4>
+                <i>Remarks</i>
+                <input type="text"/>
+
+            </fieldset>
+        </div>
+
+    </form>
+
+</div>
+</body>
+</html>

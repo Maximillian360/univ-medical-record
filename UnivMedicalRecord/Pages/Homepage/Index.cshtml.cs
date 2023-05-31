@@ -39,6 +39,13 @@ public class IndexModel : PageModel
         return RedirectToPage("../Index");
         
     }
+    
+    public IActionResult OnPostRedirect()
+    {
+        //HttpContext.Session.Logout();
+        return RedirectToPage("./AddLabTest");
+        
+    }
     public IActionResult OnPostCreateAccount()
     {
         

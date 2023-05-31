@@ -22,11 +22,13 @@ public class DatabaseContext: DbContext
     public DbSet<AdminRole> AdminRoles { get; set; }
     public DbSet<EmployeeRole> EmployeeRoles { get; set; }
     public DbSet<CBC> BloodCounts { get; set; }
-    public DbSet<MicroUrinalysis> MicroUrinalysis { get; set; }
     public DbSet<Urinalysis> Urinalyses { get; set; }
+    public DbSet<Cholesterol> Cholesterols { get; set; }
+    public DbSet<CholesterolSI> CholesterolSis { get; set; }
+    public DbSet<Fecalysis> Fecalyses { get; set; }
     public DbSet<FamilyInfo> FamilyInfos { get; set; }
     public DbSet<Personal> Personals { get; set; }
-   public DbSet<Medical>Medicals { get; set; }
+    public DbSet<Medical>Medicals { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -107,28 +107,28 @@ public class GeneralRecords : PageModel
     public string FatherStatus { get; set; }
     
     [BindProperty]
-    [Display(Name= "Name of Gurdian")]
-    public string GurdianName { get; set; }
+    [Display(Name= "Name of Guardian")]
+    public string GuardianName { get; set; }
     
     [BindProperty]
-    [Display(Name= "Address of Gurdian")]
-    public string GurdianAddress { get; set; }
+    [Display(Name= "Address of Guardian")]
+    public string GuardianAddress { get; set; }
     
     [BindProperty]
-    [Display(Name= "Contact Number of Gurdian")]
-    public string GurdianNumber { get; set; }
+    [Display(Name= "Contact Number of Guardian")]
+    public string GuardianNumber { get; set; }
     
     [BindProperty]
-    [Display(Name= "Occupation of Gurdian")]
-    public string GurdianOccupation { get; set; }
+    [Display(Name= "Occupation of Guardian")]
+    public string GuardianOccupation { get; set; }
     
     [BindProperty]
     [Display(Name = "Civil Status")]
-    public string GurdianStatus { get; set; }
+    public string GuardianStatus { get; set; }
 
     [BindProperty]
-    [Display(Name = "Relationship with the Gurdian")]
-    public string GurdianRelation { get; set; }
+    [Display(Name = "Relationship with the Guardian")]
+    public string GuardianRelation { get; set; }
     
     [BindProperty]
     [Display(Name = "List of Allergies if there's any")]
@@ -198,11 +198,11 @@ public class GeneralRecords : PageModel
              FatherNumber = FatherNumber,
              FatherOccupation = FatherOccupation,
              FatherAddress = FatherOccupation,
-             GurdianName = GurdianName,
-             GurdianOccupation = GurdianOccupation,
-             GurdianAddress = GurdianAddress,
-             GurdianStatus = GurdianStatus,
-             GurdianRelation = GurdianRelation
+             GuardianName = GuardianName,
+             GuardianOccupation = GuardianOccupation,
+             GuardianAddress = GuardianAddress,
+             GuardianStatus = GuardianStatus,
+             GuardianRelation = GuardianRelation
             };
 
             var medical = new Medical()

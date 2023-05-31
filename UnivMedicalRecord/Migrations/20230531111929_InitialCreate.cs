@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace UnivMedicalRecord.Migrations
 {
     /// <inheritdoc />
-    public partial class optimized_records : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -63,15 +63,100 @@ namespace UnivMedicalRecord.Migrations
                     Hb = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
                     Hct = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
                     Plt = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    Mcv = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    Mch = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    Mchc = table.Column<decimal>(type: "decimal(18,2)", nullable: true)
+                    Blast = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Promyelocyte = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Myelocyte = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Metamyelocyte = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Stab = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Segmenter = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Lymphocyte = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Monocyte = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Eosinophil = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Basophil = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Esr = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Reticulocyte = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    BleedingTime = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    ClottingTime = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Malaria = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    RedCellMorphology = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Test = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Control = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Activity = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PatientRatio = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Inr = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BloodType = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_BloodCounts", x => x.Id);
                     table.ForeignKey(
                         name: "FK_BloodCounts_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Cholesterols",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    DateRetrieved = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    TradFbs = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TradBun = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TradCreatinine = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TradBua = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TradCholesterol = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TradTriglyceride = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TradDhdl = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TradLdl = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OtherRemarks = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Cholesterols", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Cholesterols_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CholesterolSis",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    DateRetrieved = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    SiFbs = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    SiBun = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    SiCreatinine = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    SiBua = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    SiCholesterol = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    SiTriglyceride = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    SiDhdl = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    SiLdl = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Sgot = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Sgpt = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Amylase = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Ckmb = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Sodium = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Potassium = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Chloride = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    IonizedCalcium = table.Column<decimal>(type: "decimal(18,2)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CholesterolSis", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CholesterolSis_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
@@ -115,11 +200,11 @@ namespace UnivMedicalRecord.Migrations
                     FatherAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FatherOccupation = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FatherNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    GurdianName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    GurdianStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    GurdianAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    GurdianOccupation = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    GurdianRelation = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    GuardianName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GuardianStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GuardianAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GuardianOccupation = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GuardianRelation = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -127,6 +212,36 @@ namespace UnivMedicalRecord.Migrations
                     table.ForeignKey(
                         name: "FK_FamilyInfos_Users_userId",
                         column: x => x.userId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Fecalyses",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    DateRetrieved = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    StoolPusCells = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    StoolRbc = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Color = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Consistency = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OtherFindings = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OccultBlood = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MicroOtherFindings = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MicroRemarks = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    StoolRemarks = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FurtherRemarks = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Fecalyses", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Fecalyses_Users_UserId",
+                        column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -148,28 +263,6 @@ namespace UnivMedicalRecord.Migrations
                     table.ForeignKey(
                         name: "FK_Medicals_Users_userId",
                         column: x => x.userId,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "MicroUrinalysis",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    RBC = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    EpithelialCells = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Bacteria = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_MicroUrinalysis", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_MicroUrinalysis_Users_UserId",
-                        column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -213,18 +306,25 @@ namespace UnivMedicalRecord.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
                     DateRetrieved = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Appearance = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Glucose = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Bilirubin = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Ketone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Specgrav = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Blood = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Ph = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Protein = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Urobilinogen = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Nitrite = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Leukesterase = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Color = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Appearance = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Ph = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Specgrav = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    EpithelialCells = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MucusThread = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AmorphousUrates = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AmorphousPhosphates = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Albumin = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Sugar = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Pregnancy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Crystals = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Casts = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OthersUrinalysis = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PusCells = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Rbc = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Bacteria = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    YeastCells = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OthersMicroAnalysis = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -248,6 +348,16 @@ namespace UnivMedicalRecord.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Cholesterols_UserId",
+                table: "Cholesterols",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CholesterolSis_UserId",
+                table: "CholesterolSis",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_EmployeeRoles_EmployeeId",
                 table: "EmployeeRoles",
                 column: "EmployeeId");
@@ -258,14 +368,14 @@ namespace UnivMedicalRecord.Migrations
                 column: "userId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Fecalyses_UserId",
+                table: "Fecalyses",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Medicals_userId",
                 table: "Medicals",
                 column: "userId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MicroUrinalysis_UserId",
-                table: "MicroUrinalysis",
-                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Personals_userId",
@@ -288,16 +398,22 @@ namespace UnivMedicalRecord.Migrations
                 name: "BloodCounts");
 
             migrationBuilder.DropTable(
+                name: "Cholesterols");
+
+            migrationBuilder.DropTable(
+                name: "CholesterolSis");
+
+            migrationBuilder.DropTable(
                 name: "EmployeeRoles");
 
             migrationBuilder.DropTable(
                 name: "FamilyInfos");
 
             migrationBuilder.DropTable(
-                name: "Medicals");
+                name: "Fecalyses");
 
             migrationBuilder.DropTable(
-                name: "MicroUrinalysis");
+                name: "Medicals");
 
             migrationBuilder.DropTable(
                 name: "Personals");

@@ -21,4 +21,8 @@ public class ViewRecords : PageModel
         Personals = (List<Personal>)_context.GetPersonals();
         return Page();
     }
+    public IActionResult OnPostEditButton()
+    {
+        return RedirectToPage("./AdminMedicalRecordEdit");
+    }
 }

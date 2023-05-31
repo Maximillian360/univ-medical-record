@@ -36,12 +36,12 @@ public class ViewMedical : PageModel
     public string FatherNumber { get; set; }
     public string FatherOccupation { get; set; }
     public string FatherStatus { get; set; }
-    public string GurdianName { get; set; }
-    public string GurdianAddress { get; set; }
-    public string GurdianNumber { get; set; }
-    public string GurdianOccupation { get; set; }
-    public string GurdianStatus { get; set; }
-    public string GurdianRelation { get; set; }
+    public string GuardianName { get; set; }
+    public string GuardianAddress { get; set; }
+    public string GuardianNumber { get; set; }
+    public string GuardianOccupation { get; set; }
+    public string GuardianStatus { get; set; }
+    public string GuardianRelation { get; set; }
     public string Allergy { get; set; }
     public string Illness { get; set; }
     
@@ -79,11 +79,11 @@ public class ViewMedical : PageModel
             FatherNumber = fam.FatherNumber;
             FatherOccupation = fam.FatherOccupation;
             FatherStatus = fam.FatherStatus;
-            GurdianName = fam.GurdianName;
-            GurdianAddress = fam.GurdianAddress;
-            GurdianOccupation = fam.GurdianOccupation;
-            GurdianStatus = fam.GurdianStatus;
-            GurdianRelation = fam.GurdianRelation;
+            GuardianName = fam.GuardianName;
+            GuardianAddress = fam.GuardianAddress;
+            GuardianOccupation = fam.GuardianOccupation;
+            GuardianStatus = fam.GuardianStatus;
+            GuardianRelation = fam.GuardianRelation;
         }
 
         foreach (var med in medical)
