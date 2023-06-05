@@ -22,6 +22,35 @@ namespace UnivMedicalRecord.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("UnivMedicalRecord.Models.Comms.MessagePost", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Recipient")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("MessagePosts");
+                });
+
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.CBC", b =>
                 {
                     b.Property<int>("Id")
@@ -363,6 +392,39 @@ namespace UnivMedicalRecord.Migrations
                     b.ToTable("Fecalyses");
                 });
 
+            modelBuilder.Entity("UnivMedicalRecord.Models.Record.LabResult", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CbcRes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CholesterolRes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Encoded")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FecalysisRes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UrinalysisRes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("LabResults");
+                });
+
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.Medical", b =>
                 {
                     b.Property<int>("Id")
@@ -602,6 +664,17 @@ namespace UnivMedicalRecord.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("UnivMedicalRecord.Models.Comms.MessagePost", b =>
+                {
+                    b.HasOne("UniversityMedicalRecord.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.CBC", b =>
                 {
                     b.HasOne("UniversityMedicalRecord.Models.User", "User")
@@ -647,6 +720,17 @@ namespace UnivMedicalRecord.Migrations
                 });
 
             modelBuilder.Entity("UnivMedicalRecord.Models.Record.Fecalysis", b =>
+                {
+                    b.HasOne("UniversityMedicalRecord.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("UnivMedicalRecord.Models.Record.LabResult", b =>
                 {
                     b.HasOne("UniversityMedicalRecord.Models.User", "User")
                         .WithMany()

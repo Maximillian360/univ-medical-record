@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using UniversityMedicalRecord.Models;
 using UniversityMedicalRecord.Models.Admin;
 using UniversityMedicalRecord.Models.Employee;
+using UnivMedicalRecord.Models.Comms;
 using UnivMedicalRecord.Models.Record;
 
 namespace UniversityMedicalRecord.Data;
@@ -29,6 +30,8 @@ public class DatabaseContext: DbContext
     public DbSet<FamilyInfo> FamilyInfos { get; set; }
     public DbSet<Personal> Personals { get; set; }
     public DbSet<Medical>Medicals { get; set; }
+    public DbSet<LabResult>LabResults { get; set; }
+    public DbSet<MessagePost>MessagePosts { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -64,6 +67,12 @@ public class DatabaseContext: DbContext
     {
         return AdminRoles.Any(x => x.Position == Position.SuperAdmin);
     }
+    public bool WriteMessage(MessagePost messagePost)
+    {
+        MessagePosts.Add(messagePost);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
     
     
     public bool AddUser(User user)
@@ -78,6 +87,14 @@ public class DatabaseContext: DbContext
         Personals.Add(personal);
         FamilyInfos.Add(familyInfo);
         Medicals.Add(medical);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
+   
+
+    public bool AddLabResult(LabResult labResult)
+    {
+        LabResults.Add(labResult);
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }

@@ -40,6 +40,26 @@
               </form>
             </a>
           </li>
+          
+            @{
+              if (Model.Type == "Regular")
+              {
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <form class="form-inline" method="post">
+                      <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="LabResult">Laboratory Test</button>
+                      </form>
+                    </a>
+                  </li>
+              }
+            }
+            <li>
+            <a href="#" class="nav-link text-white">
+              <form class="form-inline" method="post">
+                <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="Inbox">Inbox</button>
+              </form>
+            </a>
+          </li>
         </ul>
         <hr>
         <div class="dropdown">
@@ -68,9 +88,7 @@
         </div>
       </div> 
       <div class="col-md-8">
-        <h4>
-                
-        </h4>
+        
       </div>       
     </div>
    

@@ -2,16 +2,22 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using UniversityMedicalRecord.Data;
 using UniversityMedicalRecord.Models;
+using UnivMedicalRecord.Models.Comms;
 
 namespace UnivMedicalRecord.Pages.Homepage;
 
 public class IndexModel : PageModel
 {
     private readonly DatabaseContext _context;
+    public IndexModel(DatabaseContext context)  {
+        _context = context;
+    }
     
+    public IQueryable<MessagePost> Messages { get; set; }
     public IActionResult OnGet()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
+        Messages =_context.MessagePosts.Where(x => x.Recipient == user.Username);
         switch (user)
         {
             case null:
@@ -23,9 +29,7 @@ public class IndexModel : PageModel
         }
         
     }
-    public IndexModel(DatabaseContext context)  {
-        _context = context;
-    }
+  
     
     [BindProperty]
     public string Name { get; set; }
@@ -50,7 +54,6 @@ public class IndexModel : PageModel
     {
         
         return RedirectToPage("../CreateUser/Index");
-        
     }
 
     public IActionResult OnPostMedicalRecord()
@@ -61,6 +64,14 @@ public class IndexModel : PageModel
     public IActionResult OnPostViewMedical()
     {
         return RedirectToPage("./ViewRecords");
+    }
+    public IActionResult OnPostLabResult()
+    {
+        return RedirectToPage("./AddLabResult");
+    }
+    public IActionResult OnPostInbox()
+    {
+        return RedirectToPage("./Inbox");
     }
     
 }

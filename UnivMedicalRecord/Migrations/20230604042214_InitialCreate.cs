@@ -248,6 +248,30 @@ namespace UnivMedicalRecord.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "LabResults",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    CholesterolRes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CbcRes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UrinalysisRes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FecalysisRes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Encoded = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_LabResults", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_LabResults_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Medicals",
                 columns: table => new
                 {
@@ -263,6 +287,28 @@ namespace UnivMedicalRecord.Migrations
                     table.ForeignKey(
                         name: "FK_Medicals_Users_userId",
                         column: x => x.userId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MessagePosts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    Recipient = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    message = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MessagePosts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_MessagePosts_Users_UserId",
+                        column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -373,9 +419,19 @@ namespace UnivMedicalRecord.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_LabResults_UserId",
+                table: "LabResults",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Medicals_userId",
                 table: "Medicals",
                 column: "userId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MessagePosts_UserId",
+                table: "MessagePosts",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Personals_userId",
@@ -413,7 +469,13 @@ namespace UnivMedicalRecord.Migrations
                 name: "Fecalyses");
 
             migrationBuilder.DropTable(
+                name: "LabResults");
+
+            migrationBuilder.DropTable(
                 name: "Medicals");
+
+            migrationBuilder.DropTable(
+                name: "MessagePosts");
 
             migrationBuilder.DropTable(
                 name: "Personals");
