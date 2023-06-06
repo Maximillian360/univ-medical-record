@@ -90,6 +90,17 @@ public class DatabaseContext: DbContext
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
+    
+    public bool AddLabRecord(CBC bloodcount, Cholesterol cholesterol, CholesterolSI cholesterolSi, Urinalysis urinalysis, Fecalysis fecalysis)
+    {
+        BloodCounts.Add(bloodcount);
+        Cholesterols.Add(cholesterol);
+        CholesterolSis.Add(cholesterolSi);
+        Urinalyses.Add(urinalysis);
+        Fecalyses.Add(fecalysis);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
    
 
     public bool AddLabResult(LabResult labResult)

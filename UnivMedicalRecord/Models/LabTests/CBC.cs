@@ -53,8 +53,7 @@ public class CBC
     public string? Test { get; set; }
     public string? Control { get; set; }
     public string? Activity { get; set; }
-    [Column(TypeName = "decimal(18,2)")]
-    public decimal? PatientRatio { get; set; }
+    public string? PatientRatio { get; set; }
     public string? Inr { get; set; }
     public string? BloodType { get; set; }
     

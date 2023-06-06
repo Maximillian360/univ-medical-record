@@ -12,7 +12,7 @@ using UniversityMedicalRecord.Data;
 namespace UnivMedicalRecord.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20230604042214_InitialCreate")]
+    [Migration("20230605085328_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

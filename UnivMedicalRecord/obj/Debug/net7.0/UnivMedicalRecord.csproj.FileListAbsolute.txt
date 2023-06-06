@@ -307,3 +307,12 @@ C:\Users\JonelDavid\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debu
 C:\Users\JonelDavid\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\WebMatrix.Data.dll
 C:\Users\JonelDavid\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\WebMatrix.WebData.dll
 C:\Users\JonelDavid\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\System.Web.Razor.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\Microsoft.Web.Helpers.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\System.Web.Helpers.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\System.Web.WebPages.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\WebMatrix.Data.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\WebMatrix.WebData.dll
+C:\Users\blythePC\RiderProjects\univ-medical-record\UnivMedicalRecord\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll

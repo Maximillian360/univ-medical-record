@@ -44,6 +44,13 @@ public class IndexModel : PageModel
         
     }
     
+    public IActionResult OnPostLabTest()
+    {
+        HttpContext.Session.Logout();
+        return RedirectToPage("./AddLabTest");
+        
+    }
+    
     public IActionResult OnPostRedirect()
     {
         //HttpContext.Session.Logout();

@@ -40,8 +40,23 @@
               </form>
             </a>
           </li>
+
+          @{
+            if (Model.Type == "Admin")
+            {
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <form class="form-inline" method="post">
+                    <button type="submit" class="dropdown-item" asp-page-handler="LabTest">Lab Test</button>
+                  </form>
+                </a>
+              </li>
+            }
+            
+            
+          }
           
-            @{
+          @{
               if (Model.Type == "Regular")
               {
                 <li>

@@ -33,7 +33,6 @@ public class AddLabResult : PageModel
     public IActionResult OnGet()
     {
         return Page();
-
     }
 
     public IActionResult OnPost()
