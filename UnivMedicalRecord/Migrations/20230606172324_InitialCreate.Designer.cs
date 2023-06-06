@@ -12,7 +12,7 @@ using UniversityMedicalRecord.Data;
 namespace UnivMedicalRecord.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20230605085328_InitialCreate")]
+    [Migration("20230606172324_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -116,8 +116,8 @@ namespace UnivMedicalRecord.Migrations
                     b.Property<decimal?>("Myelocyte")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal?>("PatientRatio")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("PatientRatio")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal?>("Plt")
                         .HasColumnType("decimal(18,2)");

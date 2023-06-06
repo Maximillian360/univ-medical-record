@@ -113,8 +113,8 @@ namespace UnivMedicalRecord.Migrations
                     b.Property<decimal?>("Myelocyte")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal?>("PatientRatio")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("PatientRatio")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal?>("Plt")
                         .HasColumnType("decimal(18,2)");

@@ -25,4 +25,9 @@ public class ViewRecords : PageModel
     {
         return RedirectToPage("./AdminMedicalRecordEdit");
     }
+
+    public IActionResult OnPostClose()
+    {
+        return RedirectToPage("./Index");
+    }
 }

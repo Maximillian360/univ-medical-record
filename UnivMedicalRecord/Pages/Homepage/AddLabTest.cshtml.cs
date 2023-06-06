@@ -28,11 +28,7 @@ public class AddLabTest : PageModel
     public DateTime LabDateCholesterol { get; set; }
     [BindProperty]
     public DateTime LabDateFecalysis { get; set; }
-    // public void OnGet()
-    // {
-    //     var UserList = _context.Users.Where(x=>x.Type == UserType.Regular);
-    //     UserId = UserList;
-    // }
+    
     [BindProperty]
     public int Wbc { get; set; }
     [BindProperty]
@@ -199,7 +195,7 @@ public class AddLabTest : PageModel
     [BindProperty]
     public string FurtherRemarks { get; set; }
     
-    public User UserId { get; set; }
+    public User User { get; set; }
     
     
     // public IActionResult OnGet()
@@ -222,14 +218,19 @@ public class AddLabTest : PageModel
     // {
     //     // return Personals.Any(x => x.user == User);
     // }
-
-    public IActionResult OnPost()
+    public IActionResult OnGet()
+    {
+        
+        return Page();
+    }
+    
+    public IActionResult OnPost(int? id)
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
-        
+        User= _context.GetUser(id);
         var bloodcount = new CBC()
             {
-                User = UserId,
+                User = User,
                 DateRetrieved = LabDateCBC,
                 Wbc = Wbc,
                 Blast = Blast,
@@ -262,7 +263,7 @@ public class AddLabTest : PageModel
             
             var cholesterol = new Cholesterol()
             {
-                User = UserId,
+                User = User,
                 DateRetrieved = LabDateCholesterol,
                 TradFbs = TradFbs,
                 TradBun = TradBun,
@@ -278,7 +279,7 @@ public class AddLabTest : PageModel
 
             var cholesterolsi = new CholesterolSI()
             {
-                User = UserId,
+                User = User,
                 DateRetrieved = LabDateCholesterol,
                 SiFbs = SiFbs,
                 SiBun = SiBun,
@@ -300,7 +301,7 @@ public class AddLabTest : PageModel
             
             var urinalysis = new Urinalysis()
             {
-                User = UserId,
+                User = User,
                 DateRetrieved = LabDateUrinalysis,
                 Color = Color,
                 Appearance = Appearance,
@@ -325,7 +326,7 @@ public class AddLabTest : PageModel
             
             var fecalysis = new Fecalysis()
             {
-                User = UserId,
+                User = User,
                 DateRetrieved = LabDateFecalysis,
                 StoolPusCells = StoolPus,
                 StoolRbc = StoolRbc,
@@ -338,8 +339,8 @@ public class AddLabTest : PageModel
                 StoolRemarks = StoolRemarks,
                 FurtherRemarks = FurtherRemarks
             };
-            
-            _context.AddLabRecord(bloodcount, cholesterol, cholesterolsi, urinalysis, fecalysis);
+
+            _context.AddLabTest(fecalysis, urinalysis,bloodcount, cholesterolsi, cholesterol);
             
             _context.SaveChanges();
             

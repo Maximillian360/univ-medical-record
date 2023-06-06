@@ -30,9 +30,8 @@ public class DatabaseContext: DbContext
     public DbSet<FamilyInfo> FamilyInfos { get; set; }
     public DbSet<Personal> Personals { get; set; }
     public DbSet<Medical>Medicals { get; set; }
-    public DbSet<LabResult>LabResults { get; set; }
     public DbSet<MessagePost>MessagePosts { get; set; }
-
+    public DbSet<LabResult>LabResults { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -81,7 +80,7 @@ public class DatabaseContext: DbContext
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
-    
+
     public bool AddRecord(Personal personal, Medical medical, FamilyInfo familyInfo)
     {
         Personals.Add(personal);
@@ -91,25 +90,26 @@ public class DatabaseContext: DbContext
         return changesSaved > 0;
     }
     
-    public bool AddLabRecord(CBC bloodcount, Cholesterol cholesterol, CholesterolSI cholesterolSi, Urinalysis urinalysis, Fecalysis fecalysis)
-    {
-        BloodCounts.Add(bloodcount);
-        Cholesterols.Add(cholesterol);
-        CholesterolSis.Add(cholesterolSi);
-        Urinalyses.Add(urinalysis);
-        Fecalyses.Add(fecalysis);
-        var changesSaved = SaveChanges();
-        return changesSaved > 0;
-    }
-   
-
     public bool AddLabResult(LabResult labResult)
     {
         LabResults.Add(labResult);
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
+
+    public bool AddLabTest(Fecalysis fecalysis, Urinalysis urinalysis, CBC cbc, CholesterolSI cholesterolSi,
+        Cholesterol cholesterol)
+    {
+        Fecalyses.Add(fecalysis);
+        Urinalyses.Add(urinalysis);
+        CholesterolSis.Add(cholesterolSi);
+        Cholesterols.Add(cholesterol);
+        BloodCounts.Add(cbc);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
     
+
     public List<User> GetAdmins()
     {
         return Users.Where(x => x.Type == UserType.Admin).ToList();

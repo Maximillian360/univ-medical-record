@@ -17,7 +17,9 @@ public class IndexModel : PageModel
     public IActionResult OnGet()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
-        Messages =_context.MessagePosts.Where(x => x.Recipient == user.Username);
+        var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
+        Users = userList;
+        
         switch (user)
         {
             case null:
@@ -30,7 +32,7 @@ public class IndexModel : PageModel
         
     }
   
-    
+    public IQueryable<User> Users { get; set; }
     [BindProperty]
     public string Name { get; set; }
     [BindProperty]

@@ -82,7 +82,7 @@ namespace UnivMedicalRecord.Migrations
                     Test = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Control = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Activity = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PatientRatio = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    PatientRatio = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Inr = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     BloodType = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
