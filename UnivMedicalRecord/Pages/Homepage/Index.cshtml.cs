@@ -67,7 +67,7 @@ public class IndexModel : PageModel
 
     public IActionResult OnPostMedicalRecord()
     {
-        return RedirectToPage("./GeneralRecords");
+        return RedirectToPage("./MedicalRecord");
     }
 
     public IActionResult OnPostViewMedical()
@@ -81,6 +81,11 @@ public class IndexModel : PageModel
     public IActionResult OnPostInbox()
     {
         return RedirectToPage("./Inbox");
+    }
+
+    public IActionResult OnPostDashboard()
+    {
+        return RedirectToPage("./Index");
     }
     
 }
