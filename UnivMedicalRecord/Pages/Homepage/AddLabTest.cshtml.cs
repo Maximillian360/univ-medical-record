@@ -340,7 +340,7 @@ public class AddLabTest : PageModel
                 FurtherRemarks = FurtherRemarks
             };
 
-            _context.AddLabTest(fecalysis, urinalysis,bloodcount, cholesterolsi, cholesterol);
+           /* _context.AddLabTest(fecalysis, urinalysis,bloodcount, cholesterolsi, cholesterol);*/
             
             _context.SaveChanges();
             

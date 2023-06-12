@@ -46,16 +46,43 @@ public class DatabaseContext: DbContext
 
     public  IEnumerable<FamilyInfo> GetFamilyInfo()
     {
-        var family = FamilyInfos.ToList();
+        var family = FamilyInfos.Include(X=>X.user).ToList();
         return family;
     }
     
     public  IEnumerable<Personal> GetPersonals()
     {
-        var personal = Personals.ToList();
+        var personal = Personals.Include(x=>x.user).ToList();
         return personal;
     }
     
+    public  IEnumerable<Urinalysis> GetUrinalysis()
+    {
+        var urinalysis = Urinalyses.Include(x=>x.User).ToList();
+        return urinalysis;
+    }
+    
+    public  IEnumerable<Cholesterol> GetCholesterol()
+    {
+        var cholesterol = Cholesterols.Include(x=>x.User).ToList();
+        return cholesterol;
+    }
+    public  IEnumerable<Fecalysis> GetFecalysis()
+    {
+        var fecalysis = Fecalyses.Include(x=>x.User).ToList();
+        return fecalysis;
+    }
+
+    public  IEnumerable<CholesterolSI> GetCholesterolSis()
+    {
+        var cholesterolSi = CholesterolSis.Include(x=>x.User).ToList();
+        return cholesterolSi;
+    }
+    public  IEnumerable<CBC> GetBloodCount()
+    {
+        var cbc = BloodCounts.Include(X=>X.User).ToList();
+        return cbc;
+    }
     public User? GetUser(int? id)
     {
         return GetUsers().FirstOrDefault(x => x.Id == id);
@@ -89,6 +116,36 @@ public class DatabaseContext: DbContext
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
+
+    public bool AddUrinalysis(Urinalysis urinalysis)
+    {
+        Urinalyses.Add(urinalysis);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
+    
+    public bool AddFecalysis(Fecalysis fecalysis)
+    {
+        Fecalyses.Add(fecalysis);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
+    
+    public bool AddCbc(CBC cbc)
+    {
+        BloodCounts.Add(cbc);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
+    
+    public bool AddCholesterol(CholesterolSI cholesterolSi,
+        Cholesterol cholesterol)
+    {
+        CholesterolSis.Add(cholesterolSi);
+        Cholesterols.Add(cholesterol);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
     
     public bool AddLabResult(LabResult labResult)
     {
@@ -97,17 +154,7 @@ public class DatabaseContext: DbContext
         return changesSaved > 0;
     }
 
-    public bool AddLabTest(Fecalysis fecalysis, Urinalysis urinalysis, CBC cbc, CholesterolSI cholesterolSi,
-        Cholesterol cholesterol)
-    {
-        Fecalyses.Add(fecalysis);
-        Urinalyses.Add(urinalysis);
-        CholesterolSis.Add(cholesterolSi);
-        Cholesterols.Add(cholesterol);
-        BloodCounts.Add(cbc);
-        var changesSaved = SaveChanges();
-        return changesSaved > 0;
-    }
+    
     
 
     public List<User> GetAdmins()

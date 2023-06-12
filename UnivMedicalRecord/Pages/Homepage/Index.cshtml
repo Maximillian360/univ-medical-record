@@ -30,23 +30,6 @@
               </form>
             </a>
           </li>
-          
-          <li>
-            <a href="#" class="nav-link text-white">
-              <form class="form-inline" method="post">
-                @{
-                  if (Model.Type == "Admin")
-                  {
-                    <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="ViewMedical">View Medical Records </button>
-                  }
-                  else
-                  {
-                    <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="MedicalRecord">Medical Record</button>
-                  }
-                }
-              </form>
-            </a>
-          </li>
 
           @{
             if (Model.Type == "Admin")
@@ -55,6 +38,13 @@
                 <a href="#" class="nav-link text-white">
                   <form class="form-inline" method="post">
                     <button type="submit" class="dropdown-item" asp-page-handler="LabTest">Lab Test</button>
+                  </form>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <form class="form-inline" method="post">
+                    <button type="submit" class="dropdown-item" asp-page-handler="ViewRecords">View Medical Records</button>
                   </form>
                 </a>
               </li>
@@ -68,6 +58,13 @@
                 <a href="#" class="nav-link text-white">
                   <form class="form-inline" method="post">
                     <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="LabResult">Laboratory Test</button>
+                  </form>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <form class="form-inline" method="post">
+                    <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="MedicalRecord">MedicalRecord</button>
                   </form>
                 </a>
               </li>
@@ -133,7 +130,7 @@
                             {
                               <tr>
                                 <td>@x.Firstname</td>
-                                <td><a class="btn btn-dark" style="float: right" asp-page="./AddLabTest" asp-route-id="@x.Id">Add Lab Record</a></td>
+                                <td><a class="btn btn-dark" style="float: right" asp-page="./AddLab" asp-route-Id="@x.Id">Add Lab Record</a></td>
                               </tr>
                             }
                             </tbody>

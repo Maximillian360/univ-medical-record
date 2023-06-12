@@ -48,14 +48,14 @@ public class IndexModel : PageModel
     
     public IActionResult OnPostLabTest()
     {
-        HttpContext.Session.Logout();
-        return RedirectToPage("./AddLabTest");
+        
+        return RedirectToPage("./AddLab");
         
     }
     
     public IActionResult OnPostRedirect()
     {
-        //HttpContext.Session.Logout();
+        
         return RedirectToPage("./AddLabTest");
         
     }
@@ -67,13 +67,9 @@ public class IndexModel : PageModel
 
     public IActionResult OnPostMedicalRecord()
     {
-        return RedirectToPage("./MedicalRecord");
+        return RedirectToPage("./GeneralRecords");
     }
-
-    public IActionResult OnPostViewMedical()
-    {
-        return RedirectToPage("./ViewRecords");
-    }
+    
     public IActionResult OnPostLabResult()
     {
         return RedirectToPage("./AddLabResult");
@@ -86,6 +82,10 @@ public class IndexModel : PageModel
     public IActionResult OnPostDashboard()
     {
         return RedirectToPage("./Index");
+    }
+    public IActionResult OnPostViewRecords()
+    {
+        return RedirectToPage("./Records");
     }
     
 }
