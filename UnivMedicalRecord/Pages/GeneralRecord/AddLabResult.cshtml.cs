@@ -92,7 +92,7 @@ public class AddLabResult : PageModel
         
         _context.SaveChanges();
         
-        return Page();
+        return RedirectToPage("../Homepage/Index");
     }
     
     public IActionResult OnPostRecords()

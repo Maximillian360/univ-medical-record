@@ -544,12 +544,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\20ff2f7f-fab8-4929-a5a3-b43990bb3624.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\0249ee65-ff04-44a0-a1a7-c8ef06247bb5.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/20ff2f7f-fab8-4929-a5a3-b43990bb3624.jpg</RelativePath>
+      <RelativePath>images/0249ee65-ff04-44a0-a1a7-c8ef06247bb5.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -558,14 +558,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\20ff2f7f-fab8-4929-a5a3-b43990bb3624.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\0249ee65-ff04-44a0-a1a7-c8ef06247bb5.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3add8192-ecc4-41ef-8a27-689b6e7baa49.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\1dce77dc-5b43-4a83-b6f3-bee28624724f.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/3add8192-ecc4-41ef-8a27-689b6e7baa49.png</RelativePath>
+      <RelativePath>images/1dce77dc-5b43-4a83-b6f3-bee28624724f.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -574,14 +574,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3add8192-ecc4-41ef-8a27-689b6e7baa49.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\1dce77dc-5b43-4a83-b6f3-bee28624724f.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\43ae06b3-6aaf-4f4a-98a5-f8ae681dc7e9.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\1f72e2bf-cb22-45d4-9a25-64e8ecaa35c6.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/43ae06b3-6aaf-4f4a-98a5-f8ae681dc7e9.png</RelativePath>
+      <RelativePath>images/1f72e2bf-cb22-45d4-9a25-64e8ecaa35c6.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -590,14 +590,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\43ae06b3-6aaf-4f4a-98a5-f8ae681dc7e9.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\1f72e2bf-cb22-45d4-9a25-64e8ecaa35c6.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\48907625-8a88-48a7-9552-1dbb2dec02ff.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\20a3424c-7038-46c1-89d4-8c3fd8709687.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/48907625-8a88-48a7-9552-1dbb2dec02ff.png</RelativePath>
+      <RelativePath>images/20a3424c-7038-46c1-89d4-8c3fd8709687.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -606,14 +606,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\48907625-8a88-48a7-9552-1dbb2dec02ff.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\20a3424c-7038-46c1-89d4-8c3fd8709687.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\522bfee3-cb08-4af3-bde9-7b68d8933b12.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3c7bd501-356f-44ee-b6ca-f7849370bbcb.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/522bfee3-cb08-4af3-bde9-7b68d8933b12.jpg</RelativePath>
+      <RelativePath>images/3c7bd501-356f-44ee-b6ca-f7849370bbcb.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -622,14 +622,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\522bfee3-cb08-4af3-bde9-7b68d8933b12.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3c7bd501-356f-44ee-b6ca-f7849370bbcb.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\52319783-9cb3-4a52-9b84-9ccf7d21e6d4.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\4a7ee372-9651-4f06-b055-40e4dd193103.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/52319783-9cb3-4a52-9b84-9ccf7d21e6d4.jpg</RelativePath>
+      <RelativePath>images/4a7ee372-9651-4f06-b055-40e4dd193103.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -638,14 +638,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\52319783-9cb3-4a52-9b84-9ccf7d21e6d4.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\4a7ee372-9651-4f06-b055-40e4dd193103.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7abbed99-3e13-4a33-93b7-abed97e6dc15.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\5868bb07-a9b3-431f-a86c-ee48a15629fa.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/7abbed99-3e13-4a33-93b7-abed97e6dc15.png</RelativePath>
+      <RelativePath>images/5868bb07-a9b3-431f-a86c-ee48a15629fa.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -654,14 +654,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7abbed99-3e13-4a33-93b7-abed97e6dc15.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\5868bb07-a9b3-431f-a86c-ee48a15629fa.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\9731e152-9358-48cb-832f-5018c06283f9.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7559cb51-420c-4031-8639-4b21e565ff17.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/9731e152-9358-48cb-832f-5018c06283f9.png</RelativePath>
+      <RelativePath>images/7559cb51-420c-4031-8639-4b21e565ff17.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -670,14 +670,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\9731e152-9358-48cb-832f-5018c06283f9.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7559cb51-420c-4031-8639-4b21e565ff17.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\a3225abf-a5b6-4f6c-8959-9a6359a994ce.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\75aafbba-9b71-4527-a560-06aec4ac63b3.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/a3225abf-a5b6-4f6c-8959-9a6359a994ce.jpg</RelativePath>
+      <RelativePath>images/75aafbba-9b71-4527-a560-06aec4ac63b3.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -686,14 +686,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\a3225abf-a5b6-4f6c-8959-9a6359a994ce.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\75aafbba-9b71-4527-a560-06aec4ac63b3.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\aa7df329-4d53-4684-b750-88c4766a2569.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\86895dc1-7639-45a4-b7c4-e7cf4785ec64.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/aa7df329-4d53-4684-b750-88c4766a2569.png</RelativePath>
+      <RelativePath>images/86895dc1-7639-45a4-b7c4-e7cf4785ec64.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -702,14 +702,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\aa7df329-4d53-4684-b750-88c4766a2569.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\86895dc1-7639-45a4-b7c4-e7cf4785ec64.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\bad2c564-8fca-4bfc-9c97-bc7369a2665c.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\9440a14c-d12c-49d9-957d-44a6ca121f63.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/bad2c564-8fca-4bfc-9c97-bc7369a2665c.png</RelativePath>
+      <RelativePath>images/9440a14c-d12c-49d9-957d-44a6ca121f63.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -718,14 +718,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\bad2c564-8fca-4bfc-9c97-bc7369a2665c.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\9440a14c-d12c-49d9-957d-44a6ca121f63.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c84a3898-0c86-4d5b-8195-9fcfdfb00a36.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\b1aa910e-1b47-4a93-acd2-a9d32b811af0.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/c84a3898-0c86-4d5b-8195-9fcfdfb00a36.png</RelativePath>
+      <RelativePath>images/b1aa910e-1b47-4a93-acd2-a9d32b811af0.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -734,14 +734,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c84a3898-0c86-4d5b-8195-9fcfdfb00a36.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\b1aa910e-1b47-4a93-acd2-a9d32b811af0.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c902fb7d-7ab4-4517-81e4-58a7bddefdab.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c1f76d24-8384-4310-a6fd-da8aad1b29a8.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/c902fb7d-7ab4-4517-81e4-58a7bddefdab.jpg</RelativePath>
+      <RelativePath>images/c1f76d24-8384-4310-a6fd-da8aad1b29a8.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -750,14 +750,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c902fb7d-7ab4-4517-81e4-58a7bddefdab.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c1f76d24-8384-4310-a6fd-da8aad1b29a8.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\d380ea52-e6cd-47ca-b76d-08806167b9ed.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c40c32e6-c565-435e-a5cf-ab1f4649a313.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/d380ea52-e6cd-47ca-b76d-08806167b9ed.jpg</RelativePath>
+      <RelativePath>images/c40c32e6-c565-435e-a5cf-ab1f4649a313.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -766,14 +766,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\d380ea52-e6cd-47ca-b76d-08806167b9ed.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c40c32e6-c565-435e-a5cf-ab1f4649a313.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\f16dccf8-5481-4abb-bc71-139dd6c924da.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c4a91198-564c-4536-95a9-94b45f8e0356.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/f16dccf8-5481-4abb-bc71-139dd6c924da.png</RelativePath>
+      <RelativePath>images/c4a91198-564c-4536-95a9-94b45f8e0356.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -782,14 +782,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\f16dccf8-5481-4abb-bc71-139dd6c924da.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c4a91198-564c-4536-95a9-94b45f8e0356.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\f1bf6c38-a2dc-4ba9-9316-e2cf1877be6c.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c9975fae-57c0-4ec3-8b85-b090cb57c61f.png))">
       <SourceType>Package</SourceType>
       <SourceId>UnivMedicalRecord</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UnivMedicalRecord</BasePath>
-      <RelativePath>images/f1bf6c38-a2dc-4ba9-9316-e2cf1877be6c.png</RelativePath>
+      <RelativePath>images/c9975fae-57c0-4ec3-8b85-b090cb57c61f.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -798,7 +798,71 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\f1bf6c38-a2dc-4ba9-9316-e2cf1877be6c.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c9975fae-57c0-4ec3-8b85-b090cb57c61f.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\da389960-c30b-4432-8982-9516df5380fd.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>UnivMedicalRecord</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UnivMedicalRecord</BasePath>
+      <RelativePath>images/da389960-c30b-4432-8982-9516df5380fd.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\da389960-c30b-4432-8982-9516df5380fd.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\e215a591-a8a7-4e41-8c39-c867e49895a0.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>UnivMedicalRecord</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UnivMedicalRecord</BasePath>
+      <RelativePath>images/e215a591-a8a7-4e41-8c39-c867e49895a0.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\e215a591-a8a7-4e41-8c39-c867e49895a0.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\ec47e7d5-e1c9-4e08-ba34-4f48bed5a61b.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>UnivMedicalRecord</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UnivMedicalRecord</BasePath>
+      <RelativePath>images/ec47e7d5-e1c9-4e08-ba34-4f48bed5a61b.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\ec47e7d5-e1c9-4e08-ba34-4f48bed5a61b.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\fbb512ec-3553-426e-ad69-b0a248069137.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>UnivMedicalRecord</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UnivMedicalRecord</BasePath>
+      <RelativePath>images/fbb512ec-3553-426e-ad69-b0a248069137.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\fbb512ec-3553-426e-ad69-b0a248069137.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.bundle.js))">
       <SourceType>Package</SourceType>

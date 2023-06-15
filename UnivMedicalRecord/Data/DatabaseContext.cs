@@ -4,6 +4,7 @@ using UniversityMedicalRecord.Models;
 using UniversityMedicalRecord.Models.Admin;
 using UniversityMedicalRecord.Models.Employee;
 using UnivMedicalRecord.Models.Comms;
+using UnivMedicalRecord.Models.Graphs;
 using UnivMedicalRecord.Models.Record;
 
 namespace UniversityMedicalRecord.Data;
@@ -32,6 +33,7 @@ public class DatabaseContext: DbContext
     public DbSet<Medical>Medicals { get; set; }
     public DbSet<MessagePost>MessagePosts { get; set; }
     public DbSet<LabResult>LabResults { get; set; }
+   
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -93,8 +95,20 @@ public class DatabaseContext: DbContext
     {
         return GetUsers().FirstOrDefault(x => x.Id == id);
     }
-    
-    
+
+    // public IEnumerable<MessagePost> GetMessage()
+    // {
+    //     var msg = MessagePosts.Include(x => x.message).ToList();
+    //     return msg;
+    // }
+
+
+    public bool RemoveMessage( MessagePost messagePost)
+    {
+        MessagePosts.Remove(messagePost);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
     public bool HasSuperAdmin()
     {
         return AdminRoles.Any(x => x.Position == Position.SuperAdmin);

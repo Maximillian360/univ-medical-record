@@ -262,12 +262,26 @@ public class AddLab : PageModel
         _context.Attach(Cholesterol).State = EntityState.Modified;
         _context.Attach(CholesterolSi).State = EntityState.Modified;
         _context.SaveChanges();
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
+        FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
+        CbcPath = Path.Combine("\\images", labresult.CbcRes);
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+
+        var userid = _context.GetUser(Id);
         CurrentId = Id;
         
         return Page();
     }
     public IActionResult OnPostUpdateCbc()
     {
+        
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
+        FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
+        CbcPath = Path.Combine("\\images", labresult.CbcRes);
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        
         _context.Attach(Cbc).State = EntityState.Modified;
         _context.SaveChanges();
         CurrentId = Id;
@@ -303,6 +317,7 @@ public class AddLab : PageModel
     public IActionResult OnPostUrinalysis()
     {
         
+        
         var urinalysis = new Urinalysis()
         {
             User = _context.GetUser(Id),
@@ -331,6 +346,11 @@ public class AddLab : PageModel
         _context.SaveChanges();
         
         var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
+        FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
+        CbcPath = Path.Combine("\\images", labresult.CbcRes);
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        
         labresult.UrinalEncoded = true;
         _context.SaveChanges();
         
@@ -359,6 +379,11 @@ public class AddLab : PageModel
         _context.SaveChanges();
         
         var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
+        FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
+        CbcPath = Path.Combine("\\images", labresult.CbcRes);
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        
         labresult.FecalEncoded = true;
         _context.SaveChanges();
         
@@ -411,6 +436,11 @@ public class AddLab : PageModel
         _context.SaveChanges();
 
         var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
+        FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
+        CbcPath = Path.Combine("\\images", labresult.CbcRes);
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        
         labresult.CholesEncoded = true;
         _context.SaveChanges();
         
@@ -456,6 +486,11 @@ public class AddLab : PageModel
         _context.SaveChanges();
 
         var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
+        FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
+        CbcPath = Path.Combine("\\images", labresult.CbcRes);
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        
         labresult.CbcEncoded = true;
         _context.SaveChanges();
         

@@ -13,20 +13,48 @@ public class Inbox : PageModel
         _context = context;
     }
     
-    public IQueryable<MessagePost> Messages { get; set; }
+    public MessagePost Messages { get; set; }
       
+    public IQueryable<MessagePost> MessageList { get; set; }
     public IQueryable<User> Users { get; set; }
     [BindProperty]
     public string Name { get; set; }
     [BindProperty]
     public string Type { get; set; }
+
+    public List<string> MessageRecieved { get; set; } = new();
+    public List<string> From { get; set; } = new();
+    public List<string> DateRecieved { get; set; } = new();
+    
+    public List<int> MessageId { get; set; } = new();
+    
+    
     
     public IActionResult OnGet()
     {
+        
+        var encryptionService = new StringEncryptionService();
         var user = HttpContext.Session.GetLoggedInUser(_context);
-        Messages = _context.MessagePosts.Where(x => x.Recipient == user.Username);
+        MessageList = _context.MessagePosts.Where(x => x.Recipient == user.Username);
+        
         var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
         Users = userList;
+        const string passphrase = "Sup3rS3curePass!";
+        
+       
+        
+        
+        foreach (var msg in MessageList)
+        {
+            var decrypted =  encryptionService.Decrypt(msg.message, passphrase);
+            From.Add(msg.User.Firstname);
+            DateRecieved.Add(msg.Date.ToLongDateString());
+            MessageRecieved.Add(decrypted);
+            MessageId.Add(msg.Id);
+
+        }
+
+      
         
         switch (user)
         {
@@ -37,7 +65,19 @@ public class Inbox : PageModel
                 Type = $"{user.Type}";
                 return Page();
         }
-        return Page();
+        
+    }
+
+    public IActionResult OnPostDelete(int? id)
+    {
+        if (id == null) {
+            return NotFound();
+        }
+        
+        Messages = _context.MessagePosts.FirstOrDefault(x => x.Id == id);
+        _context.RemoveMessage(Messages); 
+        _context.SaveChanges();
+        return RedirectToPage("./Inbox");
     }
     public IActionResult OnPostCompose()
     {
@@ -78,9 +118,9 @@ public class Inbox : PageModel
         return RedirectToPage("./MedicalRecord");
     }
 
-    public IActionResult OnPostViewMedical()
+    public IActionResult OnPostViewRecords()
     {
-        return RedirectToPage("./ViewRecords");
+        return RedirectToPage("./Records");
     }
     public IActionResult OnPostLabResult()
     {

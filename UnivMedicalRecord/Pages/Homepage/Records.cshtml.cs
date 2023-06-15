@@ -25,6 +25,7 @@ public class Records : PageModel
 
     public IActionResult OnGet()
     {
+        
         Personals = (List<Personal>)_context.GetPersonals();
         Urinalysis = (List<Urinalysis>)_context.GetUrinalysis();
         Fecalysis = (List<Fecalysis>)_context.GetFecalysis();

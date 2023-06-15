@@ -15,7 +15,7 @@ public class IndexModel : PageModel
     }
     
     public IQueryable<MessagePost> Messages { get; set; }
-    public IActionResult OnGet()
+    public async Task<IActionResult> OnGetAsync()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
         var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
@@ -26,6 +26,7 @@ public class IndexModel : PageModel
         LabList = lablist;
         Users = userList;
         
+        
         switch (user)
         {
             case null:
@@ -34,13 +35,12 @@ public class IndexModel : PageModel
                 Name = $"{user.Firstname} {user.Lastname}";
                 Type = $"{user.Type}";
                 
-                
-                
                 return Page();
         }
         
     }
   
+    public string samplemsg { get; set; }
     public IQueryable<User> Users { get; set; }
     [BindProperty]
     public string Name { get; set; }
@@ -51,8 +51,7 @@ public class IndexModel : PageModel
     public IQueryable<LabResult> LabList { get; set; }
     public IEnumerable<LabResult> LabResultChecker { get; set; }
     public IEnumerable<LabResult> LabResultChecker1 { get; set; }
-    public bool test { get; set; }
-
+  
     public IActionResult OnPostLogout()
     {
         HttpContext.Session.Logout();
@@ -62,9 +61,7 @@ public class IndexModel : PageModel
     
     public IActionResult OnPostLabTest()
     {
-        
         return RedirectToPage("../LaboratoryRecord/AddLab");
-        
     }
     
     public IActionResult OnPostRedirect()

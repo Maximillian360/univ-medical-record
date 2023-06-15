@@ -1,0 +1,52 @@
+﻿@page
+@model UnivMedicalRecord.Pages.GraphTest.Graph
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<div>
+    <canvas id="myChart" height="350" width="1080" style="margin: 0 auto"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        getBarGraphData()
+    });
+
+    function getBarGraphData(){
+
+        $.ajax({
+            type: "GET",
+            url: '/GraphTest/Graph',
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+            
+                var ctx = document.getElementById("myChart");
+                var chart = new Chart(ctx, {
+                    type: 'bar',
+                    data: data.data,
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+
+                chart.update();
+                console.log(chart);
+            },
+            error: function () {
+                alert("Content load failed.");
+            }
+        })
+    }
+
+</script>

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using UniversityMedicalRecord.Data;
 using UniversityMedicalRecord.Models;
 using UnivMedicalRecord.Models.Comms;
-
+using System.Security.Cryptography;
 namespace UnivMedicalRecord.Pages.Homepage;
 
 public class Message : PageModel
@@ -45,14 +45,20 @@ public class Message : PageModel
     public IActionResult OnPostSend()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
-
+        var encryptionService = new StringEncryptionService();
+        const string passphrase = "Sup3rS3curePass!";
+        var encrypted = encryptionService.Encrypt(message,
+            passphrase);
+        
+        
         var newmessage = new MessagePost()
         {
             Date = DateTime.Today,
             User = user,
             Recipient = Recipient,
-            message = message
+            message = encrypted,
         };
+
         _context.WriteMessage(newmessage);
         _context.SaveChanges();
         return RedirectToPage("./Inbox");
