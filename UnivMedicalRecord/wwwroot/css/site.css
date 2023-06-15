@@ -26,6 +26,12 @@ body {
   padding: 0;
 }
 
+.rounded-rectangle {
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 40px;
+}
+
 /**
  * Fonts
  */

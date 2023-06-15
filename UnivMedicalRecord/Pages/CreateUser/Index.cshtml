@@ -7,101 +7,90 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+ <link rel="stylesheet" href="./css/site.css">
 
 <head>
     <title>Create Admin</title>
 </head>
+<style>
+    
+</style>
 
-<body>
-<section class="vh-100" style="background-color: #808080;">
-    <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-xl-5" style="align-self: center; align-content: center">
-                <div class="card" style="border-radius: 1rem;">
-                    <div class="row g-0">
-                        <div class="col-md-4 col-lg-6 d-flex align-items-center">
-                            <div class="card-body p-4 p-lg-4 text-black">
-                                <form method="post">
-                                    
-                                    <h5 class="fw-normal mb-2 pb-2" style="letter-spacing: 1px;">@Model.PageTitle</h5>
-
-                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                    <div class="form-outline mb-1 w-75">
-                                        <label asp-for="FirstName" class="control-label"></label>
-                                        <input asp-for="FirstName" class="form-control"/>
-                                        <span asp-validation-for="FirstName" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-outline md-1 w-75">
-                                        <label asp-for="MiddleName" class="control-label"></label>
-                                        <input asp-for="MiddleName" class="form-control"/>
-                                        <span asp-validation-for="MiddleName" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-outline mb-1 w-75">
-                                        <label asp-for="LastName" class="control-label"></label>
-                                        <input asp-for="LastName" class="form-control"/>
-                                        <span asp-validation-for="LastName" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-outline mb-1 w-75">
-                                        <label asp-for="Username" class="control-label"></label>
-                                        <input asp-for="Username" class="form-control"/>
-                                        <span asp-validation-for="Username" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-outline mb-3 w-75">
-                                        <label asp-for="Password" class="control-label"></label>
-                                        <input asp-for="Password" type="password" class="form-control"/>
-                                        <span asp-validation-for="Password" class="text-danger"></span>
-                                    </div>
-                                    
-
-                                    @{
-                                        
-                                        if (!Model.HasSuperAdmin)
-                                        {
-                                            <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
-                                            <input type="radio" class="btn-check mb-5" value="admin" asp-for="UserType" id="option1" autocomplete="off" checked>
-                                            <label class="btn btn-secondary" for="option1">Admin</label>
-                                                                        
-                                            <input type="radio" class="btn-check mb-5" value="student" asp-for="UserType" id="option2" autocomplete="off" disabled>
-                                            <label class="btn btn-secondary" for="option2">Student</label>
-                                            
-                                            <input type="radio" class="btn-check mb-5" value="faculty" asp-for="UserType" id="option3" autocomplete="off" disabled>
-                                            <label class="btn btn-secondary" for="option2">Faculty</label>
-                                            </div>
-                                        }
-                                        else
-                                        {
-                                            <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
-                                            <input type="radio" class="btn-check mb-5" value="admin" asp-for="UserType" id="option1" autocomplete="off" disabled>
-                                            <label class="btn btn-secondary" for="option1">Admin</label>
-                                                                        
-                                            <input type="radio" class="btn-check mb-5" value="student" asp-for="UserType" id="option2" autocomplete="off">
-                                            <label class="btn btn-secondary" for="option2">Student</label>
-                                                                                        
-                                            <input type="radio" class="btn-check mb-5" value="faculty" asp-for="UserType" id="option3" autocomplete="off">
-                                            <label class="btn btn-secondary" for="option3">Faculty</label>
-                                            </div>
-                                        }
-                                    
-                                        
-                                    }
-                                    
-                                    &nbsp;
-
-                                    <div class="form-outline mb-2 w-75">
-                                        <input type="submit" value="Create" class="btn btn-dark"/>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+<body style="background: #d7d9e5; font-family: 'DM Sans', sans-serif">
+<div>
+    <div class="row d-flex justify-content-md-center align-items-center vh-100">
+        <div class="col-md-6 rounded-rectangle">
+            <h2 style="font-weight: bold">@Model.PageTitle</h2>
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-outline mb-1 w-75">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input asp-for="FirstName" class="form-control"/>
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
                 </div>
-            </div>
+                <div class="form-outline md-1 w-75">
+                    <label asp-for="MiddleName" class="control-label"></label>
+                    <input asp-for="MiddleName" class="form-control"/>
+                    <span asp-validation-for="MiddleName" class="text-danger"></span>
+                </div>
+                <div class="form-outline mb-1 w-75">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input asp-for="LastName" class="form-control"/>
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="form-outline mb-1 w-75">
+                    <label asp-for="Username" class="control-label"></label>
+                    <input asp-for="Username" class="form-control"/>
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="form-outline mb-3 w-75">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" type="password" class="form-control"/>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+
+                @{
+
+                    if (!Model.HasSuperAdmin)
+                    {
+                        <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check mb-5" value="admin" asp-for="UserType" id="option1" autocomplete="off" checked>
+                            <label class="btn btn-secondary" for="option1">Admin</label>
+
+                            <input type="radio" class="btn-check mb-5" value="student" asp-for="UserType" id="option2" autocomplete="off" disabled>
+                            <label class="btn btn-secondary" for="option2">Student</label>
+
+                            <input type="radio" class="btn-check mb-5" value="faculty" asp-for="UserType" id="option3" autocomplete="off" disabled>
+                            <label class="btn btn-secondary" for="option2">Faculty</label>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check mb-5" value="admin" asp-for="UserType" id="option1" autocomplete="off" disabled>
+                            <label class="btn btn-secondary" for="option1">Admin</label>
+
+                            <input type="radio" class="btn-check mb-5" value="student" asp-for="UserType" id="option2" autocomplete="off">
+                            <label class="btn btn-secondary" for="option2">Student</label>
+
+                            <input type="radio" class="btn-check mb-5" value="faculty" asp-for="UserType" id="option3" autocomplete="off">
+                            <label class="btn btn-secondary" for="option3">Faculty</label>
+                        </div>
+                    }
+
+
+                }
+
+                &nbsp;
+
+                <div class="form-outline mb-2 w-75">
+                    <input type="submit" value="Create" class="btn btn-dark"/>
+                </div>
+            </form>
         </div>
     </div>
-</section>
-
-
-
-
+</div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 @model UnivMedicalRecord.Pages.GraphTest.Graph
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Home Page";
 }
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
 
         $.ajax({
             type: "GET",
-            url: '/GraphTest/Graph',
+            url: '@Url.Page("/Graph")',
             contentType: "application/json; charset=utf-8",
             success: function (data) {
             

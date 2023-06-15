@@ -21,7 +21,10 @@ public class IndexModel : PageModel
         var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
         var lablist = _context.LabResults;
         var pendinglab = _context.GetLabResult().Where(x=>x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null && x.CbcEncoded == false || x.CholesEncoded == false || x.UrinalEncoded == false || x.CbcEncoded == false);
-        
+
+        var labresult = _context.GetLabResult().Where(X => X.User == user);
+
+        LabResults = labresult;
         PendingLab = pendinglab;
         LabList = lablist;
         Users = userList;
@@ -40,7 +43,7 @@ public class IndexModel : PageModel
         
     }
   
-    public string samplemsg { get; set; }
+    public IEnumerable<LabResult> LabResults { get; set; }
     public IQueryable<User> Users { get; set; }
     [BindProperty]
     public string Name { get; set; }
@@ -62,6 +65,7 @@ public class IndexModel : PageModel
     public IActionResult OnPostLabTest()
     {
         return RedirectToPage("../LaboratoryRecord/AddLab");
+       
     }
     
     public IActionResult OnPostRedirect()
@@ -88,6 +92,7 @@ public class IndexModel : PageModel
     public IActionResult OnPostInbox()
     {
         return RedirectToPage("./Inbox");
+        
     }
 
     public IActionResult OnPostDashboard()
