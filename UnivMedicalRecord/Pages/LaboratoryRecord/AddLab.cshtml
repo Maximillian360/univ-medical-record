@@ -48,12 +48,15 @@
                        
   </style>
 <head>
-	
+	<link rel="stylesheet" href="./css/site.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
 </head>
 
   <div class="site-wrapper m-md-5">
   <form method="post">
-      <button class="btn btn-dark mb-4" style="float: left"  asp-page-handler="Dashboard" type="submit">Dashboard</button>
+      <button class="btn btn-dark mb-4" style="align-self: center" asp-page-handler="Dashboard" type="submit">Back To Dashboard</button>
   </form>
   	<section class="tabs-wrapper m-lg-20">
   		<div class="tabs-container">
@@ -61,18 +64,26 @@
   				<div class="tabs">
   					<input type="radio" name="tabs" id="tab1" checked="checked" />
   					<label for="tab1"><span class="material-icons"></span>Cbc</label>
-                    <div class="tab">
+                <div class="tab">
                     @if (Model.HasCbc())
                     {
-                        <p>This User already has a record.</p>
+                        <p>This user already has a record</p>
                     }
                     else
                     {
                         <div class="form-control" display>
-                        
                             <form class="form-inline" method="post">
+                                <div class="modal fade Cbc" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <img class="m-lg-4" src="@Model.CbcPath" alt="Cbc" style="max-width: 10.25in; max-height: 5.25in;">
+                                        </div>
+                                    </div>
+                                </div>
+                               
                                 Input the Date of the Lab Test: <input asp-for="LabDateCBC" type="date" id="LabDate">
-                                <button class="btn btn-dark mb-4" style="float: right"  asp-page-handler="Cbc" type="submit">Submit</button>
+                                 <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".Cbc">Show Laboratory Test</button>
+                                <button class="btn btn-dark m-lg-1" style="float: right" asp-page-handler="Cbc" type="submit">Submit</button>
                                 <input type="hidden" asp-for="Id" value="@Model.CurrentId"/>
                                 <table class="table" style="text-align: center">
                                     <thead class="thead-dark">
@@ -258,10 +269,11 @@
                         </div>
                     }
 
-                    </div>
+                </div>
                 <input type="radio" name="tabs" id="tab2" />
   					<label for="tab2"><span class="material-icons"></span>Fecalysis</label>
                 <div class="tab">
+                   
                     <div class="card-container">
                         @if (Model.HasFecalysis())
                         {
@@ -271,8 +283,16 @@
                         {
                             <div class="form-control">
                                 <form class="form-inline" method="post">
+                                    <div class="modal fade fecalysis" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <img class="m-lg-4" src="@Model.FecalPath" alt="Fecalysis" style="max-width: 10.25in; max-height: 5.25in;">
+                                            </div>
+                                        </div>
+                                    </div>
                                     Input the Date of the Lab Test: <input asp-for="LabDateFecalysis" type="date">
-                                    <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Fecalysis" type="submit">Submit</button>
+                                    <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".fecalysis">Show Laboratory Test</button>
+                                    <button class="btn btn-dark m-lg-1" style="float: right" asp-page-handler="Fecalysis" type="submit">Submit</button>
                                     <input type="hidden" asp-for="Id" value="@Model.CurrentId"/>
                                     <table class="table" style="text-align: center">
                                         <thead class="thead-dark">
@@ -349,13 +369,21 @@
                     <div class="card-container">
                          @if (Model.HasCholesterol() || Model.HasCholesterolSi())
                          {
-                             <p>This user already has a record.</p>
+                             <p>This user already has a record</p>
                          }
                          else
                          {
                              <div class="form-control">
                              <form class="form-inline" method="post">
+                                 <div class="modal fade Cholesterol" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                     <div class="modal-dialog modal-sm">
+                                         <div class="modal-content">
+                                             <img class="m-lg-4" src="@Model.CholesPath" alt="Cholesterol" style="max-width: 10.25in; max-height: 5.25in;">
+                                         </div>
+                                     </div>
+                                 </div>
                                  Input the Date of the Lab Test: <input asp-for="LabDateCholesterol" type="date" id="LabDate">
+                                 <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".Cholesterol">Show Laboratory Test</button>
                                  <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Cholesterol" type="submit">Submit</button>
                                  <input type="hidden" asp-for="Id" value="@Model.CurrentId"/>
                              <table class="table" style="text-align: center">
@@ -538,8 +566,16 @@
 						  {
 						      <div class="form-control">
                                   <form class="form-inline" method="post">
+                                      <div class="modal fade Urinalysis" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-sm">
+                                              <div class="modal-content">
+                                                  <img class="m-lg-4" src="@Model.UrinalysisPath" alt="Urinalysis" style="max-width: 10.25in; max-height: 5.25in;">
+                                              </div>
+                                          </div>
+                                      </div>
                                       Input the Date of the Lab Test: <input asp-for="LabDateUrinalysis" type="date" id="LabDate">
-                                      <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Urinalysis" type="Submit">Submit</button>
+                                      <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".Urinalysis">Show Laboratory Test</button>
+                                      <button class="btn btn-dark m-lg-1" style="float: right" asp-page-handler="Urinalysis" type="Submit">Submit</button>
                                       <input type="hidden" asp-for="Id" value="@Model.CurrentId"/>
                                       <table class="table" style="text-align: center">
                                           <thead class="thead-dark">

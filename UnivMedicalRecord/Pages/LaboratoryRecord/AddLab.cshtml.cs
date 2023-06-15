@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using UniversityMedicalRecord.Data;
 using UniversityMedicalRecord.Models;
 using UnivMedicalRecord.Models.Record;
@@ -9,11 +10,12 @@ namespace UnivMedicalRecord.Pages.Homepage;
 public class AddLab : PageModel
 {
    private readonly DatabaseContext _context;
-
-    public AddLab(DatabaseContext context)
-    {
-        _context = context;
-    }
+   private readonly IWebHostEnvironment webHostEnvironment;
+   public AddLab(DatabaseContext context, IWebHostEnvironment hostEnvironment) {
+       _context = context;
+       webHostEnvironment = hostEnvironment;
+   }
+    
     [BindProperty]
     public DateTime LabDateCBC { get; set; }
     [BindProperty]
@@ -200,14 +202,79 @@ public class AddLab : PageModel
     
     [BindProperty]
     public int CurrentId { get; set; }
+    
+    [BindProperty]
+    public Urinalysis Urinalysis { get; set; }
+    
+    [BindProperty]
+    public Fecalysis Fecalysis { get; set; }
 
+    [BindProperty]
+    public CBC Cbc { get; set; }
+    
+    [BindProperty]
+    public Cholesterol Cholesterol { get; set; }
+    
+    [BindProperty]
+    public CholesterolSI CholesterolSi { get; set; }
+    
+    [BindProperty]
+   public string? UrinalysisPath { get; set; }
+   
+   [BindProperty]
+   public string? FecalPath { get; set; }
+   
+   [BindProperty]
+   public string? CbcPath { get; set; }
+   
+   [BindProperty]
+   public string? CholesPath { get; set; }
+    
     public IActionResult OnGet(int id)
     {
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == id);
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
+        FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
+        CbcPath = Path.Combine("\\images", labresult.CbcRes);
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+
         var userid = _context.GetUser(id);
         CurrentId = id;
         CurrentUser = userid;
+
+        var urinalysis = _context.Urinalyses.FirstOrDefault(x => x.Id == CurrentId);
+        var fecalysis = _context.Fecalyses.FirstOrDefault(x => x.Id == CurrentId);
+        var cbc = _context.BloodCounts.FirstOrDefault(x => x.Id == CurrentId);
+        var cholesterol = _context.Cholesterols.FirstOrDefault(x => x.Id == CurrentId);
+        var cholesterolSi = _context.CholesterolSis.FirstOrDefault(x => x.Id == CurrentId);
+
+        Urinalysis = urinalysis;
+        Fecalysis = fecalysis;
+        Cbc = cbc;
+        Cholesterol = cholesterol;
+        CholesterolSi = cholesterolSi;
+        
         return Page();
     }
+    
+    public IActionResult OnPostUpdateCholesterol()
+    {
+        _context.Attach(Cholesterol).State = EntityState.Modified;
+        _context.Attach(CholesterolSi).State = EntityState.Modified;
+        _context.SaveChanges();
+        CurrentId = Id;
+        
+        return Page();
+    }
+    public IActionResult OnPostUpdateCbc()
+    {
+        _context.Attach(Cbc).State = EntityState.Modified;
+        _context.SaveChanges();
+        CurrentId = Id;
+        
+        return Page();
+    }
+    
 
     public bool HasUrinalysis()
     {
@@ -262,6 +329,11 @@ public class AddLab : PageModel
         };
         _context.AddUrinalysis(urinalysis);
         _context.SaveChanges();
+        
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        labresult.UrinalEncoded = true;
+        _context.SaveChanges();
+        
         CurrentId = Id;
         return Page();
     }
@@ -285,6 +357,11 @@ public class AddLab : PageModel
         };
         _context.AddFecalysis(fecalysis);
         _context.SaveChanges();
+        
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        labresult.FecalEncoded = true;
+        _context.SaveChanges();
+        
         CurrentId = Id;
         return Page();
     }
@@ -329,8 +406,14 @@ public class AddLab : PageModel
             Chloride = Chloride,
             IonizedCalcium = IonizedCalcium
         };
+        
         _context.AddCholesterol(cholesterolsi,cholesterol);
         _context.SaveChanges();
+
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        labresult.CholesEncoded = true;
+        _context.SaveChanges();
+        
         CurrentId = Id;
         return Page();
     }
@@ -371,12 +454,17 @@ public class AddLab : PageModel
         };
         _context.AddCbc(bloodcount);
         _context.SaveChanges();
+
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        labresult.CbcEncoded = true;
+        _context.SaveChanges();
+        
         CurrentId = Id;
         return Page();
     }
 
     public IActionResult OnPostDashboard()
     {
-        return RedirectToPage("./Index");
+        return RedirectToPage("../Homepage/Index");
     }
 }

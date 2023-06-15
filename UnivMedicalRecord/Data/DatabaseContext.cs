@@ -44,6 +44,12 @@ public class DatabaseContext: DbContext
         return users;
     }
 
+    public IEnumerable<LabResult> GetUrinalTest()
+    {
+        var labresult = LabResults.ToList();
+        return labresult;
+    }
+
     public  IEnumerable<FamilyInfo> GetFamilyInfo()
     {
         var family = FamilyInfos.Include(X=>X.user).ToList();
@@ -99,8 +105,13 @@ public class DatabaseContext: DbContext
         var changesSaved = SaveChanges();
         return changesSaved > 0;
     }
+
     
-    
+    public IEnumerable<LabResult> GetLabResult()
+    {
+        var labresult = LabResults.Include(x => x.User).ToList();
+        return labresult;
+    }
     public bool AddUser(User user)
     {
         Users.Add(user);

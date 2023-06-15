@@ -24,81 +24,86 @@
 	
 </head>
 <body>
-  <div class="site-wrapper m-md-5">
-  	<section class="tabs-wrapper m-lg-20">
-  		<div class="tabs-container">
-  			<div class="tabs-block">
-  				<div class="tabs">
-  					<input type="radio" name="tabs" id="tab1" checked="checked" />
-  					<label for="tab1"><span class="material-icons"></span>Urinalysis</label>
-  					<div class="tab">
-  						<div class="card-container">
-  							@foreach (var x in Model.Urinalysis)
-  							{
-  								<div class="card">
-  									<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
-  									<p>Date:@x.DateRetrieved</p>
-  									<a class = btn-close-white asp-page="./EditRecord" asp-route-id="@x.Id">Edit</a>
-  								</div>
-  							}
-  						</div>
-  					</div>
-  
-  					<input type="radio" name="tabs" id="tab2" />
-  					<label for="tab2"><span class="material-icons"></span>Fecalysis</label>
-  					<div class="tab">
-	                    <div class="card-container">
-		                    @foreach (var x in Model.Fecalysis)
-		                    {
-			                    <div class="card">
-				                    <h2>@x.User.Firstname @x.User.Lastname's Record</h2>
-				                    <p>Date:@x.DateRetrieved</p>
-				                    <a class = btn-close-white asp-page="./EditRecord" asp-route-id="@x.Id">Edit</a>
-			                    </div>
-		                    }
-	                    </div>
-                    </div>
-  
-  					<input type="radio" name="tabs" id="tab3" />
-  					<label for="tab3"><span class="material-icons"></span>Cholesterol</label>
-					  <div class="tab">
-						  @foreach (var x in Model.Cholesterol)
-						  {
-							  <div class="card">
-								  <h2>@x.User.Firstname @x.User.Lastname's Record</h2>
-								  <p>Date:@x.DateRetrieved</p>
-								  <a class = btn-close-white asp-page="./EditRecord" asp-route-id="@x.Id">Edit</a>
-							  </div>
-						  }
-					  </div>
-					   <input type="radio" name="tabs" id="tab4" />
-					  <label for="tab4"><span class="material-icons"></span>CBC</label>
-					  <div class="tab">
-						  @foreach (var x in Model.Cbcs)
-						  {
-							  <div class="card">
-								  <h2>@x.User.Firstname @x.User.Lastname's Record</h2>
-								  <p> Date:@x.DateRetrieved</p>
-								  <a class = btn-close-white asp-page="./EditRecord" asp-route-id="@x.Id">Edit</a>
-							  </div>
-						  }
-					  </div>
+<div class="site-wrapper m-md-5">
+	<form method="post">
+		<div class="card" style="flex-direction: row; align-items: center; background-color:black; box-shadow: unset">
+			<button class="btn btn-dark m-lg-3" asp-page-handler="Dashboard" type="submit">Back To Dashboard</button>
+		</div>
+	</form>
+	<section class="tabs-wrapper m-lg-20">
+		<div class="tabs-container">
+			<div class="tabs-block">
+				<div class="tabs">
+					<input type="radio" name="tabs" id="tab1" checked="checked"/>
+					<label for="tab1"><span class="material-icons"></span>Urinalysis</label>
+					<div class="tab">
+						<div class="card-container">
+							@foreach (var x in Model.Urinalysis)
+							{
+								<div class="card">
+									<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
+									<p>Date:@x.DateRetrieved</p>
+									<a class="btn-close-white" asp-page="../LaboratoryRecord/EditUrinalysis" asp-route-id="@x.Id">Edit</a>
+								</div>
+							}
+						</div>
+					</div>
 
-					  <input type="radio" name="tabs" id="tab5" />
-  					<label for="tab5"><span class="material-icons"></span>Medical Record</label>
-					  <div class="tab">
-						  @foreach (var x in Model.Personals)
-							  {
-								  <div class="card">
-									  <h2>@x.user.Firstname @x.user.Lastname's Record</h2>
-									  <p> ID Number:@x.IdNumber</p>
-									  <a class=btn-close-white asp-page="./EditRecord" asp-route-id="@x.Id">Edit</a>
-								  </div>
-							  }
-					  </div>
-                </div>
-  			</div>
-  		</div>
-  	</section>
-  </div>
+					<input type="radio" name="tabs" id="tab2"/>
+					<label for="tab2"><span class="material-icons"></span>Fecalysis</label>
+					<div class="tab">
+						<div class="card-container">
+							@foreach (var x in Model.Fecalysis)
+							{
+								<div class="card">
+									<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
+									<p>Date:@x.DateRetrieved</p>
+									<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditFecalysis" asp-route-id="@x.Id">Edit</a>
+								</div>
+							}
+						</div>
+					</div>
+
+					<input type="radio" name="tabs" id="tab3"/>
+					<label for="tab3"><span class="material-icons"></span>Cholesterol</label>
+					<div class="tab">
+						@foreach (var x in Model.Cholesterol)
+						{
+							<div class="card">
+								<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
+								<p>Date:@x.DateRetrieved</p>
+								<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditCholesterol" asp-route-id="@x.Id">Edit</a>
+							</div>
+						}
+					</div>
+					<input type="radio" name="tabs" id="tab4"/>
+					<label for="tab4"><span class="material-icons"></span>CBC</label>
+					<div class="tab">
+						@foreach (var x in Model.Cbcs)
+						{
+							<div class="card">
+								<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
+								<p> Date:@x.DateRetrieved</p>
+								<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditCBC" asp-route-id="@x.Id">Edit</a>
+							</div>
+						}
+					</div>
+
+					<input type="radio" name="tabs" id="tab5"/>
+					<label for="tab5"><span class="material-icons"></span>Medical Record</label>
+					<div class="tab">
+						@foreach (var x in Model.Personals)
+						{
+							<div class="card">
+								<h2>@x.user.Firstname @x.user.Lastname's Record</h2>
+								<p> ID Number:@x.IdNumber</p>
+								<a class="btn-close-dark" asp-page="../GeneralRecord/EditRecord" asp-route-id="@x.Id">Edit</a>
+							</div>
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
 </body>

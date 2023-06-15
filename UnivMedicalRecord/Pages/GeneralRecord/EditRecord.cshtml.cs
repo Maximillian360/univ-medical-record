@@ -46,7 +46,7 @@ public class EditRecord : PageModel
         return Page();
     }
 
-    public IActionResult OnPostSubmit()
+    public IActionResult OnPostUpdate()
     {
         _context.Attach(Personal).State = EntityState.Modified;
         _context.Attach(FamilyInfo).State = EntityState.Modified;
@@ -54,11 +54,15 @@ public class EditRecord : PageModel
 
         _context.SaveChanges();
         
-        return RedirectToPage("./ViewRecords");
+        return RedirectToPage("../Homepage/Records");
     }
 
-    public IActionResult OnPostReturn()
+    public IActionResult OnPostRecords()
     {
-        return RedirectToPage("./ViewRecords");
+        return RedirectToPage("../Homepage/Records");
+    }
+    public IActionResult OnPostDashboard()
+    {
+        return RedirectToPage("../Homepage/Index");
     }
 }

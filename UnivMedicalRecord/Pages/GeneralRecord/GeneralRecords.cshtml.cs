@@ -23,119 +23,117 @@ public class GeneralRecords : PageModel
     }
 
     [BindProperty]
-    [Display(Name = "Fullname")]
+
     public string FullName { get; set; }
     
     [BindProperty]
     
-    [Display(Name = "Age")]
+ 
     public int Age { get; set; }
     
     [BindProperty]
-    [Display(Name = "Gender")]
+ 
     public string Gender { get; set; }
     
     [BindProperty]
-    [Display(Name = "Email")]
+   
     public string Email { get; set; }
 
     [BindProperty]
-    [Display(Name= "Mobile Number")]
+    
     public string MobileNumber { get; set; }
     
     [BindProperty]
-    [Display(Name= "IdNumber")]
+
     public string IdNumber { get; set; }
     
     [BindProperty]
-    [Display(Name= "Date")]
+ 
     public DateTime Date { get; set; }
     
     [BindProperty]
-    [Display(Name= "Birth Place")]
+
     public string BirthPlace { get; set; }
     
     [BindProperty]
-    [Display(Name= "Address")]
+
     public string Address { get; set; }
     
     [BindProperty]
-    [Display(Name= " Personal Doctor")]
+  
     public string? Doctor { get; set; }
     
     [BindProperty]
-    [Display(Name= " Do you have any Insurance?")]
+
     public string? Insurance { get; set; }
     
     [BindProperty]
-    [Display(Name= "Name of Mother")]
     public string MotherName { get; set; }
     
     [BindProperty]
-    [Display(Name= "Address of Mother")]
+
     public string MotherAddress { get; set; }
     
     [BindProperty]
-    [Display(Name= "Contact Number of Mother")]
+
     public string MotherNumber { get; set; }
     
     [BindProperty]
-    [Display(Name= "Occupation of Mother")]
+  
     public string MotherOccupation { get; set; }
     
     [BindProperty]
-    [Display(Name = "Civil Status")]
+
     public string MotherStatus { get; set; }
     [BindProperty]
-    [Display(Name= "Name of Father")]
+
     public string FatherName { get; set; }
     
     [BindProperty]
-    [Display(Name= "Address of Father")]
+
     public string FatherAddress { get; set; }
     
     [BindProperty]
-    [Display(Name= "Contact Number of Father")]
+
     public string FatherNumber { get; set; }
     
     [BindProperty]
-    [Display(Name= "Occupation of Father")]
+
     public string FatherOccupation { get; set; }
     
     [BindProperty]
-    [Display(Name = "Civil Status")]
+
     public string FatherStatus { get; set; }
     
     [BindProperty]
-    [Display(Name= "Name of Guardian")]
+
     public string GuardianName { get; set; }
     
     [BindProperty]
-    [Display(Name= "Address of Guardian")]
+
     public string GuardianAddress { get; set; }
     
     [BindProperty]
-    [Display(Name= "Contact Number of Guardian")]
+
     public string GuardianNumber { get; set; }
     
     [BindProperty]
-    [Display(Name= "Occupation of Guardian")]
+ 
     public string GuardianOccupation { get; set; }
     
     [BindProperty]
-    [Display(Name = "Civil Status")]
+
     public string GuardianStatus { get; set; }
 
     [BindProperty]
-    [Display(Name = "Relationship with the Guardian")]
+
     public string GuardianRelation { get; set; }
     
     [BindProperty]
-    [Display(Name = "List of Allergies if there's any")]
+
     public string Allergy { get; set; }
     
     [BindProperty]
-    [Display(Name = "List of present or active Illnesses if there's any")]
     
     public string Illness { get; set; }
 
@@ -165,7 +163,7 @@ public class GeneralRecords : PageModel
         return Personals.Any(x => x.user == User);
     }
 
-    public IActionResult OnPost()
+    public IActionResult OnPostSubmit()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
         
@@ -189,20 +187,20 @@ public class GeneralRecords : PageModel
             {
                 user = user,
                 MotherName = MotherName,
-             MotherStatus = MotherStatus,
-             MotherAddress = MotherAddress,
-             MotherOccupation = MotherOccupation,
-             MotherNumber = MobileNumber,
-             FatherName = FatherName,
-             FatherStatus = FatherStatus,
-             FatherNumber = FatherNumber,
-             FatherOccupation = FatherOccupation,
-             FatherAddress = FatherOccupation,
-             GuardianName = GuardianName,
-             GuardianOccupation = GuardianOccupation,
-             GuardianAddress = GuardianAddress,
-             GuardianStatus = GuardianStatus,
-             GuardianRelation = GuardianRelation
+                MotherStatus = MotherStatus,
+                MotherAddress = MotherAddress,
+                MotherOccupation = MotherOccupation,
+                MotherNumber = MobileNumber,
+                FatherName = FatherName,
+                FatherStatus = FatherStatus,
+                FatherNumber = FatherNumber,
+                FatherOccupation = FatherOccupation,
+                FatherAddress = FatherOccupation,
+                GuardianName = GuardianName,
+                GuardianOccupation = GuardianOccupation,
+                GuardianAddress = GuardianAddress,
+                GuardianStatus = GuardianStatus,
+                GuardianRelation = GuardianRelation
             };
 
             var medical = new Medical()
@@ -219,5 +217,18 @@ public class GeneralRecords : PageModel
             return RedirectToPage("../Homepage/Index");
 
     }
+
+    public IActionResult OnPostLabTest()
+    {
+        return RedirectToPage("./AddLabResult");
+    }
+    public IActionResult OnPostDashboard()
+    {
+        return RedirectToPage("../Homepage/Index");
+    }
     
+    public IActionResult OnPostInbox()
+    {
+        return RedirectToPage("../Homepage/Inbox");
+    }
 }

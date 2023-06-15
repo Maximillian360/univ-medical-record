@@ -1,0 +1,209 @@
+﻿@page
+@using UniversityMedicalRecord.Data
+@model UnivMedicalRecord.Pages.Homepage.EditUrinalysis
+
+@{
+  ViewData["Title"] = "Urinalysis";
+}
+<style>
+    .card-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .form-control input[type=text],
+        .form-control input[type=number]{
+        width: 75%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+    
+    
+        .form-control input[id=txtStoolRemarks],
+        .form-control input[id=txtFurtherRemarks]{
+        width: 75%;
+        padding: 5px 20px;
+        margin: 5px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom:2px solid black;
+        }    
+        /*
+        #labtbl{
+      	border: 2px solid black;
+        margin-left: auto; 
+        margin-right: auto;
+    	}*/
+                       
+  </style>
+<head>
+	
+</head>
+
+  <div class="site-wrapper m-md-5">
+   <form method="post">
+        <div class="card" style="flex-direction: row; background-color: black; align-items: center">
+            <button class="btn btn-dark m-lg-3" asp-page-handler="Dashboard">Dashboard</button>
+            <button class="btn btn-dark m-lg-3" asp-page-handler="Records">Records</button>
+        </div>
+    </form>
+  	<section class="tabs-wrapper m-lg-20">
+  		<div class="tabs-container">
+  			<div class="tabs-block">
+                <div class="tabs">
+                    <input type="radio" name="tabs" id="tab1" checked="checked" />
+                    <label for="tab1"><span class="material-icons"></span>Urinalysis</label>
+                    <div class="tab">
+                        <div class="form-control">
+                            <form class="form-inline" method="post">
+                                Input the Date of the Lab Test: <input asp-for="Urinalysis.DateRetrieved" type="date" id="LabDate">
+                                <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Update" type="Submit">Submit</button>
+                                <input type="hidden" asp-for="Urinalysis.Id"/>
+                                <table class="table" style="text-align: center">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">PHYSICAL EXAMINATION</th>
+                                        <th scope="col">RESULTS</th>
+                                    </tr>
+                                          
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Color</td>
+                                        <td><input asp-for="Urinalysis.Color" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Appearance</td>
+                                        <td><input asp-for="Urinalysis.Appearance" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>pH</td>
+                                        <td><input asp-for="Urinalysis.Ph" type="number" step="0.1" min="0" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Specific Gravity</td>
+                                        <td><input asp-for="Urinalysis.Specgrav" type="number" step="0.001" min="0" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Epithelial Cells</td>
+                                        <td><input asp-for="Urinalysis.EpithelialCells" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Mucus Thread</td>
+                                        <td><input asp-for="Urinalysis.MucusThread" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Amorphous Urates</td>
+                                        <td><input asp-for="Urinalysis.AmorphousUrates" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Amorphous Phosphates</td>
+                                        <td><input asp-for="Urinalysis.AmorphousPhosphates" type="text" class="form-control"></td>
+                                    </tr>
+                                    </tbody>
+                          
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">CHEMICAL EXAMINATION</th>
+                                        <th scope="col">Results</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Albumin</td>
+                                        <td><input asp-for="Urinalysis.Albumin" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Sugar</td>
+                                        <td><input asp-for="Urinalysis.Sugar" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Others:</td>
+                                        <td><input asp-for="Urinalysis.OthersUrinalysis" type="text" class="form-control"></td>
+                                    </tr>
+                                    </tbody>
+                          
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">MICROSCOPIC EXAMINATION</th>
+                                        <th scope="col">Results</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Pus Cells</td>
+                                        <td><input asp-for="Urinalysis.PusCells" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Red Blood Cells</td>
+                                        <td><input asp-for="Urinalysis.Rbc" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Bacteria</td>
+                                        <td><input asp-for="Urinalysis.Bacteria" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Yeast Cells</td>
+                                        <td><input asp-for="Urinalysis.YeastCells" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Others:</td>
+                                        <td><input asp-for="Urinalysis.OthersMicroAnalysis" type="text" class="form-control"></td>
+                                    </tr>
+                                    </tbody>
+                          
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">OTHER EXAMINATION</th>
+                                        <th scope="col">Results</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Pregnancy</td>
+                                        <td><input asp-for="Urinalysis.Pregnancy" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Crystals</td>
+                                        <td><input asp-for="Urinalysis.Crystals" type="text" class="form-control"></td>
+                                    </tr>
+                          
+                                    <tr>
+                                        <td>Cast</td>
+                                        <td><input asp-for="Urinalysis.Casts" type="text" class="form-control"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  		</div>
+  	</section>
+  </div>
+

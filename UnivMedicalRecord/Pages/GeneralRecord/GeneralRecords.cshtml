@@ -1,0 +1,534 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.EntityFrameworkCore
+@using UniversityMedicalRecord.Data
+@using UniversityMedicalRecord.Models
+@model UnivMedicalRecord.Pages.Homepage.GeneralRecords
+
+
+
+    @{
+	    Layout = null;
+    }
+
+
+<style>
+ 
+        body {
+                   background-color: #8080;
+                   font-family: sans-serif;
+                   //text-align: center;
+               }
+        
+               form {
+                   background-color: #fff;
+                   width: 1000px;
+                   max-width: max-content;
+                   height: 1000px;
+                   margin: 50px auto;
+                   padding: 40px 20px;
+                   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+               }
+           	
+           	.gen-records{
+           	text-align: center;
+           	}
+           
+           	input[id="radio1"]{
+           	display: inline-block;
+         		margin-left: -180px;
+           	}
+           
+              	input[id="radio2"]{
+           	display: inline-block;
+         		margin-left: -100px;
+           	}
+           
+           	input[id="name"]{
+           	width: 225px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+             	input[id="age"]{
+           	width: 40px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="email"]{
+           	width: 229px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="id"]{
+           	width: 150px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="mobile"]{
+           	width: 150px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="doctor"]{
+           	width: 220px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="insurance"]{
+           	width: 175px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="dob"]{
+           	width: 125px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="birthplace"]{
+           	width: 165px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="address"]{
+           	width: 190px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+              	input[id="motherRadio1"]{
+           	display: inline-block;
+         		margin-left: -200px;
+           	}
+           
+              	input[id="motherRadio2"]{
+           	display: inline-block;
+         		margin-left: -500px;
+           	}
+           
+               input[id="motherRadio3"]{
+           	display: inline-block;
+         		margin-left: -400px;
+           	}
+           
+              	input[id="motherRadio4"]{
+           	display: inline-block;
+         		margin-left: -275px;
+           	}
+           
+           	input[id="motherName"]{
+           	width: 225px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+              	input[id="motherAddress"]{
+           	width: 190px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="motherOccupation"]{
+           	width: 190px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+           	input[id="motherNumber"]{
+           	width: 150px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+           
+               input[id="fatherRadio1"]{
+           	display: inline-block;
+         		margin-left: -200px;
+           	}
+           
+              	input[id="fatherRadio2"]{
+           	display: inline-block;
+         		margin-left: -500px;
+           	}
+           
+               input[id="fatherRadio3"]{
+           	display: inline-block;
+         		margin-left: -400px;
+           	}
+           
+              	input[id="fatherRadio4"]{
+           	display: inline-block;
+         		margin-left: -275px;
+           	}
+           
+           	input[id="fatherName"]{
+           	width: 225px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+              	input[id="fatherAddress"]{
+           	width: 190px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="fatherOccupation"]{
+           	width: 190px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+           	input[id="fatherNumber"]{
+           	width: 150px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+           
+               input[id="guardianRadio1"]{
+           	display: inline-block;
+         		margin-left: -200px;
+           	}
+           
+              	input[id="guardianRadio2"]{
+           	display: inline-block;
+         		margin-left: -500px;
+           	}
+           
+               input[id="guardianRadio3"]{
+           	display: inline-block;
+         		margin-left: -400px;
+           	}
+           
+              	input[id="guardianRadio4"]{
+           	display: inline-block;
+         		margin-left: -275px;
+           	}
+           
+           	input[id="guardianName"]{
+           	width: 225px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+              	input[id="guardianAddress"]{
+           	width: 190px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="guardianOccupation"]{
+           	width: 190px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+           	input[id="guardianRelation"]{
+           	width: 150px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+               input[id="illness"]{
+           	width: 700px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+           	input[id="allergy"]{
+           	width: 700px;
+           	padding: 10px 10px 10px 10px;
+               border: none;
+       		border-bottom: 2px solid black;
+           	margin-right: 30px;
+           	margin-left: 5px;
+           	}
+           
+        
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+	    Create General Records
+    </title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+</head>
+
+<div>
+	<form class="mt-3" style="height: unset; width: unset; background-color: unset; padding: unset; margin: auto; box-shadow: unset; align-self: center" method="post">
+		<div class="card" style="flex-direction: row; background-color: black; width: 1000px; align-items: center">
+			<button class="btn btn-dark m-lg-3" asp-page-handler="Dashboard">Dashboard</button>
+			<button class="btn btn-dark m-lg-3" asp-page-handler="Lab Test">Records</button>
+			<button class="btn btn-dark m-lg-3" asp-page-handler="Inbox">Inbox</button>
+		</div>
+	</form>
+</div>
+  
+<body>
+<form method="post" style="width: auto">
+	<div style="text-align: center"><h3>General Records</h3><div>
+			<b><div class="mb-10" style="float:left">Personal Information</div></b>
+			<br/>
+			<table>
+				<tbody>
+				<tr>
+					<td> <label  for="name">Name</label>
+						<input asp-for="FullName" type="text" id="name">
+					</td>
+					<td> <label  for="age">Age</label>
+						<input asp-for="Age" type=number id="age">
+					</td>
+					<td> <div class="mt-3" style="float:left">
+							<label>Gender</label>
+							<td><input asp-for="Gender" type="radio" value="Male" id="radio1">Male</td>
+							<td><input asp-for="Gender" type="radio" value="Female" id="radio2">Female</td>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td> <label for="email">Email</label>
+						<input asp-for="Email" type=text id="email">
+					</td>
+					<td> <label for="id">ID</label>
+						<input asp-for="IdNumber" type=text id="id">
+					</td>
+					<td> <label for="mobile">Mobile</label>
+						<input asp-for="MobileNumber" type=text id="mobile">  
+					</td>
+				</tr>
+				<tr>
+					<td> <label for="doctor">Doctor</label>
+						<input asp-for="Doctor" type=text id="doctor">
+					</td>
+					<td>  <label for="insurance" >Insurance</label>
+						<input asp-for="Insurance" type="text" id="insurance">
+					</td>
+					<td> <label for="dob">Date of Birth</label>
+						<input asp-for="Date" type=date id="dob">
+					</td>
+    
+				</tr>
+				<tr>
+              
+					<td>  <label for="birthplace">Place of Birth</label>
+						<input asp-for="BirthPlace" type="text" id="birthplace">
+					</td>
+					<td>  <label for="address">Address</label>
+						<input asp-for="Address" class="mb-5" type="text" id="address"> 
+					</td>
+				</tr>
+    
+				</tbody>
+			</table>
+			
+		</div>
+	</div>
+	
+	<br/>
+	
+	<b><div style="float:left">Mother Information</div></b>
+	<br/>
+	<table>
+		<tbody>
+		<tr>
+			<td> <label for="motherName">Mother's Name</label>
+				<input asp-for="MotherName" type="text" id="motherName">
+			</td>
+			<td> <label for="motherAddress">Mother's Address</label>
+				<input asp-for="MotherAddress" type=text id="motherAddress">
+			</td>
+			<td> <label for="motherOccupation">Mother's Occupation</label>
+				<input asp-for="MotherOccupation" type=text id="motherOccupation">
+			</td>
+		</tr>
+		<tr>
+			<td> <label for="motherNumber">Mother's Number</label>
+				<input asp-for="MobileNumber" type="text" id="motherNumber">
+			</td>
+    
+			<td> <div class="mt-3">
+					<label>Mother's Civil Status:</label>
+					<td><input asp-for="MotherStatus" value="Married" type="radio" id="motherRadio1">Married</td>
+					<td><input asp-for="MotherStatus" value="Single" type="radio" id="motherRadio2">Single</td>
+					<td><input asp-for="MotherStatus" value="Separated" type="radio" id="motherRadio3">Separated</td>
+					<td><input asp-for="MotherStatus" value="Widowed" type="radio" id="motherRadio4">Widowed</td>
+				</div>
+			</td>
+		</tr>  
+		</tbody>
+	</table>
+		
+	<br/>
+	<b><div style="float:left">Father Information</div></b>
+	<br/>
+	<table>
+		<tbody>
+		<tr>
+			<td> <label for="fatherName">Father's Name</label>
+				<input asp-for="FatherName" type="text" id="fatherName">
+			</td>
+			<td> <label for="fatherAddress">Father's Address</label>
+				<input asp-for="FatherAddress" type=text id="fatherAddress">
+			</td>
+			<td> <label for="fatherOccupation">Father's Occupation</label>
+				<input asp-for="FatherOccupation" type=text id="fatherOccupation">
+			</td>
+		</tr>
+		<tr>
+			<td> <label for="fatherNumber">Father's Number</label>
+				<input asp-for="FatherNumber" type="text" id="fatherNumber">
+			</td>
+    
+			<td> <div >
+					<label>Father's Civil Status: </label>
+					<input asp-for="FatherStatus" value="Married" type="radio">Married
+					<input asp-for="FatherStatus" value="Single" type="radio" >Single
+					<input asp-for="FatherStatus" value="Separated" type="radio">Separated
+					<input asp-for="FatherStatus" value="Widowed" type="radio" >Widowed
+				</div>
+			</td>
+		</tr>  
+		</tbody>
+	</table>
+	<br/>
+			
+	<b><div style="float:left">Guardian Information</div></b>
+	<br/>
+	<table>
+		<tbody>
+		<tr>
+			<td> <label for="guardianName">Guardian's Name</label>
+				<input asp-for="GuardianName" type="text" id="guardianName">
+			</td>
+			<td> <label for="guardianAddress">Guardian's Address</label>
+				<input asp-for="GuardianAddress" type=text id="guardianAddress">
+			</td>
+			<td> <label for="guardianOccupation">Guardian's Occupation</label>
+				<input asp-for="GuardianOccupation" type=text id="guardianOccupation">
+			</td>
+		</tr>
+		<tr>
+			<td> <label for="guardianRelation">Guardian's Relation</label>
+				<input asp-for="GuardianRelation" type="text" id="guardianRelation">
+			</td>
+    
+			<td> <div style="float:left">
+					<label>Guardian's Civil Status: </label>
+					<input asp-for="GuardianStatus" value="Married" type="radio">Married
+					<input asp-for="GuardianStatus" value="Single" type="radio" >Single
+					<input asp-for="GuardianStatus" value="Separated" type="radio">Separated
+					<input asp-for="GuardianStatus" value="Widowed" type="radio" >Widowed
+				</div>
+			</td>
+		</tr>  
+		</tbody>
+	</table>
+
+	<br>
+	<b><div style="float:left">Medical Information</div></b>
+	<br/>
+	<table>
+		<tbody>
+		<tr>
+			<td> <label for="allergy">Allergies</label>
+				<input asp-for="Allergy" type="text" id="allergy">
+			</td>
+		</tr>
+		<tr>
+			<td> <label for="illness">Illnesses</label>
+				<input asp-for="Illness" type="text" id="illness">
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<button class="btn btn-dark mt-4" asp-page-handler="Submit">Submit</button>
+</form>
+</body>
+</html>

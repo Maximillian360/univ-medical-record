@@ -1,0 +1,149 @@
+﻿@page
+@using UniversityMedicalRecord.Data
+@model UnivMedicalRecord.Pages.Homepage.EditFecalysis
+
+@{
+  ViewData["Title"] = "Fecalysis";
+}
+<style>
+    .card-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .form-control input[type=text],
+        .form-control input[type=number]{
+        width: 75%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+    
+    
+        .form-control input[id=txtStoolRemarks],
+        .form-control input[id=txtFurtherRemarks]{
+        width: 75%;
+        padding: 5px 20px;
+        margin: 5px ;
+        box-sizing: border-box;
+        border: none;
+        border-bottom:2px solid black;
+        }    
+        
+        /*
+        #labtbl{
+      	border: 2px solid black;
+        margin-left: auto; 
+        margin-right: auto;
+    	}*/
+                       
+  </style>
+<head>
+	
+</head>
+
+  <div class="site-wrapper m-md-5">
+ <form method="post">
+       <div class="card" style="flex-direction: row; background-color: black;  align-items: center">
+           <button class="btn btn-dark m-lg-3" asp-page-handler="Dashboard">Dashboard</button>
+           <button class="btn btn-dark m-lg-3" asp-page-handler="Records">Records</button>
+       </div>
+   </form>
+  	<section class="tabs-wrapper m-lg-20">
+  		<div class="tabs-container">
+  			<div class="tabs-block">
+                <div class="tabs">
+                    <input type="radio" name="tabs" id="tab2" checked="checked" />
+                    <label for="tab2"><span class="material-icons"></span>Fecalysis</label>
+                    <div class="tab">
+                        <div class="card-container">
+                            <div class="form-control">
+                                <form class="form-inline" method="post">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <input type="hidden" asp-for="Fecalysis.Id"/>
+                                    Input the Date of the Lab Test: <input asp-for="Fecalysis.DateRetrieved" type="date">
+                                    <button class="btn btn-dark mb-2.5" style="float: right" asp-page-handler="Update" type="submit">Update</button>
+                                    <table class="table" style="text-align: center">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">GROSS EXAMINATION</th>
+                                            <th scope="col">RESULT</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Color</td>
+                                            <td><input asp-for="Fecalysis.Color" type="text" class="form-control"/></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Consistency</td>
+                                            <td><input asp-for="Fecalysis.Consistency" type="text" class="form-control"/></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Other findings</td>
+                                            <td><input asp-for="Fecalysis.OtherFindings" type="text" class="form-control"/></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Occult Blood</td>
+                                            <td><input asp-for="Fecalysis.OccultBlood" type="text" class="form-control"/></td>
+                                        </tr>
+                                        </tbody>
+                                        <br/>
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">MICROSCOPIC EXAMINATION</th>
+                                            <th scope="col">RESULT</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Pus cells/HPF</td>
+                                            <td><input asp-for="Fecalysis.StoolPusCells" type="number" min="0" class="form-control"/></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>RBC/HPF</td>
+                                            <td><input asp-for="Fecalysis.StoolRbc" type="number" min="0" class="form-control"/></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Other findings</td>
+                                            <td><input asp-for="Fecalysis.MicroOtherFindings" type="text" class="form-control"/></td>
+                                        </tr>
+                                        <br/>
+                                        <tr>
+                                            <td>Remarks</td>
+                                            <td><input asp-for="Fecalysis.MicroRemarks" type="text" class="form-control"/></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <i>Remarks:</i>
+                                    <input asp-for="Fecalysis.StoolRemarks" id="txtStoolRemarks" type="text" class="form-control">
+                                    <br/>
+                                    <h2>OTHERS</h2>
+                                    <i>Remarks:</i>
+                                    <input asp-for="Fecalysis.FurtherRemarks" id="txtFurtherRemarks" type="text" class="form-control">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+  			</div>
+  		</div>
+  	</section>
+  </div>
+

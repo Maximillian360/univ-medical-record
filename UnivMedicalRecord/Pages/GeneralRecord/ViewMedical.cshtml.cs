@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using UniversityMedicalRecord.Data;
 using UnivMedicalRecord.Models.Record;
 
@@ -95,7 +96,19 @@ public class ViewMedical : PageModel
 
 
     }
-
+    public IActionResult OnPostLabTest()
+    {
+        return RedirectToPage("./AddLabResult");
+    }
+    public IActionResult OnPostDashboard()
+    {
+        return RedirectToPage("../Homepage/Index");
+    }
+    
+    public IActionResult OnPostInbox()
+    {
+        return RedirectToPage("../Homepage/Inbox");
+    }
     
 
 }

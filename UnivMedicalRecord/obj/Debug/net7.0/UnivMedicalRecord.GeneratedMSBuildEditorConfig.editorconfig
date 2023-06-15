@@ -24,24 +24,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Homepage/AddLab.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcQWRkTGFiLmNzaHRtbA==
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/GeneralRecord/AddLabResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJhbFJlY29yZFxBZGRMYWJSZXN1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Homepage/AddLabTest.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcQWRkTGFiVGVzdC5jc2h0bWw=
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/GeneralRecord/EditRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJhbFJlY29yZFxFZGl0UmVjb3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Homepage/EditLab.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcRWRpdExhYi5jc2h0bWw=
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/GeneralRecord/GeneralRecords.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJhbFJlY29yZFxHZW5lcmFsUmVjb3Jkcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Homepage/EditRecord.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcRWRpdFJlY29yZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Homepage/GeneralRecords.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcR2VuZXJhbFJlY29yZHMuY3NodG1s
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/GeneralRecord/ViewMedical.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJhbFJlY29yZFxWaWV3TWVkaWNhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Homepage/Inbox.cshtml]
@@ -60,12 +56,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcUmVjb3Jkcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Homepage/ViewMedical.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcVmlld01lZGljYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/LaboratoryRecord/AddLab.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFib3JhdG9yeVJlY29yZFxBZGRMYWIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/LaboratoryRecord/EditCbc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFib3JhdG9yeVJlY29yZFxFZGl0Q2JjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/LaboratoryRecord/EditCholesterol.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFib3JhdG9yeVJlY29yZFxFZGl0Q2hvbGVzdGVyb2wuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/LaboratoryRecord/EditFecalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFib3JhdG9yeVJlY29yZFxFZGl0RmVjYWx5c2lzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/LaboratoryRecord/EditUrinalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFib3JhdG9yeVJlY29yZFxFZGl0VXJpbmFseXNpcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JonelDavid/RiderProjects/univ-medical-record/UnivMedicalRecord/Pages/Login/Index.cshtml]

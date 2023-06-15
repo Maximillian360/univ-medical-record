@@ -39,8 +39,9 @@ public class Records : PageModel
         return RedirectToPage("./AdminMedicalRecordEdit");
     }
 
-    public IActionResult OnPostClose()
+    public IActionResult OnPostDashboard()
     {
         return RedirectToPage("./Index");
     }
+    
 }

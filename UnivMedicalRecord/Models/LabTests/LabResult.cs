@@ -15,5 +15,9 @@ public class LabResult
     public string? UrinalysisRes { get; set; }
    
     public string? FecalysisRes { get; set; }
-    public bool Encoded { get; set; }
+    
+    public bool CholesEncoded { get; set; }
+    public bool CbcEncoded { get; set; }
+    public bool UrinalEncoded { get; set; }
+    public bool FecalEncoded { get; set; }
 }

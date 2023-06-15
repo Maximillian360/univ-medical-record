@@ -154,7 +154,6 @@ footer .credits {
  * Tabs Container
  */
 .tabs-container {
-  overflow: auto;
   padding: 2rem;
 }
 
@@ -197,7 +196,7 @@ footer .credits {
 }
 
 .tabs .tab {
-  overflow: auto;
+  
   flex-grow: 1;
   width: 100%;
   height: 100%;
@@ -209,7 +208,7 @@ footer .credits {
 }
 
 .tabs .tab > *:not(:last-child) {
-  overflow: auto;
+  ;
   margin-bottom: 0.8rem;
 }
 
@@ -218,7 +217,7 @@ footer .credits {
 }
 
 .tabs [type=radio]:checked + label {
-  overflow: auto;
+  
   background-color: #fff;
   color: #000000;
   border-top: 4px solid #000000;
@@ -235,7 +234,7 @@ footer .credits {
   }
 
   .tabs-container {
-    overflow: auto;
+    
     padding: 1rem 1rem;
   }
 
@@ -255,7 +254,6 @@ footer .credits {
 @media (min-width: 992px) {
 
   .tabs {
-    overflow: auto;
     width: 2000px;
   }
 }
