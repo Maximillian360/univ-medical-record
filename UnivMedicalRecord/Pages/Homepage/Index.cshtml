@@ -126,60 +126,76 @@
 
           <div style="flex-direction: row">
               
-              @if (!Model.PendingLab.Any())
-              {
-                <h1 class="mt-4" style=" font-size: 15px;color: #0d0d0d;font-family: Roboto, sans-serif;line-height: 1.2;">There are no pending lab records: </h1>
-              }
-              else
-              {
-                @foreach (var x in Model.PendingLab)
-                {
-                  @if (x.CholesterolRes == null & x.FecalysisRes == null & x.UrinalysisRes == null & x.CbcRes == null)
-                  {
-                    <label> </label>
-                  }
-                  else
-                  {
-                    <div class="card mt-3" style=" cursor: pointer; border: 2px solid #0000; border-radius: 8px; padding: 20px;background-color: #ffffff;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
-                      <b>
-                        <h1 style="font-size: 25px">@x.User.Firstname @x.User.Lastname</h1></b>
-                      <p style="font-size: 20px">Pending Record/s:
-
-                        @if (x.CbcEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
-                        {
-                          <label style="font-size: 15px;">Cbc Record</label>
-                        }
-                        @if (x.FecalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
-                        {
-                          <label style="font-size: 15px">,Fecalysis Record</label>
-                        }
-                        @if (x.UrinalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
-                        {
-                          <label style="font-size: 15px ">,Urinalysis Record</label>
-                        }
-                        @if (x.CholesEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
-                        {
-                          <label style="font-size: 15px">,Cholesterol Record</label>
-                        }
-                      </p>
-                      <a style="background-color: transparent; color: #000000;text-decoration: none;border-bottom: 1px dotted;" class="btn-close-dark" asp-page="../LaboratoryRecord/AddLab" asp-route-id="@x.User.Id">Edit</a>
-                    </div>
-                  }
-
-                }
-              }
-            </div>
+            @if (!Model.PendingLab.Any())
+            {
+              <h1 class="mt-4" style=" font-size: 15px;color: #0d0d0d;font-family: Roboto, sans-serif;line-height: 1.2;">There are no pending lab records: </h1>
             }
-
-
-
             else
             {
-            <div class="row">
-              
-            </div>
+              @foreach (var x in Model.PendingLab)
+              {
+                @if (x.CholesterolRes == null & x.FecalysisRes == null & x.UrinalysisRes == null & x.CbcRes == null)
+                {
+                  <label> </label>
+                }
+                else
+                {
+                  <div class="card mt-3" style=" cursor: pointer; border: 2px solid #0000; border-radius: 8px; padding: 20px;background-color: #ffffff;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+                    <b>
+                      <h1 style="font-size: 25px">@x.User.Firstname @x.User.Lastname</h1></b>
+                    <p style="font-size: 20px">Pending Record/s:
+
+                      @if (x.CbcEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                      {
+                        <label style="font-size: 15px;">Cbc Record</label>
+                      }
+                      @if (x.FecalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                      {
+                        <label style="font-size: 15px">,Fecalysis Record</label>
+                      }
+                      @if (x.UrinalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                      {
+                        <label style="font-size: 15px ">,Urinalysis Record</label>
+                      }
+                      @if (x.CholesEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                      {
+                        <label style="font-size: 15px">,Cholesterol Record</label>
+                      }
+                    </p>
+                    <a style="background-color: transparent; color: #000000;text-decoration: none;border-bottom: 1px dotted;" class="btn-close-dark" asp-page="../LaboratoryRecord/AddLab" asp-route-id="@x.User.Id">Edit</a>
+                  </div>
+                }
+
+              }
             }
           </div>
+        }
+
+
+
+        else
+        {
+          <div class="card" style="flex-direction: row; align-items: center; background-color: #111; box-shadow: unset">
+            <h1 class="mt-4" style=" font-size: 20px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Recent Reports: </h1>
+          </div>
+          <div class="row">
+              @for (int i = 0; i < 3; i++)
+              {
+                <div class="col-md-4 mb-4 mt-2">
+                  <div class="card border-dark mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-dark">Card link</a>
+                      <a href="#" class="btn btn-dark">Another link</a>
+                    </div>
+                  </div>
+                </div>
+              }
+          </div>
+        }
+      </div>
     </div>
     </body>
 </html>
