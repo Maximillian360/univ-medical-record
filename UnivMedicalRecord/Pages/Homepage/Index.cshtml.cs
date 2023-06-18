@@ -18,6 +18,8 @@ public class IndexModel : PageModel
     [BindProperty]
     public decimal[] ChartValues { get; set; }
     
+    public IQueryable<User> requestUser { get; set; }
+    
     public IQueryable<MessagePost> Messages { get; set; }
     public async Task<IActionResult> OnGetAsync()
     {
@@ -28,7 +30,8 @@ public class IndexModel : PageModel
 
         var labresult = _context.GetLabResult().Where(X => X.User == user);
 
-        
+        var requestedUser = _context.Users.Where(x=>x.Type == UserType.Regular);
+        requestUser = requestedUser;
 
         
         LabResults = labresult;
@@ -126,6 +129,39 @@ public class IndexModel : PageModel
                 return Page();
         }
 
+    }
+
+    public IActionResult OnPostRequest(int? id)
+    {
+        var user = HttpContext.Session.GetLoggedInUser(_context);
+        var requestedUser = _context.Users.FirstOrDefault(x=>x.Id == id && x.Type == UserType.Regular);
+
+        requestedUser.IsRequested = true;
+        _context.SaveChanges();
+        
+        var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
+        var lablist = _context.LabResults;
+        var pendinglab = _context.GetLabResult().Where(x=>x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null && x.CbcEncoded == false || x.CholesEncoded == false || x.UrinalEncoded == false || x.CbcEncoded == false);
+
+        var labresult = _context.GetLabResult().Where(X => X.User == user);
+        
+          
+        LabResults = labresult;
+        PendingLab = pendinglab;
+        LabList = lablist;
+        Users = userList;
+        
+        switch (user)
+        {
+            case null:
+                return RedirectToPage("../Login/Index");
+            default:
+                Name = $"{user.Firstname} {user.Lastname}";
+                Type = $"{user.Type}";
+                
+                return Page();
+        }
+       
     }
     public IActionResult OnPostLogout()
     {

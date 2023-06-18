@@ -28,7 +28,7 @@ public class Inbox : PageModel
     
     public List<int> MessageId { get; set; } = new();
     
-    
+    public IQueryable<User> requestUser { get; set; }
     
     public IActionResult OnGet()
     {
@@ -40,8 +40,8 @@ public class Inbox : PageModel
         var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
         Users = userList;
         const string passphrase = "Sup3rS3curePass!";
-        
-       
+        var requestedUser = _context.Users.Where(x=> x.Type == UserType.Regular);
+        requestUser = requestedUser;
         
         
         foreach (var msg in MessageList)
@@ -82,6 +82,30 @@ public class Inbox : PageModel
     public IActionResult OnPostCompose()
     {
         return RedirectToPage("./Message");
+    }
+    
+    public IActionResult OnPostRequest(int? id)
+    {
+        var user = HttpContext.Session.GetLoggedInUser(_context);
+        var requestedUser = _context.Users.FirstOrDefault(x=>x.Id == id && x.Type == UserType.Regular);
+
+        requestedUser.IsRequested = true;
+        _context.SaveChanges();
+        
+        var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
+        Users = userList;
+        
+        switch (user)
+        {
+            case null:
+                return RedirectToPage("../Login/Index");
+            default:
+                Name = $"{user.Firstname} {user.Lastname}";
+                Type = $"{user.Type}";
+                
+                return Page();
+        }
+       
     }
     public IActionResult OnPostClose()
     {

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using UniversityMedicalRecord.Data;
+using UniversityMedicalRecord.Models;
 using UnivMedicalRecord.Models.Record;
 
 namespace UnivMedicalRecord.Pages.Homepage;
@@ -32,10 +33,13 @@ public class AddLabResult : PageModel
     [BindProperty]
     public string SignaturePath { get; set; }
     
+    public bool? IsRequested { get; set; }
     
     public IActionResult OnGet()
     {
-
+        var user = HttpContext.Session.GetLoggedInUser(_context);
+        var labresult = _context.LabResults.FirstOrDefault(x => x.User == user);
+        IsRequested = user.IsRequested;
         return Page();
     }
 
@@ -43,6 +47,7 @@ public class AddLabResult : PageModel
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
         var labresult = _context.LabResults.FirstOrDefault(x => x.User == user);
+        IsRequested = user.IsRequested;
         
         var imageDirectory = Path.Combine(webHostEnvironment.WebRootPath, "images");
 
@@ -88,6 +93,7 @@ public class AddLabResult : PageModel
             FecalysisRes = FecalfileName,
             CholesterolRes = CholfileName,
         };
+        user.IsRequested = false;
 
         _context.AddLabResult(labresults);
         _context.SaveChanges();

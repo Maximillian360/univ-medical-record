@@ -82,7 +82,8 @@ public class IndexModel : PageModel
             Lastname = LastName,
             Username = Username,
             PasswordHash = passwordHash,
-            PasswordSalt = Convert.ToBase64String(passwordSalt)
+            PasswordSalt = Convert.ToBase64String(passwordSalt),
+            IsRequested = false,
         };
 
         _context.AddUser(user);
@@ -106,7 +107,7 @@ public class IndexModel : PageModel
                     Employee = user,
                     EmployeePosition = EmployeePosition.Student
                 };
-        
+
                 _context.EmployeeRoles.Add(newStudent);
 
                 break;

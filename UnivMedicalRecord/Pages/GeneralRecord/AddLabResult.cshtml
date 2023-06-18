@@ -64,7 +64,15 @@
                                   
                                     @Html.TextBoxFor(Model => Model.Cholesterol, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png,.jpg", onchange = "previewImage(event)" })
                                     <br/>
-                                    <button asp-page-handler="Save" class="btn btn-dark mt-4" type="submit">Save</button>
+                                    @if (Model.IsRequested == true)
+                                    {
+                                        <button asp-page-handler="Save" class="btn btn-dark mt-4" type="submit">Save</button>
+                                    }
+                                    else
+                                    {
+                                        <button asp-page-handler="Save" class="btn btn-dark mt-4" type="submit" disabled="disabled">Save</button>
+                                    }
+                                   
                                 </form>
                             </div>
                         </div>
