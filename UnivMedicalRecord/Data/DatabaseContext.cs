@@ -4,7 +4,6 @@ using UniversityMedicalRecord.Models;
 using UniversityMedicalRecord.Models.Admin;
 using UniversityMedicalRecord.Models.Employee;
 using UnivMedicalRecord.Models.Comms;
-using UnivMedicalRecord.Models.Graphs;
 using UnivMedicalRecord.Models.Record;
 
 namespace UniversityMedicalRecord.Data;
@@ -45,6 +44,8 @@ public class DatabaseContext: DbContext
         var users = Users.ToList();
         return users;
     }
+    
+    
 
     public IEnumerable<LabResult> GetUrinalTest()
     {
@@ -66,34 +67,39 @@ public class DatabaseContext: DbContext
     
     public  IEnumerable<Urinalysis> GetUrinalysis()
     {
-        var urinalysis = Urinalyses.Include(x=>x.User).ToList();
+        var urinalysis = Urinalyses.Include(x=>x.labResult.User).ToList();
         return urinalysis;
     }
     
     public  IEnumerable<Cholesterol> GetCholesterol()
     {
-        var cholesterol = Cholesterols.Include(x=>x.User).ToList();
+        var cholesterol = Cholesterols.Include(x=>x.labResult.User).ToList();
         return cholesterol;
     }
     public  IEnumerable<Fecalysis> GetFecalysis()
     {
-        var fecalysis = Fecalyses.Include(x=>x.User).ToList();
+        var fecalysis = Fecalyses.Include(x=>x.labResult.User).ToList();
         return fecalysis;
     }
 
     public  IEnumerable<CholesterolSI> GetCholesterolSis()
     {
-        var cholesterolSi = CholesterolSis.Include(x=>x.User).ToList();
+        var cholesterolSi = CholesterolSis.Include(x=>x.labResult.User).ToList();
         return cholesterolSi;
     }
     public  IEnumerable<CBC> GetBloodCount()
     {
-        var cbc = BloodCounts.Include(X=>X.User).ToList();
+        var cbc = BloodCounts.Include(X=>X.labResult.User).ToList();
         return cbc;
     }
     public User? GetUser(int? id)
     {
         return GetUsers().FirstOrDefault(x => x.Id == id);
+    }
+
+    public LabResult? LabResult(int? id)
+    {
+        return GetLabResult().FirstOrDefault(x => x.Id == id);
     }
 
     // public IEnumerable<MessagePost> GetMessage()

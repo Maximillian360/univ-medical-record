@@ -108,20 +108,7 @@ public class IndexModel : PageModel
                 };
         
                 _context.EmployeeRoles.Add(newStudent);
-                
-                var labresult = new LabResult()
-                {
-                    User = user,
-                    CbcRes = null,
-                    CholesterolRes = null,
-                    FecalysisRes = null,
-                    CholesEncoded = false,
-                    FecalEncoded = false,
-                    UrinalEncoded = false,
-                    CbcEncoded = false,
-                };
-                _context.AddLabResult(labresult);
-                
+
                 break;
             }
             case "faculty":
@@ -134,18 +121,6 @@ public class IndexModel : PageModel
         
                 _context.EmployeeRoles.Add(newFaculty);
                 
-                var labresult = new LabResult()
-                {
-                    User = user,
-                    CbcRes = null,
-                    CholesterolRes = null,
-                    FecalysisRes = null,
-                    CholesEncoded = false,
-                    FecalEncoded = false,
-                    UrinalEncoded = false,
-                    CbcEncoded = false,
-                };
-                _context.AddLabResult(labresult);
                 
                 break;
             }

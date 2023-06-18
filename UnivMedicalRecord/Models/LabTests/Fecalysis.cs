@@ -7,7 +7,8 @@ namespace UnivMedicalRecord.Models.Record;
 public class Fecalysis
 {
     public int Id { get; set; }
-    public User User { get; set; }
+    public LabResult? labResult { set; get; } 
+    
     [DataType(DataType.Date)]
     public DateTime DateRetrieved { get; set; }
     [Column(TypeName = "decimal(18,2)")]

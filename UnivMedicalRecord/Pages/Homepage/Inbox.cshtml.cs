@@ -115,7 +115,7 @@ public class Inbox : PageModel
 
     public IActionResult OnPostMedicalRecord()
     {
-        return RedirectToPage("./MedicalRecord");
+        return RedirectToPage("../GeneralRecord/GeneralRecords");
     }
 
     public IActionResult OnPostViewRecords()
@@ -124,7 +124,7 @@ public class Inbox : PageModel
     }
     public IActionResult OnPostLabResult()
     {
-        return RedirectToPage("./AddLabResult");
+        return RedirectToPage("../GeneralRecord/AddLabResult");
     }
     public IActionResult OnPostInbox()
     {

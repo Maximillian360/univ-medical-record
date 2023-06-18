@@ -7,7 +7,8 @@ namespace UnivMedicalRecord.Models.Record;
 public class CholesterolSI
 {
     public int Id { get; set; }
-    public User User { set; get; } 
+    public LabResult labResult { set; get; }  
+    
     [DataType(DataType.Date)]
     public DateTime DateRetrieved { get; set; }
     [Column(TypeName = "decimal(18,2)")]

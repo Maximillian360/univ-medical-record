@@ -35,14 +35,7 @@ public class AddLabResult : PageModel
     
     public IActionResult OnGet()
     {
-        var user = HttpContext.Session.GetLoggedInUser(_context);
-        var labresult = _context.LabResults.FirstOrDefault(x => x.User == user);
 
-        if (SignaturePath != null)
-        {
-            SignaturePath = Path.Combine("\\images", labresult.UrinalysisRes);
-        }
-       
         return Page();
     }
 
@@ -85,11 +78,18 @@ public class AddLabResult : PageModel
         var Cholstream = new FileStream(CholfilePath, FileMode.Create);
         Cbc?.CopyToAsync(Cholstream);
         
-        labresult.UrinalysisRes = UrinalysisfileName;
-        labresult.CbcRes = CbcfileName;
-        labresult.FecalysisRes = FecalfileName;
-        labresult.CholesterolRes = CholfileName;
-        
+       
+
+        var labresults = new LabResult()
+        {
+            User = user,
+            UrinalysisRes = UrinalysisfileName,
+            CbcRes = CbcfileName,
+            FecalysisRes = FecalfileName,
+            CholesterolRes = CholfileName,
+        };
+
+        _context.AddLabResult(labresults);
         _context.SaveChanges();
         
         return RedirectToPage("../Homepage/Index");

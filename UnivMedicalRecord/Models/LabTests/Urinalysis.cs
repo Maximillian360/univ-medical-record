@@ -7,7 +7,8 @@ namespace UnivMedicalRecord.Models.Record;
 public class Urinalysis
 {
     public int Id { get; set; }
-    public User User { get; set; }
+    public LabResult? labResult { set; get; } 
+    
     [DataType(DataType.Date)]
     public DateTime DateRetrieved { get; set; }
     public string? Color { get; set; }

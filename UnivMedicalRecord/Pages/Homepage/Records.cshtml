@@ -42,7 +42,7 @@
 							@foreach (var x in Model.Urinalysis)
 							{
 								<div class="card">
-									<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
+									<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
 									<p>Date:@x.DateRetrieved</p>
 									<a class="btn-close-white" asp-page="../LaboratoryRecord/EditUrinalysis" asp-route-id="@x.Id">Edit</a>
 								</div>
@@ -57,7 +57,7 @@
 							@foreach (var x in Model.Fecalysis)
 							{
 								<div class="card">
-									<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
+									<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
 									<p>Date:@x.DateRetrieved</p>
 									<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditFecalysis" asp-route-id="@x.Id">Edit</a>
 								</div>
@@ -71,7 +71,7 @@
 						@foreach (var x in Model.Cholesterol)
 						{
 							<div class="card">
-								<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
+								<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
 								<p>Date:@x.DateRetrieved</p>
 								<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditCholesterol" asp-route-id="@x.Id">Edit</a>
 							</div>
@@ -83,7 +83,7 @@
 						@foreach (var x in Model.Cbcs)
 						{
 							<div class="card">
-								<h2>@x.User.Firstname @x.User.Lastname's Record</h2>
+								<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
 								<p> Date:@x.DateRetrieved</p>
 								<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditCBC" asp-route-id="@x.Id">Edit</a>
 							</div>

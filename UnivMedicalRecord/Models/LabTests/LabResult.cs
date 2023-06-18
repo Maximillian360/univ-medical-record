@@ -6,7 +6,7 @@ namespace UnivMedicalRecord.Models.Record;
 public class LabResult
 {
     public int Id { get; set; }
-    public User User { get; set; }
+    public User User{ set; get; } 
    
     public string? CholesterolRes { get; set; }
    

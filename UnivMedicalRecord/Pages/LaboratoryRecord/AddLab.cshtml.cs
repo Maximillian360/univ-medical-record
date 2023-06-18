@@ -198,7 +198,7 @@ public class AddLab : PageModel
     public int Id { get; set; }
     
     [BindProperty]
-    public User CurrentUser { get; set; }
+    public LabResult? CurrentLab { get; set; }
     
     [BindProperty]
     public int CurrentId { get; set; }
@@ -232,15 +232,15 @@ public class AddLab : PageModel
     
     public IActionResult OnGet(int id)
     {
-        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == id);
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == id);
         UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
         CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
 
-        var userid = _context.GetUser(id);
+        var labid = _context.LabResult(id);
         CurrentId = id;
-        CurrentUser = userid;
+        CurrentLab = labid;
 
         var urinalysis = _context.Urinalyses.FirstOrDefault(x => x.Id == CurrentId);
         var fecalysis = _context.Fecalyses.FirstOrDefault(x => x.Id == CurrentId);
@@ -292,26 +292,26 @@ public class AddLab : PageModel
 
     public bool HasUrinalysis()
     {
-        return _context.Urinalyses.Any(x=>x.User == CurrentUser);
+        return _context.Urinalyses.Any(x=>x.labResult ==  CurrentLab);
     }
     public bool HasFecalysis()
     {
-        return _context.Fecalyses.Any(x => x.User == CurrentUser);
+        return _context.Fecalyses.Any(x => x.labResult == CurrentLab);
     }
     
     public bool HasCbc()
     {
-        return _context.BloodCounts.Any(x => x.User == CurrentUser);
+        return _context.BloodCounts.Any(x => x.labResult == CurrentLab);
     }
     
     public bool HasCholesterolSi()
     {
-        return _context.CholesterolSis.Any(x => x.User == CurrentUser);
+        return _context.CholesterolSis.Any(x => x.labResult == CurrentLab);
     }
     
     public bool HasCholesterol()
     {
-        return _context.Cholesterols.Any(x => x.User == CurrentUser);
+        return _context.Cholesterols.Any(x => x.labResult == CurrentLab);
     }
 
     public IActionResult OnPostUrinalysis()
@@ -320,7 +320,7 @@ public class AddLab : PageModel
         
         var urinalysis = new Urinalysis()
         {
-            User = _context.GetUser(Id),
+            labResult = _context.LabResult(Id),
             DateRetrieved = LabDateUrinalysis,
             Color = Color,
             Appearance = Appearance,
@@ -345,7 +345,7 @@ public class AddLab : PageModel
         _context.AddUrinalysis(urinalysis);
         _context.SaveChanges();
         
-        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == Id);
         UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
@@ -362,7 +362,7 @@ public class AddLab : PageModel
     {
         var fecalysis = new Fecalysis()
         {
-            User = _context.GetUser(Id),
+            labResult = _context.LabResult(Id),
             DateRetrieved = LabDateFecalysis,
             StoolPusCells = StoolPus,
             StoolRbc = StoolRbc,
@@ -378,7 +378,7 @@ public class AddLab : PageModel
         _context.AddFecalysis(fecalysis);
         _context.SaveChanges();
         
-        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == Id);
         UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
@@ -396,7 +396,7 @@ public class AddLab : PageModel
         User= _context.GetUser(Id);
         var cholesterol = new Cholesterol()
         {
-            User = _context.GetUser(Id),
+            labResult = _context.LabResult(Id),
             DateRetrieved = LabDateCholesterol,
             TradFbs = TradFbs,
             TradBun = TradBun,
@@ -412,7 +412,7 @@ public class AddLab : PageModel
 
         var cholesterolsi = new CholesterolSI()
         {
-            User = _context.GetUser(Id),
+            labResult = _context.LabResult(Id),
             DateRetrieved = LabDateCholesterol,
             SiFbs = SiFbs,
             SiBun = SiBun,
@@ -435,7 +435,7 @@ public class AddLab : PageModel
         _context.AddCholesterol(cholesterolsi,cholesterol);
         _context.SaveChanges();
 
-        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == Id);
         UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
@@ -452,7 +452,7 @@ public class AddLab : PageModel
     {
         var bloodcount = new CBC()
         {
-            User = _context.GetUser(Id),
+            labResult = _context.LabResult(Id),
             DateRetrieved = LabDateCBC,
             Wbc = Wbc,
             Blast = Blast,
@@ -485,7 +485,7 @@ public class AddLab : PageModel
         _context.AddCbc(bloodcount);
         _context.SaveChanges();
 
-        var labresult = _context.GetLabResult().FirstOrDefault(x => x.User.Id == Id);
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == Id);
         UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);

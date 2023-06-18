@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\images\" />
+      <_ContentIncludedByDefault Remove="Pages\GraphTest\Graph.cshtml" />
     </ItemGroup>
 
 </Project>
