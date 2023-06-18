@@ -39,6 +39,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Chart.Mvc": {
+              "target": "Package",
+              "version": "[1.0.0.2, )"
+            },
+            "ChartJS.Helpers.MVC": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
             "Microsoft.AspNet.WebHelpers": {
               "target": "Package",
               "version": "[3.2.9, )"

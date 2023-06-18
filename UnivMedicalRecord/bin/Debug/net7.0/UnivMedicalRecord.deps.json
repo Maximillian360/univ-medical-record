@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "UnivMedicalRecord/1.0.0": {
         "dependencies": {
+          "Chart.Mvc": "1.0.0.2",
+          "chartjs.helpers.mvc": "3.3.1",
           "Microsoft.AspNet.WebHelpers": "3.2.9",
           "Microsoft.EntityFrameworkCore.Design": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
@@ -53,11 +55,43 @@
         }
       },
       "bootstrap/5.2.3": {},
+      "Chart.Mvc/1.0.0.2": {
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.3",
+          "Newtonsoft.Json": "6.0.8"
+        },
+        "runtime": {
+          "lib/net45/Chart.Mvc.dll": {
+            "assemblyVersion": "1.0.0.2",
+            "fileVersion": "1.0.0.2"
+          }
+        }
+      },
+      "chartjs.helpers.mvc/3.3.1": {
+        "runtime": {
+          "lib/net45/ChartJS.Helpers.MVC.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "3.2.9",
+          "Microsoft.AspNet.WebPages": "3.2.9"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "assemblyVersion": "5.2.3.0",
+            "fileVersion": "5.2.30128.0"
           }
         }
       },
@@ -462,6 +496,14 @@
           }
         }
       },
+      "Newtonsoft.Json/6.0.8": {
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.8.18111"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
       "System.CodeDom/4.4.0": {
         "runtime": {
@@ -716,12 +758,33 @@
       "path": "bootstrap/5.2.3",
       "hashPath": "bootstrap.5.2.3.nupkg.sha512"
     },
+    "Chart.Mvc/1.0.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-siBzB5T2j0HW1yLrWGq51vtOVTFnvKmbXihR7i97VC0iDn7u5yoUpVjX0cjjLMCTM6ipNBrNZKX2JgL5VEVhpQ==",
+      "path": "chart.mvc/1.0.0.2",
+      "hashPath": "chart.mvc.1.0.0.2.nupkg.sha512"
+    },
+    "chartjs.helpers.mvc/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JZkXcZsGHrK4LlQCdtNekb/1LkDljp8n7RAJv1uDtFyTKuFLVz+3eydZUlIeQfsB+fa4ua1vAFxz6MMHcyTyAg==",
+      "path": "chartjs.helpers.mvc/3.3.1",
+      "hashPath": "chartjs.helpers.mvc.3.3.1.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Mvc/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i8jZf5QrbcFmjiYWRD7o7qTak/oXKxV80MgP4cZ33A8GC0RBtBIdZ1VHaloGUg+qsHUz5rVkGpwenM+ugDz5PA==",
+      "path": "microsoft.aspnet.mvc/5.2.3",
+      "hashPath": "microsoft.aspnet.mvc.5.2.3.nupkg.sha512"
     },
     "Microsoft.AspNet.Razor/3.2.9": {
       "type": "package",
@@ -1009,6 +1072,13 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/6.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7ut47NDedTW19EbL0JpFDYUP62fcuz27hJrehCDNajdCS5NtqL+E39+7Um3OkNc2wl2ym7K8Ln5eNuLus6mVGQ==",
+      "path": "newtonsoft.json/6.0.8",
+      "hashPath": "newtonsoft.json.6.0.8.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

@@ -13,6 +13,10 @@ public class IndexModel : PageModel
     public IndexModel(DatabaseContext context)  {
         _context = context;
     }
+    [BindProperty]
+    public string[] ChartLabels { get; set; }
+    [BindProperty]
+    public decimal[] ChartValues { get; set; }
     
     public IQueryable<MessagePost> Messages { get; set; }
     public async Task<IActionResult> OnGetAsync()
@@ -24,11 +28,15 @@ public class IndexModel : PageModel
 
         var labresult = _context.GetLabResult().Where(X => X.User == user);
 
+        
+
+        
         LabResults = labresult;
         PendingLab = pendinglab;
         LabList = lablist;
         Users = userList;
-        
+       
+       
         
         switch (user)
         {
@@ -43,6 +51,11 @@ public class IndexModel : PageModel
         
     }
   
+    public IEnumerable<CBC> BloodCount { get; set; }
+    public IEnumerable<Urinalysis> Urinal { get; set; }
+    public IEnumerable<Fecalysis> Fecal { get; set; }
+    public IEnumerable<Cholesterol> Choles { get; set; }
+    public IEnumerable<CholesterolSI> CholesSi { get; set; }
     public IEnumerable<LabResult> LabResults { get; set; }
     public IQueryable<User> Users { get; set; }
     [BindProperty]
@@ -50,11 +63,70 @@ public class IndexModel : PageModel
     [BindProperty]
     public string Type { get; set; }
     
+    [BindProperty]
+    public DateTime DateSummary { get; set; }
+    [BindProperty]
+    public string? ChosenSummary { get; set; }
     public IEnumerable<LabResult> PendingLab { get; set; }
     public IQueryable<LabResult> LabList { get; set; }
     public IEnumerable<LabResult> LabResultChecker { get; set; }
     public IEnumerable<LabResult> LabResultChecker1 { get; set; }
-  
+
+    public IActionResult OnPostSelect()
+    {
+        
+        var user = HttpContext.Session.GetLoggedInUser(_context);
+        var bloodcount = _context.GetBloodCount().Where(x => x.labResult.User == user&& x.DateRetrieved == DateSummary);
+        var fecalysis = _context.GetFecalysis().Where(x => x.labResult.User == user && x.DateRetrieved == DateSummary);
+        var Cholest = _context.GetCholesterol().Where(x => x.labResult.User == user&& x.DateRetrieved == DateSummary);
+        var CholestSi = _context.GetCholesterolSis().Where(x => x.labResult.User == user&& x.DateRetrieved == DateSummary);
+        if (ChosenSummary == "CBC")
+        {
+            foreach (var x in bloodcount)
+            {
+                ChartLabels = new[] { "Red Blood Cell", "White Blood Cell", "Platelets", "Hemoglobin" };
+                ChartValues = new[] { (decimal)x.Rbc,(decimal)x.Wbc,(decimal)x.Plt, (decimal)x.Hb};
+            }
+        }
+        else if (ChosenSummary == "Fecalysis")
+        {
+            foreach (var x in fecalysis)
+            {
+                ChartLabels = new[] { "Stool Pus Cells" };
+                ChartValues = new[] {(decimal)x.StoolPusCells,};
+            }
+        }
+        else if (ChosenSummary == "Cholesterol")
+        {
+            foreach (var x in Cholest)
+            {
+                ChartLabels = new[] { "Cholesterol", "High-density lipoprotein", "Low-density lipoprotein","Triglycerides"  };
+                ChartValues = new[] {(decimal)x.TradCholesterol,(decimal)x.TradLdl,(decimal)x.TradDhdl,(decimal)x.TradTriglyceride};
+            }
+        }
+        else if(ChosenSummary == "Cholesterol SI")
+
+        {
+            foreach (var x in CholestSi)
+            {
+                ChartLabels = new[] { "Cholesterol", "High-density lipoprotein", "Low-density lipoprotein", "Triglycerides" };
+                ChartValues = new[] {(decimal)x.SiCholesterol,(decimal)x.SiDhdl,(decimal)x.SiLdl,(decimal)x.SiTriglyceride};
+            }
+        }
+
+       
+        switch (user)
+        {
+            case null:
+                return RedirectToPage("../Login/Index");
+            default:
+                Name = $"{user.Firstname} {user.Lastname}";
+                Type = $"{user.Type}";
+                
+                return Page();
+        }
+
+    }
     public IActionResult OnPostLogout()
     {
         HttpContext.Session.Logout();
