@@ -23,7 +23,7 @@ public class IndexModel : PageModel
     [BindProperty] public string UserType { get; set; }
     
     [BindProperty]
-    [Display(Name = "First name")]
+    [Display(Name = "First name*")]
     public string FirstName { get; set; }
     
     [BindProperty]
@@ -31,15 +31,15 @@ public class IndexModel : PageModel
     public string? MiddleName { get; set; }
     
     [BindProperty]
-    [Display(Name = "Last name")]
+    [Display(Name = "Last name*")]
     public string LastName { get; set; }
     
     [BindProperty]
-    [Display(Name = "Username")]
+    [Display(Name = "Username*")]
     public string Username { get; set; }
     
     [BindProperty]
-    [Display(Name = "Password")]
+    [Display(Name = "Password*")]
     public string Password { get; set; }
     
     public IActionResult OnGet()
