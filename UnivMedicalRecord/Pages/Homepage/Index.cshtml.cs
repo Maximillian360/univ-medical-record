@@ -19,8 +19,8 @@ public class IndexModel : PageModel
     public decimal[] ChartValues { get; set; }
     
     public IQueryable<User> requestUser { get; set; }
-    
-    public IQueryable<MessagePost> Messages { get; set; }
+    public bool? userHasRequest { get; set; }
+    public bool HasMedicalRecord { get; set; }
     public async Task<IActionResult> OnGetAsync()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
@@ -31,8 +31,12 @@ public class IndexModel : PageModel
         var labresult = _context.GetLabResult().Where(X => X.User == user);
 
         var requestedUser = _context.Users.Where(x=>x.Type == UserType.Regular);
-        requestUser = requestedUser;
+        var userhasrequest = _context.GetUser(user.Id).IsRequested;
+        var hasmedrecord = _context.Medicals.Any(x => x.user == user);
 
+        HasMedicalRecord = hasmedrecord;
+        requestUser = requestedUser;
+        userHasRequest = userhasrequest;
         
         LabResults = labresult;
         PendingLab = pendinglab;
@@ -139,6 +143,8 @@ public class IndexModel : PageModel
         requestedUser.IsRequested = true;
         _context.SaveChanges();
         
+         var requestUserList = _context.Users.Where(x=>x.Type == UserType.Regular);
+         requestUser = requestUserList;
         var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
         var lablist = _context.LabResults;
         var pendinglab = _context.GetLabResult().Where(x=>x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null && x.CbcEncoded == false || x.CholesEncoded == false || x.UrinalEncoded == false || x.CbcEncoded == false);

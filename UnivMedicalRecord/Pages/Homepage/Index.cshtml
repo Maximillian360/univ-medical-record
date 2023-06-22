@@ -231,19 +231,29 @@
     else
     {
       <div class="card" style="flex-direction: row; align-items: center; background-color: #111; box-shadow: unset">
-        <h1 class="mt-4" style=" font-size: 20px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Recent Reports: </h1>
+        <h1 class="mt-4" style=" font-size: 20px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Reminder/s: </h1>
       </div>
-      <div class="row">
-        @for (int i = 0; i < 3; i++)
+      <div class="col">
+        @if (Model.userHasRequest == true)
         {
-          <div class="col-md-4 mb-4 mt-2">
-            <div class="card border-dark mb-3" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
+          <div class="card mt-3">
+            <h1 style="font-size: 20px">Request for Laboratory Records:</h1>
+            <p style="font-size: 15px">Upload your available Laboratory results as soon as possible</p>
+          </div>
+        }
+        @if(!Model.HasMedicalRecord)
+        {
+        <div class="card mt-3">
+          <h1 style="font-size: 20px">Medical Record Needed:</h1>
+          <p style="font-size: 15px">Fill out your medical form as soon as possible.</p>
+        </div>
+        
+        }
+        else if(Model.HasMedicalRecord == false && Model.userHasRequest == false)
+        {
+          <div class="card mt-3">
+            <h1 style="font-size: 20px">Nothing To See Here</h1>
+            <p style="font-size: 15px">No pending reminders.</p>
           </div>
         }
       </div>

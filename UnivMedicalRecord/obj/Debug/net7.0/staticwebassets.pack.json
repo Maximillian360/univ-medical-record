@@ -201,8 +201,16 @@
       "PackagePath": "staticwebassets\\images\\1afc5260-8b00-4fcb-8f71-01b5a99d5434.png"
     },
     {
+      "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\1d93023c-9e2d-42da-a4ba-c142919590fb.png",
+      "PackagePath": "staticwebassets\\images\\1d93023c-9e2d-42da-a4ba-c142919590fb.png"
+    },
+    {
       "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\24d65599-4f73-45b7-8e15-adbbf2395c43.jpg",
       "PackagePath": "staticwebassets\\images\\24d65599-4f73-45b7-8e15-adbbf2395c43.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\254ac477-54bd-4643-99d0-645f971142a2.png",
+      "PackagePath": "staticwebassets\\images\\254ac477-54bd-4643-99d0-645f971142a2.png"
     },
     {
       "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\263eab0d-2b8d-4e76-b9a4-94cd7cae7bb2.png",
@@ -235,6 +243,10 @@
     {
       "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\4237b159-f6ce-4cd5-883f-ffe17ebd13bb.png",
       "PackagePath": "staticwebassets\\images\\4237b159-f6ce-4cd5-883f-ffe17ebd13bb.png"
+    },
+    {
+      "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\444acf49-dc0c-4743-a3c5-e3debabe76f4.png",
+      "PackagePath": "staticwebassets\\images\\444acf49-dc0c-4743-a3c5-e3debabe76f4.png"
     },
     {
       "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\7b08756b-8440-4c9a-8b43-617c73c744f7.png",
@@ -283,6 +295,10 @@
     {
       "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\e00acfc0-f8f1-47a7-8431-1eddb2d6fd21.png",
       "PackagePath": "staticwebassets\\images\\e00acfc0-f8f1-47a7-8431-1eddb2d6fd21.png"
+    },
+    {
+      "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\ec2311d9-8080-45f1-b818-9c6abe8ad47a.png",
+      "PackagePath": "staticwebassets\\images\\ec2311d9-8080-45f1-b818-9c6abe8ad47a.png"
     },
     {
       "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\f9eafd14-957b-4b55-b11d-7ab5bb7277f0.png",
