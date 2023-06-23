@@ -11,7 +11,7 @@ public class Personal
     public string Name { get; set; }
     public int Age { get; set; }
     public string Sex { get; set; }
-    public string MobileNumber { get; set; }
+    public string? MobileNumber { get; set; }
     public string? Email { get; set; }
     public string IdNumber { get; set; }
     [DataType(DataType.Date)]

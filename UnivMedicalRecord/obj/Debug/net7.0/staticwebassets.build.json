@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+NVcFji5Yixy5uzm9IY2qOETgbagu3bPDIYeos3JIBk=",
+  "Hash": "iTKizBSNhwC2zBCda03JDu0uTFX583YHpLjzx2N/DnM=",
   "Source": "UnivMedicalRecord",
   "BasePath": "_content/UnivMedicalRecord",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "UnivMedicalRecord\\wwwroot",
       "Source": "UnivMedicalRecord",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -133,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -150,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -167,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -184,13 +184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -201,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -218,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -235,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -252,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -269,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -286,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -303,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -320,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -354,13 +354,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -371,13 +371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -388,13 +388,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -405,13 +405,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -422,13 +422,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap.css",
       "AssetKind": "All",
@@ -439,13 +439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap.css.map",
       "AssetKind": "All",
@@ -456,13 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -473,13 +473,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -490,13 +490,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -507,13 +507,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -524,13 +524,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -541,13 +541,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -558,13 +558,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -575,13 +575,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -592,13 +592,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -609,13 +609,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -626,13 +626,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -643,13 +643,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -660,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -677,13 +677,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -694,13 +694,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.js",
       "AssetKind": "All",
@@ -711,13 +711,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.js.map",
       "AssetKind": "All",
@@ -728,13 +728,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -745,13 +745,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -762,13 +762,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\.nuget\\packages\\bootstrap\\5.2.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\bundle\\UnivMedicalRecord.styles.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\bundle\\UnivMedicalRecord.styles.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "UnivMedicalRecord.styles.css",
       "AssetKind": "All",
@@ -779,13 +779,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\bundle\\UnivMedicalRecord.styles.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\bundle\\UnivMedicalRecord.styles.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\UnivMedicalRecord.bundle.scp.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\UnivMedicalRecord.bundle.scp.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "UnivMedicalRecord.bundle.scp.css",
       "AssetKind": "All",
@@ -796,13 +796,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\UnivMedicalRecord.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\UnivMedicalRecord.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\css\\site.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\favicon.ico",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -833,12 +833,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\0348afc0-7ba4-4d3a-a3c9-5392f4d541d8.png",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\04ef7085-bd52-4500-819f-02e39ebe7566.jpg",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/0348afc0-7ba4-4d3a-a3c9-5392f4d541d8.png",
+      "RelativePath": "images/04ef7085-bd52-4500-819f-02e39ebe7566.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -847,15 +847,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\0348afc0-7ba4-4d3a-a3c9-5392f4d541d8.png"
+      "OriginalItemSpec": "wwwroot\\images\\04ef7085-bd52-4500-819f-02e39ebe7566.jpg"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\07a05a70-4df3-4513-8104-bb7851f9f7a3.jpg",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\2fcdef57-f274-4f11-82ac-ebc289a24b10.png",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/07a05a70-4df3-4513-8104-bb7851f9f7a3.jpg",
+      "RelativePath": "images/2fcdef57-f274-4f11-82ac-ebc289a24b10.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -864,15 +864,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\07a05a70-4df3-4513-8104-bb7851f9f7a3.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\2fcdef57-f274-4f11-82ac-ebc289a24b10.png"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\1afc5260-8b00-4fcb-8f71-01b5a99d5434.png",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\7f6a2f68-fac1-462b-8dfd-7c3efd715a82.png",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/1afc5260-8b00-4fcb-8f71-01b5a99d5434.png",
+      "RelativePath": "images/7f6a2f68-fac1-462b-8dfd-7c3efd715a82.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -881,15 +881,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\1afc5260-8b00-4fcb-8f71-01b5a99d5434.png"
+      "OriginalItemSpec": "wwwroot\\images\\7f6a2f68-fac1-462b-8dfd-7c3efd715a82.png"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\1d93023c-9e2d-42da-a4ba-c142919590fb.png",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\8435549a-3573-479f-94ed-6dde56d1c513.png",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/1d93023c-9e2d-42da-a4ba-c142919590fb.png",
+      "RelativePath": "images/8435549a-3573-479f-94ed-6dde56d1c513.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -898,15 +898,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\1d93023c-9e2d-42da-a4ba-c142919590fb.png"
+      "OriginalItemSpec": "wwwroot\\images\\8435549a-3573-479f-94ed-6dde56d1c513.png"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\24d65599-4f73-45b7-8e15-adbbf2395c43.jpg",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\8e0afcd7-b3aa-4ad7-8d1c-f41bbeec535d.jpg",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/24d65599-4f73-45b7-8e15-adbbf2395c43.jpg",
+      "RelativePath": "images/8e0afcd7-b3aa-4ad7-8d1c-f41bbeec535d.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -915,15 +915,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\24d65599-4f73-45b7-8e15-adbbf2395c43.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\8e0afcd7-b3aa-4ad7-8d1c-f41bbeec535d.jpg"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\254ac477-54bd-4643-99d0-645f971142a2.png",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\a89bca88-5b9a-4271-86bc-475934ac7108.jpg",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/254ac477-54bd-4643-99d0-645f971142a2.png",
+      "RelativePath": "images/a89bca88-5b9a-4271-86bc-475934ac7108.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -932,15 +932,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\254ac477-54bd-4643-99d0-645f971142a2.png"
+      "OriginalItemSpec": "wwwroot\\images\\a89bca88-5b9a-4271-86bc-475934ac7108.jpg"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\263eab0d-2b8d-4e76-b9a4-94cd7cae7bb2.png",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\ce71abd8-9f9c-4541-ab51-35751eb69b11.png",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/263eab0d-2b8d-4e76-b9a4-94cd7cae7bb2.png",
+      "RelativePath": "images/ce71abd8-9f9c-4541-ab51-35751eb69b11.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -949,15 +949,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\263eab0d-2b8d-4e76-b9a4-94cd7cae7bb2.png"
+      "OriginalItemSpec": "wwwroot\\images\\ce71abd8-9f9c-4541-ab51-35751eb69b11.png"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\2973f26a-f222-4c98-93f1-069c62ca4318.png",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\f9c2fdba-b6fa-4a5e-ade7-513e4d393be5.png",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/2973f26a-f222-4c98-93f1-069c62ca4318.png",
+      "RelativePath": "images/f9c2fdba-b6fa-4a5e-ade7-513e4d393be5.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -966,421 +966,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\2973f26a-f222-4c98-93f1-069c62ca4318.png"
+      "OriginalItemSpec": "wwwroot\\images\\f9c2fdba-b6fa-4a5e-ade7-513e4d393be5.png"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\2bdefa0b-dde6-42cc-8e2f-5ed343140e8f.png",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\js\\site.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/2bdefa0b-dde6-42cc-8e2f-5ed343140e8f.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\2bdefa0b-dde6-42cc-8e2f-5ed343140e8f.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\2d88119a-acf8-46ce-bdfb-94e17e94e11d.jpg",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/2d88119a-acf8-46ce-bdfb-94e17e94e11d.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\2d88119a-acf8-46ce-bdfb-94e17e94e11d.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\2fcae446-9e97-472a-aa64-ba612f218b4c.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/2fcae446-9e97-472a-aa64-ba612f218b4c.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\2fcae446-9e97-472a-aa64-ba612f218b4c.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\30a90093-47df-4c18-9274-b3b146206d5a.jpg",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/30a90093-47df-4c18-9274-b3b146206d5a.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\30a90093-47df-4c18-9274-b3b146206d5a.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\3363061d-6d5a-4c21-bd75-977ed9cf6f53.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/3363061d-6d5a-4c21-bd75-977ed9cf6f53.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\3363061d-6d5a-4c21-bd75-977ed9cf6f53.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\4237b159-f6ce-4cd5-883f-ffe17ebd13bb.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/4237b159-f6ce-4cd5-883f-ffe17ebd13bb.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\4237b159-f6ce-4cd5-883f-ffe17ebd13bb.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\444acf49-dc0c-4743-a3c5-e3debabe76f4.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/444acf49-dc0c-4743-a3c5-e3debabe76f4.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\444acf49-dc0c-4743-a3c5-e3debabe76f4.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\7b08756b-8440-4c9a-8b43-617c73c744f7.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/7b08756b-8440-4c9a-8b43-617c73c744f7.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\7b08756b-8440-4c9a-8b43-617c73c744f7.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\7d00cea0-baee-4a25-aa72-595fbc728a7d.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/7d00cea0-baee-4a25-aa72-595fbc728a7d.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\7d00cea0-baee-4a25-aa72-595fbc728a7d.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\7d27dd9d-757e-486a-ae21-796f5fd4acff.jpg",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/7d27dd9d-757e-486a-ae21-796f5fd4acff.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\7d27dd9d-757e-486a-ae21-796f5fd4acff.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\92d089ab-e76a-42fa-bfe3-06cf44181110.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/92d089ab-e76a-42fa-bfe3-06cf44181110.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\92d089ab-e76a-42fa-bfe3-06cf44181110.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\97d18d28-94de-4217-b776-0274eafbc3d1.jpg",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/97d18d28-94de-4217-b776-0274eafbc3d1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\97d18d28-94de-4217-b776-0274eafbc3d1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\a593d1f2-e37c-49a3-a9aa-defc31773981.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/a593d1f2-e37c-49a3-a9aa-defc31773981.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\a593d1f2-e37c-49a3-a9aa-defc31773981.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\bbfb6445-1be1-4082-bfab-e8dc58ac234c.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/bbfb6445-1be1-4082-bfab-e8dc58ac234c.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bbfb6445-1be1-4082-bfab-e8dc58ac234c.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\bfc25532-5c79-4f55-9bd5-cf1e36266d90.jpg",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/bfc25532-5c79-4f55-9bd5-cf1e36266d90.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bfc25532-5c79-4f55-9bd5-cf1e36266d90.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\c1224f0d-ba0e-4bff-a1bf-c40fc114f344.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/c1224f0d-ba0e-4bff-a1bf-c40fc114f344.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\c1224f0d-ba0e-4bff-a1bf-c40fc114f344.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\c2a877e3-5897-4366-a55b-8a9cc9e4dfec.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/c2a877e3-5897-4366-a55b-8a9cc9e4dfec.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\c2a877e3-5897-4366-a55b-8a9cc9e4dfec.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\c9303984-2f8c-4021-bd16-16c3a653e92d.jpg",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/c9303984-2f8c-4021-bd16-16c3a653e92d.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\c9303984-2f8c-4021-bd16-16c3a653e92d.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\e00acfc0-f8f1-47a7-8431-1eddb2d6fd21.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/e00acfc0-f8f1-47a7-8431-1eddb2d6fd21.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\e00acfc0-f8f1-47a7-8431-1eddb2d6fd21.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\ec2311d9-8080-45f1-b818-9c6abe8ad47a.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/ec2311d9-8080-45f1-b818-9c6abe8ad47a.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ec2311d9-8080-45f1-b818-9c6abe8ad47a.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\f9eafd14-957b-4b55-b11d-7ab5bb7277f0.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/f9eafd14-957b-4b55-b11d-7ab5bb7277f0.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\f9eafd14-957b-4b55-b11d-7ab5bb7277f0.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\fd254dec-71b7-4e90-bb16-f3e435288134.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/fd254dec-71b7-4e90-bb16-f3e435288134.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\fd254dec-71b7-4e90-bb16-f3e435288134.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\fd484125-a71d-49b6-a633-5983c5414973.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/fd484125-a71d-49b6-a633-5983c5414973.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\fd484125-a71d-49b6-a633-5983c5414973.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\fe06acca-df1c-48e2-b28a-b2f4a69132e2.png",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
-      "BasePath": "_content/UnivMedicalRecord",
-      "RelativePath": "images/fe06acca-df1c-48e2-b28a-b2f4a69132e2.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\fe06acca-df1c-48e2-b28a-b2f4a69132e2.png"
-    },
-    {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\js\\site.js",
-      "SourceId": "UnivMedicalRecord",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1394,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1411,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1428,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1445,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1462,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1479,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1496,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1513,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1530,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1547,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1564,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1581,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1598,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1615,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1632,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1649,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1666,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1683,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1700,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1717,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1734,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1751,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1768,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1785,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1802,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1819,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1836,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1853,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1870,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1887,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1904,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1921,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1938,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1955,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1972,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1989,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2006,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2023,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2040,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2057,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2074,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2091,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2108,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2125,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2142,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2159,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2176,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2193,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2210,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2227,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2244,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2261,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2278,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2295,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2312,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2329,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2346,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
       "BasePath": "_content/UnivMedicalRecord",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
