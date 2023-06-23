@@ -80,10 +80,34 @@
                                       </tr>
                                       </thead>
                                       <tbody>
+                                      
                                       <tr>
-                                          <td>WBC Count</td>
+                                          <td>RBC Count*</td>
+                                          <td><input asp-for="Cbc.Rbc" type="number" step=".01" min="0" class="form-control"></td>
+                                          <td>M: 4.5 - 6.2 x 10/L
+                                              F: 4.2 - 5.4 x 10/L</td>
+                                      </tr>                                      
+                                      
+                                      <tr>
+                                          <td>WBC Count*</td>
                                           <td><input asp-for="Cbc.Wbc" type="number" step=".1" min="0" class="form-control"/>
                                           <td>5.0 - 10.0 x 10/L</td>
+                                      </tr>
+
+                                      <tr>
+                                          <td>Platelets*</td>
+                                          <td><input asp-for="Cbc.Plt" type="number" min="0" class="form-control"></td>
+                                          <td>A: 150 - 450 x 10/L
+                                              NB: 84 - 450 x 10/L</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                          <td>Hemoglobin*</td>
+                                          <td><input asp-for="Cbc.Hb" type="number" step=".1" min="0" class="form-control"></td>
+                                          <td>M: 140.0 - 180.0G/L
+                                              F: 120.0 - 160.0G/L
+                                              C: 100.0 - 140.0G/L
+                                              NB: 140.0 - 230.0G/L</td>
                                       </tr>
 
                                       <tr>
@@ -147,22 +171,6 @@
                                       </tr>
 
                                       <tr>
-                                          <td>RBC Count</td>
-                                          <td><input asp-for="Cbc.Rbc" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>M: 4.5 - 6.2 x 10/L
-                                              F: 4.2 - 5.4 x 10/L</td>
-                                      </tr>
-
-                                      <tr>
-                                          <td>Hemoglobin</td>
-                                          <td><input asp-for="Cbc.Hb" type="number" step=".1" min="0" class="form-control"></td>
-                                          <td>M: 140.0 - 180.0G/L
-                                              F: 120.0 - 160.0G/L
-                                              C: 100.0 - 140.0G/L
-                                              NB: 140.0 - 230.0G/L</td>
-                                      </tr>
-
-                                      <tr>
                                           <td>Hematocrit</td>
                                           <td><input asp-for="Cbc.Hct" type="number" step=".01" min="0" class="form-control"></td>
                                           <td>M: 0.40 - 0.54
@@ -174,13 +182,6 @@
                                           <td><input asp-for="Cbc.Esr" type="number" min="0" class="form-control"></td>
                                           <td>M: 1-10mm/hr
                                               F: 0-20mm/hr</td>
-                                      </tr>
-
-                                      <tr>
-                                          <td>Platelets</td>
-                                          <td><input asp-for="Cbc.Plt" type="number" min="0" class="form-control"></td>
-                                          <td>A: 150 - 450 x 10/L
-                                              NB: 84 - 450 x 10/L</td>
                                       </tr>
 
                                       <tr>
