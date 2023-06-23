@@ -81,7 +81,7 @@ public class AddLabResult : PageModel
         var CholfilePath = Path.Combine(imageDirectory, CholfileName);
 
         var Cholstream = new FileStream(CholfilePath, FileMode.Create);
-        Cbc?.CopyToAsync(Cholstream);
+        Cholesterol?.CopyToAsync(Cholstream);
         
        
 
@@ -91,8 +91,9 @@ public class AddLabResult : PageModel
             UrinalysisRes = UrinalysisfileName,
             CbcRes = CbcfileName,
             FecalysisRes = FecalfileName,
-            CholesterolRes = CholfileName,
+            CholesterolRes = CholfileName
         };
+        _context.SaveChanges();
         user.IsRequested = false;
 
         _context.AddLabResult(labresults);

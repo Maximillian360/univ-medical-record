@@ -58,6 +58,10 @@
       <_ContentIncludedByDefault Remove="wwwroot\images\fd254dec-71b7-4e90-bb16-f3e435288134.png" />
       <_ContentIncludedByDefault Remove="wwwroot\images\fd484125-a71d-49b6-a633-5983c5414973.png" />
       <_ContentIncludedByDefault Remove="wwwroot\images\fe06acca-df1c-48e2-b28a-b2f4a69132e2.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\1b637adf-662d-4eb7-ace0-ec97daabf7fb.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\36912a3e-e060-4dcc-b2d4-80efd7bf7d48.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\729cf620-fa0d-480d-bc5a-f750a68e8634.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\d750feda-a82c-4cb4-81a4-7c31255ff78c.png" />
     </ItemGroup>
 
 </Project>
