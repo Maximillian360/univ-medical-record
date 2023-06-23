@@ -29,132 +29,7 @@
 
         </head>
 <body style="overflow-x: hidden">
-<div class="row" style="height: max-content; overflow: unset">
-  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-md-4" style="width: 280px; height: auto">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">Menu</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li>
-        <a href="#" class="nav-link text-white">
-          <form class="form-inline" method="post">
-            <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="Dashboard">Dashboard</button>
-          </form>
-        </a>
-      </li>
-
-      @{
-        if (Model.Type == "Admin")
-        {
-          <li>
-            <a href="#" class="nav-link text-white">
-              <form class="form-inline" method="post">
-                <button type="submit" class="dropdown-item" asp-page-handler="ViewRecords">View Medical Records</button>
-              </form>
-            </a>
-          </li>
-          
-          <li>
-            <form class="form-inline">
-              <a style="font: unset" type="submit" class="dropdown-item m-lg-3 mt-0" data-toggle="modal" data-target=".RequestUsers">Request</a>
-            </form>
-          </li>
-          
-          <div class="modal fade RequestUsers" id="RequestUsers" role="dialog" aria-labelledby="RequestUsers" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 style="color: black; font-size: 20px">List of Users</h1>
-                </div>
-                <div class="modal-body" style="overflow: auto">
-                  @if (Model.requestUser != null)
-                  {
-                    @foreach (var x in Model.requestUser)
-                    {
-                      <div class="card">
-                        <label style="color: black; font-size: 20px">@x.Firstname @x.Lastname </label>
-                        <label style="color: black; font-size: 15px">@x.Type</label>
-                        <form method="post" asp-page-handler="Request" asp-route-id="@x.Id">
-                          @if (x.IsRequested == false)
-                          {
-                            <button style=" background-color: transparent;color: #000000;text-decoration: none; border-bottom: 1px dotted; display: inline-block;" type="submit" class="btn btn-close-dark">Request Record</button>
-                          }
-                          else
-                          {
-                            <label style="color: black; font-size: 10px">Record has already been requested</label>
-                          }
-                        </form>
-                      </div>
-                    }
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                  }
-                  else
-                  {
-                    <text>No User To Display</text>
-                  }
-                </div>
-              </div>
-            </div>
-          </div>
-        }
-      }
-          
-      @{
-        if (Model.Type == "Regular")
-        {
-          <li>
-            <a href="#" class="nav-link text-white">
-              <form class="form-inline" method="post">
-                <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="LabResult">Laboratory Test</button>
-              </form>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <form class="form-inline" method="post">
-                <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="MedicalRecord">MedicalRecord</button>
-              </form>
-            </a>
-          </li>
-        }
-      }
-      <li>
-        <a href="#" class="nav-link text-white">
-          <form class="form-inline" method="post">
-            <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="Inbox">Inbox</button>
-          </form>
-        </a>
-      </li>
-    </ul>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>@Model.Name</strong>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-        <li>
-          @{
-            if (Model.Type == "Admin")
-            {
-              <form class="form-inline" method="post">
-                <button type="submit" class="dropdown-item" asp-page-handler="CreateAccount">Create Account</button>
-              </form>
-              <li><hr class="dropdown-divider"></li>
-            }
-          }
-        </li>
-        <li>
-          <form class="form-inline" method="post">
-            <button type="submit" class="dropdown-item" asp-page-handler="Logout">Logout</button>
-          </form>
-        </li>
-      </ul>
-    </div>
-  </div> 
-  <div class="col-md-8" style="background-color: #8080" style="overflow: auto">
+<div style="background-color: #8080" style="overflow: auto">
     <div class="row d-flex justify-content-md-center vh-100" style="background: #8080">
       <div class="col-md-10">
         <div class="card m-lg-5 h-75 border-dark">
@@ -216,7 +91,6 @@
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>
 

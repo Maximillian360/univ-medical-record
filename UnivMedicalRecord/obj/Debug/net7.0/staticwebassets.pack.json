@@ -189,6 +189,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\98c0bf34-34ee-461c-9f17-53a9f2b4f724.jpg",
+      "PackagePath": "staticwebassets\\images\\98c0bf34-34ee-461c-9f17-53a9f2b4f724.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\a2d0f1e6-158b-45ca-a18c-e8f91bf60557.png",
+      "PackagePath": "staticwebassets\\images\\a2d0f1e6-158b-45ca-a18c-e8f91bf60557.png"
+    },
+    {
+      "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\cc2062fd-c8fc-4827-a036-5bfc97eb30e6.png",
+      "PackagePath": "staticwebassets\\images\\cc2062fd-c8fc-4827-a036-5bfc97eb30e6.png"
+    },
+    {
+      "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\feb78a16-40c8-41e8-a3f2-ebcd91b38177.png",
+      "PackagePath": "staticwebassets\\images\\feb78a16-40c8-41e8-a3f2-ebcd91b38177.png"
+    },
+    {
       "Id": "C:\\Users\\JonelDavid\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
