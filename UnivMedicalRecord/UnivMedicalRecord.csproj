@@ -26,6 +26,38 @@
       <_ContentIncludedByDefault Remove="Pages\GraphTest\Graph.cshtml" />
       <_ContentIncludedByDefault Remove="Pages\ChartTest\ChartJS.cshtml" />
       <_ContentIncludedByDefault Remove="Pages\Chart\ChartTest.cshtml" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\0348afc0-7ba4-4d3a-a3c9-5392f4d541d8.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\07a05a70-4df3-4513-8104-bb7851f9f7a3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\1afc5260-8b00-4fcb-8f71-01b5a99d5434.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\1d93023c-9e2d-42da-a4ba-c142919590fb.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\24d65599-4f73-45b7-8e15-adbbf2395c43.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\254ac477-54bd-4643-99d0-645f971142a2.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\263eab0d-2b8d-4e76-b9a4-94cd7cae7bb2.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\2973f26a-f222-4c98-93f1-069c62ca4318.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\2bdefa0b-dde6-42cc-8e2f-5ed343140e8f.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\2d88119a-acf8-46ce-bdfb-94e17e94e11d.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\2fcae446-9e97-472a-aa64-ba612f218b4c.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\30a90093-47df-4c18-9274-b3b146206d5a.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\3363061d-6d5a-4c21-bd75-977ed9cf6f53.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\4237b159-f6ce-4cd5-883f-ffe17ebd13bb.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\444acf49-dc0c-4743-a3c5-e3debabe76f4.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\7b08756b-8440-4c9a-8b43-617c73c744f7.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\7d00cea0-baee-4a25-aa72-595fbc728a7d.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\7d27dd9d-757e-486a-ae21-796f5fd4acff.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\92d089ab-e76a-42fa-bfe3-06cf44181110.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\97d18d28-94de-4217-b776-0274eafbc3d1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\a593d1f2-e37c-49a3-a9aa-defc31773981.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\bbfb6445-1be1-4082-bfab-e8dc58ac234c.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\bfc25532-5c79-4f55-9bd5-cf1e36266d90.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\c1224f0d-ba0e-4bff-a1bf-c40fc114f344.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\c2a877e3-5897-4366-a55b-8a9cc9e4dfec.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\c9303984-2f8c-4021-bd16-16c3a653e92d.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\e00acfc0-f8f1-47a7-8431-1eddb2d6fd21.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\ec2311d9-8080-45f1-b818-9c6abe8ad47a.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\f9eafd14-957b-4b55-b11d-7ab5bb7277f0.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\fd254dec-71b7-4e90-bb16-f3e435288134.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\fd484125-a71d-49b6-a633-5983c5414973.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\fe06acca-df1c-48e2-b28a-b2f4a69132e2.png" />
     </ItemGroup>
 
 </Project>
