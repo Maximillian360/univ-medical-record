@@ -15,6 +15,8 @@ public class IndexModel : PageModel
     {
         _context = context;
     }
+   
+    public string WrongUserPassword { get; set; }
 
     [BindProperty]
     [Display(Name = "Username")]
@@ -33,8 +35,13 @@ public class IndexModel : PageModel
         
         var user = _context.GetUsers().FirstOrDefault(x => x.Username == Username);
         var passwordHash = Password.ComputeHash(Convert.FromBase64String(user?.PasswordSalt ?? ""));
-        
-        if (user == null || user.PasswordHash != passwordHash) return Page();
+
+
+        if (user == null || user.PasswordHash != passwordHash)
+        {
+            WrongUserPassword = "Incorrect Username or Password";
+            return Page();
+        }
         HttpContext.Session.Login(user);
         return RedirectToPage("../Homepage/Index");
 
