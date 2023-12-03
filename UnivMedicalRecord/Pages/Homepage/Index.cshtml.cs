@@ -71,29 +71,110 @@ public class IndexModel : PageModel
     public string Type { get; set; }
     
     [BindProperty]
-    public DateTime DateSummary { get; set; }
+    public DateTime DateStart { get; set; }
+    
+    [BindProperty]
+    public DateTime DateEnd { get; set; }
     [BindProperty]
     public string? ChosenSummary { get; set; }
     public IEnumerable<LabResult> PendingLab { get; set; }
     public IQueryable<LabResult> LabList { get; set; }
     public IEnumerable<LabResult> LabResultChecker { get; set; }
     public IEnumerable<LabResult> LabResultChecker1 { get; set; }
+    public List<string> DateRangeList
+    {
+        get
+        {
+            List<string> dateList = new List<string>();
+            TimeSpan range = DateEnd - DateStart;
+            int months = (DateEnd.Year - DateStart.Year) * 12 + DateEnd.Month - DateStart.Month;
+
+            // Include DateStart and DateEnd in the list
+            for (int i = 0; i <= months; i++)
+            {
+                DateTime currentDate = DateStart.AddMonths(i);
+                dateList.Add(currentDate.ToString("MMMM yyyy"));
+            }
+
+            return dateList;
+        }
+    }
 
     public IActionResult OnPostSelect()
     {
-        
         var user = HttpContext.Session.GetLoggedInUser(_context);
-        var bloodcount = _context.GetBloodCount().Where(x => x.labResult.User == user&& x.DateRetrieved == DateSummary);
-        var fecalysis = _context.GetFecalysis().Where(x => x.labResult.User == user && x.DateRetrieved == DateSummary);
-        var Cholest = _context.GetCholesterol().Where(x => x.labResult.User == user&& x.DateRetrieved == DateSummary);
-        var CholestSi = _context.GetCholesterolSis().Where(x => x.labResult.User == user&& x.DateRetrieved == DateSummary);
+        var bloodcount = _context.GetBloodCount().Where(x => x.labResult.User == user && x.DateRetrieved >= DateStart && x.DateRetrieved <= DateEnd);
+        var fecalysis = _context.GetFecalysis().Where(x => x.labResult.User == user && x.DateRetrieved == DateStart && x.DateRetrieved <= DateEnd);
+        var Cholest = _context.GetCholesterol().Where(x => x.labResult.User == user && x.DateRetrieved == DateStart && x.DateRetrieved <= DateEnd);
+        var CholestSi = _context.GetCholesterolSis().Where(x => x.labResult.User == user && x.DateRetrieved == DateStart && x.DateRetrieved <= DateEnd);
         if (ChosenSummary == "CBC")
         {
+            List<string> chartLabels = DateRangeList; // Assuming DateRangeList is a list of months
+
+            // Initialize a dictionary to store values for each month
+            Dictionary<string, decimal> chartValuesByMonth = new Dictionary<string, decimal>();
+            Dictionary<string, int> recordCountsByMonth = new Dictionary<string, int>();
+
+            // Initialize values for all months in DateRangeList to 0
+            foreach (var month in chartLabels)
+            {
+                chartValuesByMonth[month] = 0;
+                recordCountsByMonth[month] = 0;
+            }
+
+            // Iterate through bloodcount and update values in the dictionary
             foreach (var x in bloodcount)
             {
-                ChartLabels = new[] { "Red Blood Cell", "White Blood Cell", "Platelets", "Hemoglobin" };
-                ChartValues = new[] { (decimal)x.Rbc,(decimal)x.Wbc,(decimal)x.Plt, (decimal)x.Hb};
+                // Assuming DateRetrieved is a DateTime property in your model
+                string dateLabel = x.DateRetrieved.ToString("MMMM yyyy");
+
+                // Add the record value to the corresponding month
+                chartValuesByMonth[dateLabel] += (decimal)x.Rbc;
+                recordCountsByMonth[dateLabel]++;
             }
+            
+            for (int i = 0; i < chartLabels.Count; i++)
+            {
+                string month = chartLabels[i];
+                if (recordCountsByMonth[month] > 0)
+                {
+                    chartValuesByMonth[month] /= recordCountsByMonth[month];
+                }
+            }
+
+            // Convert dictionary values to an array
+            ChartValues = chartValuesByMonth.Values.ToArray();
+            ChartLabels = chartLabels.ToArray();
+            
+            
+            
+            // List<string> chartLabels = new List<string>();
+            // List<decimal> chartValues = new List<decimal>();
+            // foreach (var x in bloodcount)
+            // {
+            //     string dateLabel = x.DateRetrieved.ToString("MMMM yyyy");
+            //     if (!chartLabels.Contains(dateLabel))
+            //     {
+            //         chartLabels.Add(dateLabel);
+            //         chartValues.Add((decimal)x.Rbc);
+            //     }
+            //     else
+            //     {
+            //         int index = chartLabels.IndexOf(dateLabel);
+            //         chartValues[index] += (decimal)x.Rbc;
+            //     }
+            // }
+            //
+            // ChartLabels = chartLabels.ToArray();
+            // ChartValues = chartValues.ToArray();
+            
+            
+            
+            // foreach (var x in bloodcount)
+            // {
+            //     ChartLabels = DateRangeList.ToArray();
+            //     ChartValues = new[] { (decimal)x.Rbc};
+            // }
         }
         else if (ChosenSummary == "Fecalysis")
         {

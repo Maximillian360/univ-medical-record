@@ -193,6 +193,14 @@
       "PackagePath": "staticwebassets\\images\\038cae5e-9b87-4931-96e2-ed2f324f2165.png"
     },
     {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\07e0c665-8ab5-4e3c-a1d1-0fa99aff988a.png",
+      "PackagePath": "staticwebassets\\images\\07e0c665-8ab5-4e3c-a1d1-0fa99aff988a.png"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\0bf349c8-9fc8-40eb-b6b7-468647b46963.jpg",
+      "PackagePath": "staticwebassets\\images\\0bf349c8-9fc8-40eb-b6b7-468647b46963.jpg"
+    },
+    {
       "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\0d3f5e41-551c-4226-b5c3-68603c338881.png",
       "PackagePath": "staticwebassets\\images\\0d3f5e41-551c-4226-b5c3-68603c338881.png"
     },
@@ -201,8 +209,24 @@
       "PackagePath": "staticwebassets\\images\\1145fe20-d14f-4a26-a0ba-872a8231d258.jpg"
     },
     {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\15d1e55a-b7e1-43e6-9aea-78f7d1e2ade3.jpg",
+      "PackagePath": "staticwebassets\\images\\15d1e55a-b7e1-43e6-9aea-78f7d1e2ade3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\201d42a0-03a1-49ef-8d46-05bf3cd41954.png",
+      "PackagePath": "staticwebassets\\images\\201d42a0-03a1-49ef-8d46-05bf3cd41954.png"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\279e4bc6-21a0-4401-a01c-4688b281486e.jpg",
+      "PackagePath": "staticwebassets\\images\\279e4bc6-21a0-4401-a01c-4688b281486e.jpg"
+    },
+    {
       "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\320d8a68-b018-4d37-8dfa-d22380dbf6d7.png",
       "PackagePath": "staticwebassets\\images\\320d8a68-b018-4d37-8dfa-d22380dbf6d7.png"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\35232ecb-9aa7-480d-b116-2bf51c03cd22.jpg",
+      "PackagePath": "staticwebassets\\images\\35232ecb-9aa7-480d-b116-2bf51c03cd22.jpg"
     },
     {
       "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\36690ee3-5bbe-4547-b54e-4f975ff5a68e.jpg",
@@ -217,12 +241,32 @@
       "PackagePath": "staticwebassets\\images\\451d0959-bddd-4598-a580-4b3bd3176f75.png"
     },
     {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\48e2b5af-cf06-4d24-9db2-e934c0b4b1cc.jpg",
+      "PackagePath": "staticwebassets\\images\\48e2b5af-cf06-4d24-9db2-e934c0b4b1cc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\5d9614f3-b1dd-405f-bdb0-3cc0df2ae1c6.jpg",
+      "PackagePath": "staticwebassets\\images\\5d9614f3-b1dd-405f-bdb0-3cc0df2ae1c6.jpg"
+    },
+    {
       "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\5ece446d-8cbf-463a-a7b3-30e0ca0f6b3d.jpg",
       "PackagePath": "staticwebassets\\images\\5ece446d-8cbf-463a-a7b3-30e0ca0f6b3d.jpg"
     },
     {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\6679c7a8-42d9-4fb2-8de6-555851053f8c.jpg",
+      "PackagePath": "staticwebassets\\images\\6679c7a8-42d9-4fb2-8de6-555851053f8c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\72021236-0b2f-4c0a-8eac-91304e42317b.jpg",
+      "PackagePath": "staticwebassets\\images\\72021236-0b2f-4c0a-8eac-91304e42317b.jpg"
+    },
+    {
       "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\72d4216b-95c3-4068-96ab-c0b2367c367b.jpg",
       "PackagePath": "staticwebassets\\images\\72d4216b-95c3-4068-96ab-c0b2367c367b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\80a80cbe-8487-4de0-be7c-b3f4e74f8755.jpg",
+      "PackagePath": "staticwebassets\\images\\80a80cbe-8487-4de0-be7c-b3f4e74f8755.jpg"
     },
     {
       "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\825cf4d0-e2a6-4450-bc06-e2aeeb76c827.jpg",
@@ -233,8 +277,28 @@
       "PackagePath": "staticwebassets\\images\\91f24e9c-2072-4097-893e-b94a8fba13c0.jpg"
     },
     {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\99b8e826-ef6a-42b4-82f5-5976dc1906d8.png",
+      "PackagePath": "staticwebassets\\images\\99b8e826-ef6a-42b4-82f5-5976dc1906d8.png"
+    },
+    {
       "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\c7b648af-a734-40e5-8f53-6c9b76396b34.jpg",
       "PackagePath": "staticwebassets\\images\\c7b648af-a734-40e5-8f53-6c9b76396b34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\d1803500-6174-46a6-850d-dd07a94f665c.png",
+      "PackagePath": "staticwebassets\\images\\d1803500-6174-46a6-850d-dd07a94f665c.png"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\dc2f0181-3741-4b30-964d-a0d8c39afbaa.jpg",
+      "PackagePath": "staticwebassets\\images\\dc2f0181-3741-4b30-964d-a0d8c39afbaa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\e3bb221f-d03d-4688-a628-1c4a8b19f6fe.png",
+      "PackagePath": "staticwebassets\\images\\e3bb221f-d03d-4688-a628-1c4a8b19f6fe.png"
+    },
+    {
+      "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\e5d0d976-2f9e-4542-b5d1-7886fb85e2e0.jpg",
+      "PackagePath": "staticwebassets\\images\\e5d0d976-2f9e-4542-b5d1-7886fb85e2e0.jpg"
     },
     {
       "Id": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\js\\site.js",
