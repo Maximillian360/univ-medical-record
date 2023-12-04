@@ -9,7 +9,7 @@
 
 
 @{
-  Layout = null;
+    Layout = null;
 }
 
 <html>
@@ -31,296 +31,715 @@
       
 </style>
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-          
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="./css/site.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/site.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body style="overflow-x: hidden; overflow-y: auto">
 <div class="row" style="height: 100%;">
-  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-md-4" style="width: 280px; height: auto">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">Menu</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li>
-        <a href="#" class="nav-link text-white">
-          <form class="form-inline" method="post">
-            <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="Dashboard">Dashboard</button>
-          </form>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-md-4" style="width: 280px; height: auto">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Menu</span>
         </a>
-      </li>
-
-      @{
-        if (Model.Type == "Admin")
-        {
-          <li>
-            <a href="#" class="nav-link text-white">
-              <form class="form-inline" method="post">
-                <button type="submit" class="dropdown-item" asp-page-handler="ViewRecords">View Medical Records</button>
-              </form>
-            </a>
-          </li>
-          <li>
-            <form class="form-inline">
-              <a style="font: unset" type="submit" class="dropdown-item m-lg-3 mt-0" data-toggle="modal" data-target=".RequestUsers">Request</a>
-              </form>
-          </li>
-        }
-      }
-      
-      <div class="modal fade RequestUsers" id="RequestUsers" role="dialog" aria-labelledby="RequestUsers" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 style="color: black; font-size: 20px">List of Users</h1>
-            </div>
-            <div class="modal-body" style="overflow: auto">
-              @if (Model.requestUser != null)
-              {
-                @foreach (var x in Model.requestUser)
-                {
-                  <div class="card">
-                    <label style="color: black; font-size: 20px">@x.Firstname @x.Lastname </label>
-                    <label style="color: black; font-size: 15px">@x.Type</label>
-                    <form method="post" asp-page-handler="Request" asp-route-id="@x.Id">
-                      @if (x.IsRequested == false)
-                      {
-                        <button style=" background-color: transparent;color: #000000;text-decoration: none; border-bottom: 1px dotted; display: inline-block;" type="submit" class="btn btn-close-dark">Request Record</button>
-                      }
-                      else
-                      {
-                        <label style="color: black; font-size: 10px">Record has already been requested</label>
-                      }
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <form class="form-inline" method="post">
+                        <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="Dashboard">Dashboard</button>
                     </form>
-                  </div>
+                </a>
+            </li>
+
+            @{
+                if (Model.Type == "Admin")
+                {
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <form class="form-inline" method="post">
+                                <button type="submit" class="dropdown-item" asp-page-handler="ViewRecords">View Medical Records</button>
+                            </form>
+                        </a>
+                    </li>
+                    <li>
+                        <form class="form-inline">
+                            <a style="font: unset" type="submit" class="dropdown-item m-lg-3 mt-0" data-toggle="modal" data-target=".RequestUsers">Request</a>
+                        </form>
+                    </li>
                 }
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              }
-              else
-              {
-                <text>No User To Display</text>
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      @{
-        if (Model.Type == "Regular")
-        {
-          <li>
-            <a href="#" class="nav-link text-white">
-              <form class="form-inline" method="post">
-                <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="LabResult">Laboratory Test</button>
-              </form>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <form class="form-inline" method="post">
-                <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="MedicalRecord">MedicalRecord</button>
-              </form>
-            </a>
-          </li>
-        }
-      }
-      <li>
-        <a href="#" class="nav-link text-white">
-          <form class="form-inline" method="post">
-            <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="Inbox">Inbox</button>
-          </form>
-        </a>
-      </li>
-    </ul>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>@Model.Name</strong>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-        <li>
-          @{
-            if (Model.Type == "Admin")
-            {
-              <form class="form-inline" method="post">
-                <button type="submit" class="dropdown-item" asp-page-handler="CreateAccount">Create Account</button>
-              </form>
-              <li><hr class="dropdown-divider"></li>
             }
-          }
-        </li>
-        <li>
-          <form class="form-inline" method="post">
-            <button type="submit" class="dropdown-item" asp-page-handler="Logout">Logout</button>
-          </form>
-        </li>
-      </ul>
-    </div>
-  </div> 
-      
-  <div class="col-md-8" style="background-color: #8080" style="overflow: auto">
-    @if (Model.Type == "Admin")
-    {
-      <div class="card" style="flex-direction: row; background-color: #111; box-shadow: unset">
-        <h1 class="mt-4" style=" font-size: 20px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Pending Lab Records: </h1>
-       
-      </div>
-      
-      
 
-      <div style="flex-direction: row">
-              
-        @if (!Model.PendingLab.Any())
+            <div class="modal fade RequestUsers" id="RequestUsers" role="dialog" aria-labelledby="RequestUsers" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 style="color: black; font-size: 20px">List of Users</h1>
+                        </div>
+                        <div class="modal-body" style="overflow: auto">
+                            @if (Model.requestUser != null)
+                            {
+                                @foreach (var x in Model.requestUser)
+                                {
+                                    <div class="card">
+                                        <label style="color: black; font-size: 20px">@x.Firstname @x.Lastname </label>
+                                        <label style="color: black; font-size: 15px">@x.Type</label>
+                                        <form method="post" asp-page-handler="Request" asp-route-id="@x.Id">
+                                            @if (x.IsRequested == false)
+                                            {
+                                                <button style=" background-color: transparent;color: #000000;text-decoration: none; border-bottom: 1px dotted; display: inline-block;" type="submit" class="btn btn-close-dark">Request Record</button>
+                                            }
+                                            else
+                                            {
+                                                <label style="color: black; font-size: 10px">Record has already been requested</label>
+                                            }
+                                        </form>
+                                    </div>
+                                }
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            }
+                            else
+                            {
+                                <text>No User To Display</text>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @{
+                if (Model.Type == "Regular")
+                {
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <form class="form-inline" method="post">
+                                <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="LabResult">Laboratory Test</button>
+                            </form>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <form class="form-inline" method="post">
+                                <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="MedicalRecord">MedicalRecord</button>
+                            </form>
+                        </a>
+                    </li>
+                }
+            }
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <form class="form-inline" method="post">
+                        <button type="submit" class="dropdown-item" width="16" height="16" asp-page-handler="Inbox">Inbox</button>
+                    </form>
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>@Model.Name</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li>
+                    @{
+                        if (Model.Type == "Admin")
+                        {
+                            <form class="form-inline" method="post">
+                                <button type="submit" class="dropdown-item" asp-page-handler="CreateAccount">Create Account</button>
+                            </form>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        }
+                    }
+                </li>
+                <li>
+                    <form class="form-inline" method="post">
+                        <button type="submit" class="dropdown-item" asp-page-handler="Logout">Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-8" style="background-color: #8080" style="overflow: auto">
+        @if (Model.Type == "Admin")
         {
-          <h1 class="mt-4" style=" font-size: 15px;color: #0d0d0d;font-family: Roboto, sans-serif;line-height: 1.2;">There are no pending lab records: </h1>
+            <div class="card" style="flex-direction: row; background-color: #111; box-shadow: unset">
+                <h1 class="mt-4" style=" font-size: 20px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Pending Lab Records: </h1>
+
+            </div>
+
+
+            <div style="flex-direction: row">
+
+                @if (!Model.PendingLab.Any())
+                {
+                    <h1 class="mt-4" style=" font-size: 15px;color: #0d0d0d;font-family: Roboto, sans-serif;line-height: 1.2;">There are no pending lab records: </h1>
+                }
+                else
+                {
+                    @foreach (var x in Model.PendingLab)
+                    {
+                        @if (x.CholesterolRes == null & x.FecalysisRes == null & x.UrinalysisRes == null & x.CbcRes == null)
+                        {
+                            <label> </label>
+                        }
+                        else
+                        {
+                            <div class="card mt-3" style=" cursor: pointer; border: 2px solid #0000; border-radius: 8px; padding: 20px;background-color: #ffffff;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+                                <b>
+                                    <h1 style="font-size: 25px">@x.User.Firstname @x.User.Lastname</h1>
+                                </b>
+                                <p style="font-size: 20px">
+                                    Pending Record/s:
+
+                                    @if (x.CbcEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    {
+                                        <label style="font-size: 15px;">Cbc Record</label>
+                                    }
+                                    @if (x.FecalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    {
+                                        <label style="font-size: 15px">,Fecalysis Record</label>
+                                    }
+                                    @if (x.UrinalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    {
+                                        <label style="font-size: 15px ">,Urinalysis Record</label>
+                                    }
+                                    @if (x.CholesEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    {
+                                        <label style="font-size: 15px">,Cholesterol Record</label>
+                                    }
+                                </p>
+                                <a style="background-color: transparent; color: #000000;text-decoration: none;border-bottom: 1px dotted;" class="btn-close-dark" asp-page="../LaboratoryRecord/AddLab" asp-route-id="@x.Id">Edit</a>
+                            </div>
+                        }
+                    }
+                }
+            </div>
         }
+
         else
         {
-          @foreach (var x in Model.PendingLab)
-          {
-            @if (x.CholesterolRes == null & x.FecalysisRes == null & x.UrinalysisRes == null & x.CbcRes == null)
-            {
-              <label> </label>
-            }
-            else
-            {
-              <div class="card mt-3" style=" cursor: pointer; border: 2px solid #0000; border-radius: 8px; padding: 20px;background-color: #ffffff;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
-                <b>
-                  <h1 style="font-size: 25px">@x.User.Firstname @x.User.Lastname</h1></b>
-                <p style="font-size: 20px">Pending Record/s:
-
-                  @if (x.CbcEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
-                  {
-                    <label style="font-size: 15px;">Cbc Record</label>
-                  }
-                  @if (x.FecalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
-                  {
-                    <label style="font-size: 15px">,Fecalysis Record</label>
-                  }
-                  @if (x.UrinalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
-                  {
-                    <label style="font-size: 15px ">,Urinalysis Record</label>
-                  }
-                  @if (x.CholesEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
-                  {
-                    <label style="font-size: 15px">,Cholesterol Record</label>
-                  }
-                </p>
-                <a style="background-color: transparent; color: #000000;text-decoration: none;border-bottom: 1px dotted;" class="btn-close-dark" asp-page="../LaboratoryRecord/AddLab" asp-route-id="@x.Id">Edit</a>
-              </div>
-            }
-
-          }
-        }
-      </div>
-    }
-        
-    else
-    {
-      <div class="card" style="flex-direction: row; align-items: center; background-color: #111; box-shadow: unset">
-        <h1 class="mt-4" style=" font-size: 20px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Reminder/s: </h1>
-      </div>
-      <div class="col">
-        @if (Model.userHasRequest == true)
-        {
-          <div class="card mt-3">
-            <h1 style="font-size: 20px">Request for Laboratory Records:</h1>
-            <p style="font-size: 15px">Upload your available Laboratory results as soon as possible</p>
-          </div>
-        }
-        @if(!Model.HasMedicalRecord)
-        {
-        <div class="card mt-3">
-          <h1 style="font-size: 20px">Medical Record Needed:</h1>
-          <p style="font-size: 15px">Fill out your medical form as soon as possible.</p>
-        </div>
-        
-        }
-        else if(Model.HasMedicalRecord == false && Model.userHasRequest == false)
-        {
-          <div class="card mt-3">
-            <h1 style="font-size: 20px">Nothing To See Here</h1>
-            <p style="font-size: 15px">No pending reminders.</p>
-          </div>
-        }
-      </div>
-      <div>
-            
-        <div class="card" style="height: fit-content">
-          <form method="post">
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <script>
-                                        var chartData = {
-                                            labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
-                                            datasets: [{
-                                                label: 'Chart Values',
-                                                data: @Html.Raw(Json.Serialize(Model.ChartValues)),
-                                                backgroundColor: 'rgba(0, 123, 255, 0.2)',
-                                                borderColor: 'rgba(0, 123, 255, 1)',  
-                                                borderWidth: 1,
-                                                fill: false
-                                            }]
-                                        };
-                                
-                                        window.onload = function () {
-                                            var ctx = document.getElementById('myChart').getContext('2d');
-                                            var chart = new Chart(ctx, {
-                                                type: 'line',
-                                                data: chartData,
-                                                options: {
-                                                    responsive: true,
-                                                    scales: {
-                                                        y: {
-                                                            beginAtZero: true
-                                                        }
-                                                    }
-                                                }
-                                            });
-                                        };
-                                        
-                                        
-                                    </script>
-
-
             <div class="card" style="flex-direction: row; align-items: center; background-color: #111; box-shadow: unset">
-              <h1 style="font-size: 15px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Laboratory Result Summary: </h1>
+                <h1 class="mt-4" style=" font-size: 20px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Reminder/s: </h1>
+            </div>
+            <div class="col">
+                @if (Model.userHasRequest == true)
+                {
+                    <div class="card mt-3">
+                        <h1 style="font-size: 20px">Request for Laboratory Records:</h1>
+                        <p style="font-size: 15px">Upload your available Laboratory results as soon as possible</p>
+                    </div>
+                }
+                @if (!Model.HasMedicalRecord)
+                {
+                    <div class="card mt-3">
+                        <h1 style="font-size: 20px">Medical Record Needed:</h1>
+                        <p style="font-size: 15px">Fill out your medical form as soon as possible.</p>
+                    </div>
+                }
+                else if (Model.HasMedicalRecord == false && Model.userHasRequest == false)
+                {
+                    <div class="card mt-3">
+                        <h1 style="font-size: 20px">Nothing To See Here</h1>
+                        <p style="font-size: 15px">No pending reminders.</p>
+                    </div>
+                }
             </div>
             <div>
-              <label for="start-date">Start Date</label>
-              <input type="date" id="start-date" asp-for="DateStart" value="@DateTime.Now.ToString("yyyy-MM-dd")"/>
-              <label for="end-date">End Date</label>
-              <input type="date" id="end-date" asp-for="DateEnd" value="@DateTime.Now.ToString("yyyy-MM-dd")"/>
-              <select asp-for="ChosenSummary">
-                <option value="CBC">CBC</option>
-                <option value="Fecalysis">Fecalysis</option>
-                <option value="Cholesterol">Cholesterol</option>
-              </select>
-              <button class="btn btn-dark" type="submit" asp-page-handler="Select">View</button>
-              <div style="width: 900px; height: 500px;">
-                <canvas id="myChart"></canvas>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+
+                <div class="card" style="height: fit-content">
+                    <form method="post">
+
+
+                        <script>
+                        window.addEventListener('load', function () {
+                                initializeCharts();
+                            });
+
+           
+               function initializeCharts() {
+                   var chosenSummary = document.getElementById('ChosenSummary').value;
+           
+                   // Clear existing charts
+                   clearCharts();
+           
+                   // Check the selected summary and initialize the corresponding charts
+                   switch (chosenSummary) {
+                       case 'CBC':
+                           initializeChartsCBC();
+                           break;
+                       case 'Urinalysis':
+                           initializeUrinalysisCharts();
+                           break;
+                       case 'Fecalysis':
+                           initializeFecalysisCharts();
+                           break;
+                       case 'Cholesterol':
+                           initializeCholesterolCharts();
+                           break;
+                       default:
+                           console.log('Selected summary is not recognized.');
+                           break;
+                   }
+               }
+               
+               
+    function clearCharts() {
+        // Clear the chart container
+        var chartContainer = document.getElementById('chartContainer');
+        chartContainer.innerHTML = '';
     }
-  </div>
+    
+    function appendCanvas(canvasId) {
+            var chartContainer = document.getElementById('chartContainer');
+            var canvas = document.createElement('canvas');
+            canvas.id = canvasId;
+            canvas.style.width = '450px';
+            canvas.style.margin = '10px';
+            chartContainer.appendChild(canvas);
+        }
+               function initializeChartsCBC() {
+                   
+                   appendCanvas('chartRBC');
+                           appendCanvas('chartWBC');
+                           appendCanvas('chartPlt');
+                           appendCanvas('chartHb');
+                   // Check if "CBC" is selected
+                   // Initialize RBC chart
+                   var chartDataRBC = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'RBC Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesRBC)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+           
+                   var ctxRBC = document.getElementById('chartRBC').getContext('2d');
+                   var chartRBC = new Chart(ctxRBC, {
+                       type: 'line',
+                       data: chartDataRBC,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+           
+                   // Initialize WBC chart
+                   var chartDataWBC = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'WBC Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesWBC)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+           
+                   var ctxWBC = document.getElementById('chartWBC').getContext('2d');
+                   var chartWBC = new Chart(ctxWBC, {
+                       type: 'line',
+                       data: chartDataWBC,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+                   
+                   var chartDataHb = {
+                           labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                           datasets: [{
+                               label: 'Hb Values',
+                               data: @Html.Raw(Json.Serialize(Model.ChartValuesHb)),
+                               backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                               borderColor: 'rgba(255, 99, 132, 1)',
+                               borderWidth: 1,
+                               fill: false
+                           }]
+                       };
+                   
+                       var ctxHb = document.getElementById('chartHb').getContext('2d');
+                       var chartHb = new Chart(ctxHb, {
+                           type: 'line',
+                           data: chartDataHb,
+                           options: {
+                               responsive: true,
+                               scales: {
+                                   y: {
+                                       beginAtZero: true
+                                   }
+                               }
+                           }
+                       });
+                   
+                       // Initialize Plt chart
+                       var chartDataPlt = {
+                           labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                           datasets: [{
+                               label: 'Plt Values',
+                               data: @Html.Raw(Json.Serialize(Model.ChartValuesPlt)),
+                               backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                               borderColor: 'rgba(255, 206, 86, 1)',
+                               borderWidth: 1,
+                               fill: false
+                           }]
+                       };
+                   
+                       var ctxPlt = document.getElementById('chartPlt').getContext('2d');
+                       var chartPlt = new Chart(ctxPlt, {
+                           type: 'line',
+                           data: chartDataPlt,
+                           options: {
+                               responsive: true,
+                               scales: {
+                                   y: {
+                                       beginAtZero: true
+                                   }
+                               }
+                           }
+                       });
+                       
+               }
+           
+              
+               function initializeUrinalysisCharts() {
+                   appendCanvas('chartPh');
+                           appendCanvas('chartSpecgrav');
+                           appendCanvas('chartPusCells');
+                           appendCanvas('chartRBCUrinalysis');
+                   var chartDataPh = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'pH Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesPh)),
+                           backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                           borderColor: 'rgba(255, 99, 132, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxPh = document.getElementById('chartPh').getContext('2d');
+                   var chartPh = new Chart(ctxPh, {
+                       type: 'line',
+                       data: chartDataPh,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   var chartDataSpecGrav = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'Specific Gravity Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesSpecgrav)),
+                           backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                           borderColor: 'rgba(255, 99, 132, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxSpecgrav = document.getElementById('chartSpecgrav').getContext('2d');
+                   var chartSpecgrav = new Chart(ctxSpecgrav, {
+                       type: 'line',
+                       data: chartDataSpecGrav,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   var chartDataPusCells = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'Pus Cells',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesPusCells)),
+                           backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                           borderColor: 'rgba(255, 99, 132, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxPusCells = document.getElementById('chartPusCells').getContext('2d');
+                   var chartPusCells = new Chart(ctxPusCells, {
+                       type: 'line',
+                       data: chartDataPusCells,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   var chartDataRbcCells = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'Red Blood Cells',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesRbcUrinalysis)),
+                           backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                           borderColor: 'rgba(255, 99, 132, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxRedBloodCells = document.getElementById('chartRBCUrinalysis').getContext('2d');
+                   var chartRBCUrinalysis = new Chart(ctxRedBloodCells, {
+                       type: 'line',
+                       data: chartDataRbcCells,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               }
+
+           
+               function initializeFecalysisCharts() {
+                   appendCanvas('chartWBCHPF');
+                   appendCanvas('chartRBCHPF');
+               
+                   var chartDataWBCHPF = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'WBC/HPF Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesWBCHPF)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxWBCHPF = document.getElementById('chartWBCHPF').getContext('2d');
+                   var chartWBCHPF = new Chart(ctxWBCHPF, {
+                       type: 'line',
+                       data: chartDataWBCHPF,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   // Initialize WBC chart
+                   var chartDataRBCHPF = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'RBC/HPF Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesRBCHPF)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxRBCHPF = document.getElementById('chartRBCHPF').getContext('2d');
+                   var chartRBCHPF = new Chart(ctxRBCHPF, {
+                       type: 'line',
+                       data: chartDataRBCHPF,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               }
+           
+               function initializeCholesterolCharts() {
+                   appendCanvas('chartTradCholesterol');
+                   appendCanvas('chartTradLDL');
+                   appendCanvas('chartTradDHDL');
+                   appendCanvas('chartTradTriglyceride');
+               
+                   var chartDataTradCholesterol = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'Cholesterol (Trad) Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesTradCholesterol)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxTradChol = document.getElementById('chartTradCholesterol').getContext('2d');
+                   var chartTradCholesterol = new Chart(ctxTradChol, {
+                       type: 'line',
+                       data: chartDataTradCholesterol,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   // Initialize WBC chart
+                   var chartDataTradLDL = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'LDL (Trad) Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesTradLDL)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxTradLDL = document.getElementById('chartTradLDL').getContext('2d');
+                   var chartTradLDL = new Chart(ctxTradLDL, {
+                       type: 'line',
+                       data: chartDataTradLDL,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   var chartDataTradDHDL = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'DHDL (Trad) Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesTradDHDL)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxTradDHDL = document.getElementById('chartTradDHDL').getContext('2d');
+                   var chartTradDHDL = new Chart(ctxTradDHDL, {
+                       type: 'line',
+                       data: chartDataTradDHDL,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   // Initialize WBC chart
+                   var chartDataTradTriglyceride = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'Triglyceride (Trad) Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesTradTriglyceride)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxTradTriglyecride = document.getElementById('chartTradTriglyceride').getContext('2d');
+                   var chartTradTriglyceride = new Chart(ctxTradTriglyecride, {
+                       type: 'line',
+                       data: chartDataTradTriglyceride,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               }
+               
+           </script>
+
+                        <div class="card" style="flex-direction: row; align-items: center; background-color: #111; box-shadow: unset">
+                            <h1 style="font-size: 15px;color: #ffffff;font-family: Roboto, sans-serif;line-height: 1.2;">Laboratory Result Summary: </h1>
+                        </div>
+                        <div>
+                            <label for="start-date">Start Date</label>
+                            <input type="date" id="start-date" asp-for="DateStart" value="@DateTime.Now.ToString("yyyy-MM-dd")"/>
+                            <label for="end-date">End Date</label>
+                            <input type="date" id="end-date" asp-for="DateEnd" value="@DateTime.Now.ToString("yyyy-MM-dd")"/>
+                            <select asp-for="ChosenSummary" id="ChosenSummary">
+                                <option value="CBC">CBC</option>
+                                <option value="Urinalysis">Urinalysis</option>
+                                <option value="Fecalysis">Fecalysis</option>
+                                <option value="Cholesterol">Cholesterol</option>
+                            </select>
+                            <button id='viewButton' class="btn btn-dark" type="submit" asp-page-handler="Select">View</button>
+                            <div id="chartContainer" style="width: 900px; display: flex; flex-wrap: wrap;">
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
 </div>
 </body>
 </html>
-
-
-

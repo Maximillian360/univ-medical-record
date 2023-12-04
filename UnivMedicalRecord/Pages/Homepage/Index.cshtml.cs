@@ -17,6 +17,42 @@ public class IndexModel : PageModel
     public string[] ChartLabels { get; set; }
     [BindProperty]
     public decimal[] ChartValues { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesRBC { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesWBC { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesHb { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesPlt { get; set; }
+    
+    
+    [BindProperty]
+    public decimal[] ChartValuesPh { get; set; }
+
+    [BindProperty]
+    public decimal[] ChartValuesSpecgrav { get; set; }
+
+    [BindProperty]
+    public decimal[] ChartValuesPusCells { get; set; }
+
+    [BindProperty]
+    public decimal[] ChartValuesRbcUrinalysis { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesWBCHPF { get; set; }
+
+    [BindProperty]
+    public decimal[] ChartValuesRBCHPF { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesTradCholesterol { get; set; }
+
+    [BindProperty]
+    public decimal[] ChartValuesTradLDL { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesTradDHDL { get; set; }
+
+    [BindProperty]
+    public decimal[] ChartValuesTradTriglyceride { get; set; }
     
     public IQueryable<User> requestUser { get; set; }
     public bool? userHasRequest { get; set; }
@@ -104,103 +140,250 @@ public class IndexModel : PageModel
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
         var bloodcount = _context.GetBloodCount().Where(x => x.labResult.User == user && x.DateRetrieved >= DateStart && x.DateRetrieved <= DateEnd);
-        var fecalysis = _context.GetFecalysis().Where(x => x.labResult.User == user && x.DateRetrieved == DateStart && x.DateRetrieved <= DateEnd);
-        var Cholest = _context.GetCholesterol().Where(x => x.labResult.User == user && x.DateRetrieved == DateStart && x.DateRetrieved <= DateEnd);
-        var CholestSi = _context.GetCholesterolSis().Where(x => x.labResult.User == user && x.DateRetrieved == DateStart && x.DateRetrieved <= DateEnd);
+        var fecalysis = _context.GetFecalysis().Where(x => x.labResult.User == user && x.DateRetrieved >= DateStart && x.DateRetrieved <= DateEnd);
+        var urinalysis = _context.GetUrinalysis().Where(x => x.labResult.User == user && x.DateRetrieved >= DateStart && x.DateRetrieved <= DateEnd);
+        var Cholest = _context.GetCholesterol().Where(x => x.labResult.User == user && x.DateRetrieved >= DateStart && x.DateRetrieved <= DateEnd);
+        var CholestSi = _context.GetCholesterolSis().Where(x => x.labResult.User == user && x.DateRetrieved >= DateStart && x.DateRetrieved <= DateEnd);
+        
         if (ChosenSummary == "CBC")
         {
-            List<string> chartLabels = DateRangeList; // Assuming DateRangeList is a list of months
+            List<string> chartLabels = DateRangeList; 
 
-            // Initialize a dictionary to store values for each month
-            Dictionary<string, decimal> chartValuesByMonth = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesRBC = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesWBC = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesHb = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesPlt = new Dictionary<string, decimal>();
             Dictionary<string, int> recordCountsByMonth = new Dictionary<string, int>();
 
             // Initialize values for all months in DateRangeList to 0
             foreach (var month in chartLabels)
             {
-                chartValuesByMonth[month] = 0;
+                chartValuesRBC[month] = 0;
+                chartValuesWBC[month] = 0;
+                chartValuesHb[month] = 0;
+                chartValuesPlt[month] = 0;
                 recordCountsByMonth[month] = 0;
             }
 
             // Iterate through bloodcount and update values in the dictionary
             foreach (var x in bloodcount)
             {
+                
                 // Assuming DateRetrieved is a DateTime property in your model
                 string dateLabel = x.DateRetrieved.ToString("MMMM yyyy");
 
                 // Add the record value to the corresponding month
-                chartValuesByMonth[dateLabel] += (decimal)x.Rbc;
+                chartValuesRBC[dateLabel] += (decimal)x.Rbc;
+                chartValuesWBC[dateLabel] += (decimal)x.Wbc;
+                chartValuesHb[dateLabel] += (decimal)x.Hb;
+                chartValuesPlt[dateLabel] += (decimal)x.Plt;
                 recordCountsByMonth[dateLabel]++;
             }
             
-            for (int i = 0; i < chartLabels.Count; i++)
+            foreach (var month in chartLabels)
             {
-                string month = chartLabels[i];
+                Console.WriteLine($"{month}: RBC={chartValuesRBC[month]}, WBC={chartValuesWBC[month]}, Hb={chartValuesHb[month]}, Plt={chartValuesPlt[month]}, Count={recordCountsByMonth[month]}");
                 if (recordCountsByMonth[month] > 0)
                 {
-                    chartValuesByMonth[month] /= recordCountsByMonth[month];
+                    chartValuesRBC[month] /= recordCountsByMonth[month];
+                    chartValuesWBC[month] /= recordCountsByMonth[month];
+                    chartValuesHb[month] /= recordCountsByMonth[month];
+                    chartValuesPlt[month] /= recordCountsByMonth[month];
                 }
             }
+            
+            ChartValuesRBC = chartValuesRBC.Values.ToArray();
+            ChartValuesWBC = chartValuesWBC.Values.ToArray();
+            ChartValuesHb = chartValuesHb.Values.ToArray();
+            ChartValuesPlt = chartValuesPlt.Values.ToArray();
 
-            // Convert dictionary values to an array
-            ChartValues = chartValuesByMonth.Values.ToArray();
+            ChartLabels = chartLabels.ToArray();
+            
+       
+        }
+        
+        else if (ChosenSummary == "Urinalysis")
+        { 
+            List<string> chartLabels = DateRangeList; // Assuming DateRangeList is a list of months
+
+        // Initialize dictionaries to store values for each parameter in Urinalysis
+        Dictionary<string, decimal> chartValuesPh = new Dictionary<string, decimal>();
+        Dictionary<string, decimal> chartValuesSpecgrav = new Dictionary<string, decimal>();
+        Dictionary<string, decimal> chartValuesPusCells = new Dictionary<string, decimal>();
+        Dictionary<string, decimal> chartValuesRbcUrinalysis = new Dictionary<string, decimal>();
+        Dictionary<string, int> recordCountsByMonth = new Dictionary<string, int>();
+
+        // Initialize values for all months in DateRangeList to 0
+        foreach (var month in chartLabels)
+        {
+            chartValuesPh[month] = 0;
+            chartValuesSpecgrav[month] = 0;
+            chartValuesPusCells[month] = 0;
+            chartValuesRbcUrinalysis[month] = 0;
+            recordCountsByMonth[month] = 0;
+        }
+
+        // Iterate through urinalysis and update values in the dictionary
+        foreach (var x in urinalysis)
+        {
+            string dateLabel = x.DateRetrieved.ToString("MMMM yyyy");
+
+            // Add the record value to the corresponding month
+            chartValuesPh[dateLabel] += (decimal)x.Ph;
+            chartValuesSpecgrav[dateLabel] += (decimal)x.Specgrav;
+            chartValuesPusCells[dateLabel] += Convert.ToDecimal(x.PusCells);
+            chartValuesRbcUrinalysis[dateLabel] += Convert.ToDecimal(x.Rbc);
+            
+            // Add similar lines for other parameters (PusCells, RbcUrinalysis)
+
+            recordCountsByMonth[dateLabel]++;
+        }
+
+        foreach (var month in chartLabels)
+        {
+            Console.WriteLine($"{month}: Ph={chartValuesPh[month]}, Specgrav={chartValuesSpecgrav[month]}, PusCells={chartValuesPusCells[month]}, RbcUrinalysis={chartValuesRbcUrinalysis[month]}, Count={recordCountsByMonth[month]}");
+
+            if (recordCountsByMonth[month] > 0)
+            {
+                chartValuesPh[month] /= recordCountsByMonth[month];
+                chartValuesSpecgrav[month] /= recordCountsByMonth[month];
+                chartValuesPusCells[month] /= recordCountsByMonth[month];
+                chartValuesRbcUrinalysis[month] /= recordCountsByMonth[month];
+                // Divide other parameters by count here
+            }
+            else
+            {
+                Console.WriteLine($"No records for {month}");
+            }
+        }
+
+        // Assign the values to the corresponding properties
+        ChartValuesPh = chartValuesPh.Values.ToArray();
+        ChartValuesSpecgrav = chartValuesSpecgrav.Values.ToArray();
+        ChartValuesPusCells = chartValuesPusCells.Values.ToArray();
+        ChartValuesRbcUrinalysis = chartValuesRbcUrinalysis.Values.ToArray();
+
+        ChartLabels = chartLabels.ToArray();
+            
+        }
+        
+        
+        else if (ChosenSummary == "Fecalysis")
+        {
+            List<string> chartLabels = DateRangeList; 
+            Dictionary<string, decimal> chartValuesWBCHPF = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesRBCHPF = new Dictionary<string, decimal>();
+            Dictionary<string, int> recordCountsByMonth = new Dictionary<string, int>();
+            
+            foreach (var month in chartLabels)
+            {
+                chartValuesWBCHPF[month] = 0;
+                chartValuesRBCHPF[month] = 0;
+                recordCountsByMonth[month] = 0;
+            }
+            
+            foreach (var x in fecalysis)
+            {
+                string dateLabel = x.DateRetrieved.ToString("MMMM yyyy");
+
+                // Add the record value to the corresponding month
+                chartValuesWBCHPF[dateLabel] += (decimal)x.StoolPusCells;
+                chartValuesRBCHPF[dateLabel] += (decimal)x.StoolRbc;
+                
+                recordCountsByMonth[dateLabel]++;
+            }
+            
+            foreach (var month in chartLabels)
+            {
+                
+                if (recordCountsByMonth[month] > 0)
+                {
+                    chartValuesWBCHPF[month] /= recordCountsByMonth[month];
+                    chartValuesRBCHPF[month] /= recordCountsByMonth[month];
+                    // Divide other parameters by count here
+                }
+                else
+                {
+                    Console.WriteLine($"No records for {month}");
+                }
+            }
+            
+            ChartValuesWBCHPF = chartValuesWBCHPF.Values.ToArray();
+            ChartValuesRBCHPF = chartValuesRBCHPF.Values.ToArray();
+            
+
             ChartLabels = chartLabels.ToArray();
             
             
-            
-            // List<string> chartLabels = new List<string>();
-            // List<decimal> chartValues = new List<decimal>();
-            // foreach (var x in bloodcount)
-            // {
-            //     string dateLabel = x.DateRetrieved.ToString("MMMM yyyy");
-            //     if (!chartLabels.Contains(dateLabel))
-            //     {
-            //         chartLabels.Add(dateLabel);
-            //         chartValues.Add((decimal)x.Rbc);
-            //     }
-            //     else
-            //     {
-            //         int index = chartLabels.IndexOf(dateLabel);
-            //         chartValues[index] += (decimal)x.Rbc;
-            //     }
-            // }
-            //
-            // ChartLabels = chartLabels.ToArray();
-            // ChartValues = chartValues.ToArray();
-            
-            
-            
-            // foreach (var x in bloodcount)
-            // {
-            //     ChartLabels = DateRangeList.ToArray();
-            //     ChartValues = new[] { (decimal)x.Rbc};
-            // }
         }
-        else if (ChosenSummary == "Fecalysis")
-        {
-            foreach (var x in fecalysis)
-            {
-                ChartLabels = new[] { "Stool Pus Cells" };
-                ChartValues = new[] {(decimal)x.StoolPusCells,};
-            }
-        }
+        
         else if (ChosenSummary == "Cholesterol")
         {
+            List<string> chartLabels = DateRangeList; 
+            Dictionary<string, decimal> chartValuesTradCholesterol = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesTradLDL = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesTradDHDL = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesTradTriglyceride = new Dictionary<string, decimal>();
+            Dictionary<string, int> recordCountsByMonth = new Dictionary<string, int>();
+            
+            foreach (var month in chartLabels)
+            {
+                chartValuesTradCholesterol[month] = 0;
+                chartValuesTradLDL[month] = 0;
+                chartValuesTradDHDL[month] = 0;
+                chartValuesTradTriglyceride[month] = 0;
+                recordCountsByMonth[month] = 0;
+            }
+            
             foreach (var x in Cholest)
             {
-                ChartLabels = new[] { "Cholesterol", "High-density lipoprotein", "Low-density lipoprotein","Triglycerides"  };
-                ChartValues = new[] {(decimal)x.TradCholesterol,(decimal)x.TradLdl,(decimal)x.TradDhdl,(decimal)x.TradTriglyceride};
-            }
-        }
-        else if(ChosenSummary == "Cholesterol SI")
+                string dateLabel = x.DateRetrieved.ToString("MMMM yyyy");
 
-        {
-            foreach (var x in CholestSi)
-            {
-                ChartLabels = new[] { "Cholesterol", "High-density lipoprotein", "Low-density lipoprotein", "Triglycerides" };
-                ChartValues = new[] {(decimal)x.SiCholesterol,(decimal)x.SiDhdl,(decimal)x.SiLdl,(decimal)x.SiTriglyceride};
+                // Add the record value to the corresponding month
+                chartValuesTradCholesterol[dateLabel] += (decimal)x.TradCholesterol;
+                chartValuesTradLDL[dateLabel] += (decimal)x.TradLdl;
+                chartValuesTradDHDL[dateLabel] += (decimal)x.TradDhdl;
+                chartValuesTradTriglyceride[dateLabel] += (decimal)x.TradTriglyceride;
+                
+                recordCountsByMonth[dateLabel]++;
             }
+            
+            foreach (var month in chartLabels)
+            {
+                
+                if (recordCountsByMonth[month] > 0)
+                {
+                    chartValuesTradCholesterol[month] /= recordCountsByMonth[month];
+                    chartValuesTradLDL[month] /= recordCountsByMonth[month];
+                    chartValuesTradDHDL[month] /= recordCountsByMonth[month];
+                    chartValuesTradTriglyceride[month] /= recordCountsByMonth[month];
+                    // Divide other parameters by count here
+                }
+                else
+                {
+                    Console.WriteLine($"No records for {month}");
+                }
+            }
+            
+            ChartValuesTradCholesterol = chartValuesTradCholesterol.Values.ToArray();
+            ChartValuesTradLDL = chartValuesTradLDL.Values.ToArray();
+            ChartValuesTradDHDL = chartValuesTradDHDL.Values.ToArray();
+            ChartValuesTradTriglyceride = chartValuesTradTriglyceride.Values.ToArray();
+
+            ChartLabels = chartLabels.ToArray();
+            
         }
+        
+        
+        // else if(ChosenSummary == "Cholesterol SI")
+        //
+        // {
+        //     foreach (var x in CholestSi)
+        //     {
+        //         ChartLabels = new[] { "Cholesterol", "High-density lipoprotein", "Low-density lipoprotein", "Triglycerides" };
+        //         ChartValues = new[] {(decimal)x.SiCholesterol,(decimal)x.SiDhdl,(decimal)x.SiLdl,(decimal)x.SiTriglyceride};
+        //     }
+        // }
 
        
         switch (user)
