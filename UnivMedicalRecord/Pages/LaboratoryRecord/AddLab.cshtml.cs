@@ -23,6 +23,8 @@ public class AddLab : PageModel
     [BindProperty]
     public DateTime LabDateCholesterol { get; set; }
     [BindProperty]
+    public DateTime LabDateCholesterolSi { get; set; }
+    [BindProperty]
     public DateTime LabDateFecalysis { get; set; }
     
     [BindProperty]
@@ -138,6 +140,11 @@ public class AddLab : PageModel
     public string Remarks { get; set; }
     [BindProperty]
     public string OtherRemarks { get; set; }
+    
+    [BindProperty]
+    public string RemarksSi { get; set; }
+    [BindProperty]
+    public string OtherRemarksSi { get; set; }
     [BindProperty]
     public int SiFbs { get; set; }
     [BindProperty]
@@ -229,6 +236,8 @@ public class AddLab : PageModel
    
    [BindProperty]
    public string? CholesPath { get; set; }
+   [BindProperty]
+   public string? CholesSiPath { get; set; }
     
     public IActionResult OnGet(int id)
     {
@@ -237,6 +246,7 @@ public class AddLab : PageModel
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
         CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        CholesSiPath = Path.Combine("\\images", labresult.CholesterolSiRes);
 
         var labid = _context.LabResult(id);
         CurrentId = id;
@@ -267,6 +277,7 @@ public class AddLab : PageModel
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
         CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        CholesSiPath = Path.Combine("\\images", labresult.CholesterolSiRes);
 
         var userid = _context.GetUser(Id);
         CurrentId = Id;
@@ -281,6 +292,7 @@ public class AddLab : PageModel
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
         CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        CholesSiPath = Path.Combine("\\images", labresult.CholesterolSiRes);
         
         _context.Attach(Cbc).State = EntityState.Modified;
         _context.SaveChanges();
@@ -350,6 +362,7 @@ public class AddLab : PageModel
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
         CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        CholesSiPath = Path.Combine("\\images", labresult.CholesterolSiRes);
         
         labresult.UrinalEncoded = true;
         _context.SaveChanges();
@@ -383,6 +396,7 @@ public class AddLab : PageModel
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
         CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        CholesSiPath = Path.Combine("\\images", labresult.CholesterolSiRes);
         
         labresult.FecalEncoded = true;
         _context.SaveChanges();
@@ -410,10 +424,33 @@ public class AddLab : PageModel
             OtherRemarks = OtherRemarks,
         };
 
+        
+        _context.AddCholesterol(cholesterol);
+        _context.SaveChanges();
+
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == Id);
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
+        FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
+        CbcPath = Path.Combine("\\images", labresult.CbcRes);
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        CholesSiPath = Path.Combine("\\images", labresult.CholesterolSiRes);
+        
+        labresult.CholesEncoded = true;
+        _context.SaveChanges();
+        
+        CurrentId = Id;
+        return Page();
+    }
+    
+    
+    public IActionResult OnPostCholesterolSi()
+    {
+        User= _context.GetUser(Id);
+
         var cholesterolsi = new CholesterolSI()
         {
             labResult = _context.LabResult(Id),
-            DateRetrieved = LabDateCholesterol,
+            DateRetrieved = LabDateCholesterolSi,
             SiFbs = SiFbs,
             SiBun = SiBun,
             SiCreatinine = SiCreatinine,
@@ -429,10 +466,12 @@ public class AddLab : PageModel
             Sodium = Sodium,
             Potassium = Potassium,
             Chloride = Chloride,
-            IonizedCalcium = IonizedCalcium
+            IonizedCalcium = IonizedCalcium,
+            Remarks = RemarksSi,
+            OtherRemarks = OtherRemarksSi
         };
         
-        _context.AddCholesterol(cholesterolsi,cholesterol);
+        _context.AddCholesterolSi(cholesterolsi);
         _context.SaveChanges();
 
         var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == Id);
@@ -440,8 +479,9 @@ public class AddLab : PageModel
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
         CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        CholesSiPath = Path.Combine("\\images", labresult.CholesterolSiRes);
         
-        labresult.CholesEncoded = true;
+        labresult.CholesSiEncoded = true;
         _context.SaveChanges();
         
         CurrentId = Id;
@@ -490,6 +530,7 @@ public class AddLab : PageModel
         FecalPath = Path.Combine("\\images", labresult.FecalysisRes);
         CbcPath = Path.Combine("\\images", labresult.CbcRes);
         CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
+        CholesSiPath = Path.Combine("\\images", labresult.CholesterolSiRes);
         
         labresult.CbcEncoded = true;
         _context.SaveChanges();

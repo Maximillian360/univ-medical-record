@@ -70,7 +70,7 @@ public class IndexModel : PageModel
         var user = HttpContext.Session.GetLoggedInUser(_context);
         var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
         var lablist = _context.LabResults;
-        var pendinglab = _context.GetLabResult().Where(x=>x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null && x.CbcEncoded == false || x.CholesEncoded == false || x.UrinalEncoded == false || x.CbcEncoded == false);
+        var pendinglab = _context.GetLabResult().Where(x=>x.CholesterolRes != null &x.CholesterolSiRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null && x.CbcEncoded == false || x.CholesSiEncoded == false || x.CholesEncoded == false || x.UrinalEncoded == false || x.CbcEncoded == false);
 
         var labresult = _context.GetLabResult().Where(X => X.User == user);
 
@@ -465,7 +465,7 @@ public class IndexModel : PageModel
          requestUser = requestUserList;
         var userList = _context.Users.Where(x=>x.Type == UserType.Regular);
         var lablist = _context.LabResults;
-        var pendinglab = _context.GetLabResult().Where(x=>x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null && x.CbcEncoded == false || x.CholesEncoded == false || x.UrinalEncoded == false || x.CbcEncoded == false);
+        var pendinglab = _context.GetLabResult().Where(x=>x.CholesterolRes != null & x.CholesterolSiRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null && x.CbcEncoded == false || x.CholesSiEncoded == false || x.CholesEncoded == false || x.UrinalEncoded == false || x.CbcEncoded == false);
 
         var labresult = _context.GetLabResult().Where(X => X.User == user);
         

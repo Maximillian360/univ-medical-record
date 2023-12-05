@@ -368,7 +368,7 @@
   					<label for="tab3"><span class="material-icons"></span>Cholesterol</label>
                 <div class="tab">
                     <div class="card-container">
-                         @if (Model.HasCholesterol() || Model.HasCholesterolSi())
+                         @if (Model.HasCholesterol())
                          {
                              <p>This user already has a record</p>
                          }
@@ -397,148 +397,61 @@
                                  <tr>
                                      <th scope="col"></th>
                                      <th scope="col">Traditional</th>
-                                     <th scope="col">S.I.</th>
                                      <th scope="col">Traditional</th>
-                                     <th scope="col">S.I.</th>
                                  </tr>
                                  </thead>
                                  <tbody>
                                  <tr>
                                      <td>Cholesterol*</td>
                                      <td><input asp-for="TradCholesterol" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td><input asp-for="SiCholesterol" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td> &lt;200 mg/dl
-                                         &lt; 5.2 mmol/L</td>
+                                     <td> &lt; 200 mg/dl</td>
                                  </tr>
                                  
                                  <tr>
                                      <td>LDL*</td>
                                      <td><input asp-for="TradLdl" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td><input asp-for="SiLdl" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td>110 - 130 mg/dl
-                                         2.8 - 3.4 mmol/L</td>
+                                     <td> 110 - 130 mg/dl</td>
                                  </tr>   
                                  
                                  <tr>
                                      <td>dHDL*</td>
                                      <td><input asp-for="TradDhdl" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td><input asp-for="SiDhdl" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td>&gt; 40 mg/dl
-                                         &gt; 1.0 mmol/L</td>
+                                     <td> > 40 mg/dl</td>
                                  </tr>                                   
                                  
                                  <tr>
                                      <td>Triglyceride*</td>
                                      <td><input asp-for="TradTriglyceride" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td><input asp-for="SiTriglyceride" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td>&lt; 150 mg/dl
-                                         &lt; 1.7 mmol/L</td>
+                                     <td> &lt; 150 mg/dl</td>
                                  </tr>
 
                                  <tr>
                                      <td>FBS</td>
                                      <td><input asp-for="TradFbs" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td><input asp-for="SiFbs" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td>74 - 106 mg/dl
-                                         4.1 - 5.9 mmol/L</td>
+                                     <td> 74 - 106 mg/dl</td>
                                  </tr>
 
                                  <tr>
                                      <td>BUN</td>
                                      <td><input asp-for="TradBun" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td><input asp-for="SiBun" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td>M: 9 - 20 mg/dl
-                                         F: 3.2 - 7.1 mg/dl</td>
-                                     <td>M: 7 - 17 mmol/L
-                                         F: 2.5 - 6.1 mmol/L</td>
+                                     <td> M: 9 - 20 mg/dl</td>
+                                     <td> F: 7 - 17 mg/dl</td>
                                  </tr>
 
                                  <tr>
                                      <td>Creatinine</td>
                                      <td><input asp-for="TradCreatinine" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td><input asp-for="SiCreatinine" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td>M: 0.8 - 1.5 mg/dl
-                                         F: 0.7 - 1.2 mg/dl</td>
-                                     <td>M: 71 - 133 ummol/L
-                                         F: 62 - 106 ummol/L</td>
+                                     <td> M: 0.8 - 1.5 mg/dL</td>
+                                     <td> F: 0.7 - 1.2 mg/dl</td>
                                  </tr>
 
                                  <tr>
                                      <td>BUA</td>
                                      <td><input asp-for="TradBua" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td><input asp-for="SiBua" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td>M: 3.5 - 8.5 mg/dl
-                                         F: 2.5 - 6.2 mg/dl</td>
-                                     <td>M: 208 - 506 ummol/L
-                                         F: 149 - 369 ummol/L</td>
+                                     <td> M: 3.5 - 8.5 mg/dl</td>
+                                     <td> F: 2.5 - 6.2 mg/dl</td>
                                  </tr>
-
-                                 <tr>
-                                     <td>SGOT</td>
-                                     <td></td>
-                                     <td><input asp-for="Sgot" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td></td>
-                                     <td>M: 17 - 59 u/L
-                                         F: 14 - 36 u/L</td>
-                                 </tr>
-
-                                 <tr>
-                                     <td>SGPT</td>
-                                     <td></td>
-                                     <td><input asp-for="Sgpt" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td></td>
-                                     <td>M: 21 - 72 u/L
-                                         F: 9 - 52 u/L</td>
-                                 </tr>
-
-                                 <tr>
-                                     <td>Amylase</td>
-                                     <td></td>
-                                     <td><input asp-for="Amylase" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td></td>
-                                     <td>330 - 110 mmol/L</td>
-                                 </tr>
-
-                                 <tr>
-                                     <td>CKMB</td>
-                                     <td></td>
-                                     <td><input asp-for="Ckmb" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td></td>
-                                     <td>up to 16 u/L</td>
-                                 </tr>
-
-                                 <tr>
-                                     <td>Sodium</td>
-                                     <td></td>
-                                     <td><input asp-for="Sodium" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td></td>
-                                     <td>135 - 148 mmol/L</td>
-                                 </tr>
-
-                                 <tr>
-                                     <td>Potassium</td>
-                                     <td></td>
-                                     <td><input asp-for="Potassium" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td></td>
-                                     <td>3.5 - 5.3 mmol/L</td>
-                                 </tr>
-
-                                 <tr>
-                                     <td>Chloride</td>
-                                     <td></td>
-                                     <td><input asp-for="Chloride" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td></td>
-                                     <td>98 - 107 mmol/L</td>
-                                 </tr>
-
-                                 <tr>
-                                     <td>Ionized Calcium</td>
-                                     <td></td>
-                                     <td><input asp-for="IonizedCalcium" type="number" step=".1" min="0" class="form-control"></td>
-                                     <td></td>
-                                     <td>1.13 - 1.31 mmol/L</td>
-                                 </tr>
-
+                                 
                                  <tr>
                                      <td>Remarks</td>
                                      <td colspan="4"><input asp-for="Remarks" type="text" class="form-control"></td>
@@ -557,8 +470,181 @@
                     </div>
                 </div>
                 
-                    <input type="radio" name="tabs" id="tab4" />
-					  <label for="tab4"><span class="material-icons"></span>Urinalysis</label>
+                
+                <input type="radio" name="tabs" id="tab4" />
+                  					<label for="tab4"><span class="material-icons"></span>CholesterolSi</label>
+                                <div class="tab">
+                                    <div class="card-container">
+                                         @if (Model.HasCholesterolSi())
+                                         {
+                                             <p>This user already has a record</p>
+                                         }
+                                         else
+                                         {
+                                             <div class="form-control">
+                                             <form class="form-inline" method="post">
+                                                 <div class="modal fade CholesterolSi" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                     <div class="modal-dialog modal-sm">
+                                                         <div class="modal-content">
+                                                             <img class="m-lg-4" src="@Model.CholesSiPath" alt="CholesterolSi" style="max-width: 10.25in; max-height: 5.25in;">
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 Input the Date of the Lab Test: <input asp-for="LabDateCholesterolSi" type="date" id="LabDate" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+                                                 <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".CholesterolSi">Show Laboratory Test</button>
+                                                 <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="CholesterolSi" type="submit">Submit</button>
+                                                 <input type="hidden" asp-for="Id" value="@Model.CurrentId"/>
+                                             <table class="table" style="text-align: center">
+                                                 <thead class="thead-dark">
+                                                 <tr>
+                                                     <th scope="col">ANALYTE</th>
+                                                     <th scope="col" colspan="2">RESULT</th>
+                                                     <th scope="col" colspan="2">NORMAL RANGE</th>
+                                                 </tr>
+                                                 <tr>
+                                                     <th scope="col"></th>
+                                                     <th scope="col">S.I.</th>
+                                                     <th scope="col">S.I.</th>
+                                                 </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                 <tr>
+                                                     <td>Cholesterol*</td>
+                                                     <td><input asp-for="SiCholesterol" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td> &lt; 5.2 mmol/L</td>
+                                                 </tr>
+                                                 
+                                                 <tr>
+                                                     <td>LDL*</td>
+                                                     <td><input asp-for="SiLdl" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td> &lt; 2.8 - 3.4 mmol/L</td>
+                                                 </tr>   
+                                                 
+                                                 <tr>
+                                                     <td>dHDL*</td>
+                                                     <td><input asp-for="SiDhdl" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td> &lt; 1.0 mmol/L</td>
+                                                 </tr>                                   
+                                                 
+                                                 <tr>
+                                                     <td>Triglyceride*</td>
+                                                     <td><input asp-for="SiTriglyceride" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td> &lt; 1.7 mmol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>FBS</td>
+                                                     <td><input asp-for="SiFbs" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td> 4.1 - 5.9 mmol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>BUN</td>
+                                                     <td><input asp-for="SiBun" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td> F: 2.5 - 6.1 mmol/L</td>
+                                                     <td> M: 3.2 - 7.1 mmol/L </td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>Creatinine</td>
+                                                     <td><input asp-for="SiCreatinine" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td> M: 71 - 133 ummol/L</td>
+                                                     <td> F: 62 - 106 ummol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>BUA</td>
+                                                     <td><input asp-for="SiBua" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td> M: 208 - 506 ummol/L</td>
+                                                     <td> F: 149 - 369 ummol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>SGOT</td>
+                                                     <td></td>
+                                                     <td><input asp-for="Sgot" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td></td>
+                                                     <td>M: 17 - 59 u/L
+                                                         F: 14 - 36 u/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>SGPT</td>
+                                                     <td></td>
+                                                     <td><input asp-for="Sgpt" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td></td>
+                                                     <td>M: 21 - 72 u/L
+                                                         F: 9 - 52 u/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>Amylase</td>
+                                                     <td></td>
+                                                     <td><input asp-for="Amylase" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td></td>
+                                                     <td>330 - 110 mmol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>CKMB</td>
+                                                     <td></td>
+                                                     <td><input asp-for="Ckmb" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td></td>
+                                                     <td>up to 16 u/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>Sodium</td>
+                                                     <td></td>
+                                                     <td><input asp-for="Sodium" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td></td>
+                                                     <td>135 - 148 mmol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>Potassium</td>
+                                                     <td></td>
+                                                     <td><input asp-for="Potassium" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td></td>
+                                                     <td>3.5 - 5.3 mmol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>Chloride</td>
+                                                     <td></td>
+                                                     <td><input asp-for="Chloride" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td></td>
+                                                     <td>98 - 107 mmol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>Ionized Calcium</td>
+                                                     <td></td>
+                                                     <td><input asp-for="IonizedCalcium" type="number" step=".1" min="0" class="form-control"></td>
+                                                     <td></td>
+                                                     <td>1.13 - 1.31 mmol/L</td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>Remarks</td>
+                                                     <td colspan="4"><input asp-for="Remarks" type="text" class="form-control"></td>
+                                                 </tr>
+                
+                                                 <tr>
+                                                     <td>Other Remarks</td>
+                                                     <td colspan="4"><input asp-for="OtherRemarks" type="text" class="form-control"></td>
+                                                 </tr>
+                
+                                                 </tbody>
+                                             </table>
+                                             </form>
+                                             </div>
+                                         }
+                                    </div>
+                                </div>
+                
+                    <input type="radio" name="tabs" id="tab5" />
+					  <label for="tab5"><span class="material-icons"></span>Urinalysis</label>
 					  <div class="tab">
 						  @if (Model.HasUrinalysis())
 						  {

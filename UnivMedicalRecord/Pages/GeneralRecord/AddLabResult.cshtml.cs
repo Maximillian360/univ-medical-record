@@ -29,6 +29,8 @@ public class AddLabResult : PageModel
     
     [BindProperty]
     public IFormFile? Cholesterol { get; set; }
+    [BindProperty]
+    public IFormFile? CholesterolSi { get; set; }
     
     [BindProperty]
     public string SignaturePath { get; set; }
@@ -83,6 +85,13 @@ public class AddLabResult : PageModel
         var Cholstream = new FileStream(CholfilePath, FileMode.Create);
         Cholesterol?.CopyToAsync(Cholstream);
         
+        var CholSiextension = CholesterolSi?.FileName.Split(".").Last() ?? "jpg";
+        var CholSifileName = $"{Guid.NewGuid().ToString()}.{CholSiextension}";
+        var CholSifilePath = Path.Combine(imageDirectory, CholSifileName);
+
+        var CholSistream = new FileStream(CholSifilePath, FileMode.Create);
+        CholesterolSi?.CopyToAsync(CholSistream);
+        
        
 
         var labresults = new LabResult()
@@ -91,7 +100,8 @@ public class AddLabResult : PageModel
             UrinalysisRes = UrinalysisfileName,
             CbcRes = CbcfileName,
             FecalysisRes = FecalfileName,
-            CholesterolRes = CholfileName
+            CholesterolRes = CholfileName,
+            CholesterolSiRes = CholSifileName
         };
         _context.SaveChanges();
         user.IsRequested = false;

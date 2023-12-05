@@ -169,10 +169,15 @@ public class DatabaseContext: DbContext
         return changesSaved > 0;
     }
     
-    public bool AddCholesterol(CholesterolSI cholesterolSi,
-        Cholesterol cholesterol)
+    public bool AddCholesterolSi(CholesterolSI cholesterolSi)
     {
         CholesterolSis.Add(cholesterolSi);
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
+    
+    public bool AddCholesterol(Cholesterol cholesterol)
+    {
         Cholesterols.Add(cholesterol);
         var changesSaved = SaveChanges();
         return changesSaved > 0;

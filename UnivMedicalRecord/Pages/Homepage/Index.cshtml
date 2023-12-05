@@ -196,7 +196,7 @@
                 {
                     @foreach (var x in Model.PendingLab)
                     {
-                        @if (x.CholesterolRes == null & x.FecalysisRes == null & x.UrinalysisRes == null & x.CbcRes == null)
+                        @if (x.CholesterolSiRes == null & x.CholesterolRes == null & x.FecalysisRes == null & x.UrinalysisRes == null & x.CbcRes == null)
                         {
                             <label> </label>
                         }
@@ -209,21 +209,25 @@
                                 <p style="font-size: 20px">
                                     Pending Record/s:
 
-                                    @if (x.CbcEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    @if (x.CbcEncoded == false & x.CholesterolSiRes != null & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
                                     {
-                                        <label style="font-size: 15px;">Cbc Record</label>
+                                        <label style="font-size: 15px;"> Cbc Record</label>
                                     }
-                                    @if (x.FecalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    @if (x.FecalEncoded == false & x.CholesterolSiRes != null & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
                                     {
-                                        <label style="font-size: 15px">,Fecalysis Record</label>
+                                        <label style="font-size: 15px"> ,Fecalysis Record</label>
                                     }
-                                    @if (x.UrinalEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    @if (x.UrinalEncoded == false & x.CholesterolSiRes != null & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
                                     {
-                                        <label style="font-size: 15px ">,Urinalysis Record</label>
+                                        <label style="font-size: 15px "> ,Urinalysis Record</label>
                                     }
-                                    @if (x.CholesEncoded == false & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    @if (x.CholesEncoded == false & x.CholesterolSiRes != null & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
                                     {
-                                        <label style="font-size: 15px">,Cholesterol Record</label>
+                                        <label style="font-size: 15px"> ,Cholesterol Record</label>
+                                    }
+                                    @if (x.CholesSiEncoded == false & x.CholesterolSiRes != null & x.CholesterolRes != null & x.FecalysisRes != null & x.UrinalysisRes != null & x.CbcRes != null)
+                                    {
+                                        <label style="font-size: 15px"> ,Cholesterol (SI) Record</label>
                                     }
                                 </p>
                                 <a style="background-color: transparent; color: #000000;text-decoration: none;border-bottom: 1px dotted;" class="btn-close-dark" asp-page="../LaboratoryRecord/AddLab" asp-route-id="@x.Id">Edit</a>

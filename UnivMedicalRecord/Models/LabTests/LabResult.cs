@@ -9,6 +9,8 @@ public class LabResult
     public User User{ set; get; } 
    
     public string? CholesterolRes { get; set; }
+    
+    public string? CholesterolSiRes { get; set; }
    
     public string? CbcRes { get; set; }
     
@@ -17,6 +19,8 @@ public class LabResult
     public string? FecalysisRes { get; set; }
     
     public bool CholesEncoded { get; set; }
+    
+    public bool CholesSiEncoded { get; set; }
     public bool CbcEncoded { get; set; }
     public bool UrinalEncoded { get; set; }
     public bool FecalEncoded { get; set; }

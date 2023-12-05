@@ -63,6 +63,10 @@
                                   
                                     @Html.TextBoxFor(Model => Model.Cholesterol, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png,.jpg", onchange = "previewImage(event)" })
                                     <br/>
+                                    <label style=" width: unset; display: unset;align-items: unset; justify-content: unset;padding: unset; cursor: unset;  font-weight: unset; margin-right: unset;background-color: unset; color: unset;">Cholesterol (SI) </label>
+                                                                      
+                                    @Html.TextBoxFor(Model => Model.CholesterolSi, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png,.jpg", onchange = "previewImage(event)" })
+                                    <br/>
                                     @if (Model.IsRequested == true)
                                     {
                                         <button asp-page-handler="Save" class="btn btn-dark mt-4" type="submit">Save</button>
