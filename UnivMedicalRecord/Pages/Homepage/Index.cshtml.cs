@@ -50,9 +50,17 @@ public class IndexModel : PageModel
     public decimal[] ChartValuesTradLDL { get; set; }
     [BindProperty]
     public decimal[] ChartValuesTradDHDL { get; set; }
-
     [BindProperty]
     public decimal[] ChartValuesTradTriglyceride { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesSiCholesterol { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesSiLDL { get; set; }
+    [BindProperty]
+    public decimal[] ChartValuesSiDHDL { get; set; }
+
+    [BindProperty]
+    public decimal[] ChartValuesSiTriglyceride { get; set; }
     
     public IQueryable<User> requestUser { get; set; }
     public bool? userHasRequest { get; set; }
@@ -375,15 +383,61 @@ public class IndexModel : PageModel
         }
         
         
-        // else if(ChosenSummary == "Cholesterol SI")
-        //
-        // {
-        //     foreach (var x in CholestSi)
-        //     {
-        //         ChartLabels = new[] { "Cholesterol", "High-density lipoprotein", "Low-density lipoprotein", "Triglycerides" };
-        //         ChartValues = new[] {(decimal)x.SiCholesterol,(decimal)x.SiDhdl,(decimal)x.SiLdl,(decimal)x.SiTriglyceride};
-        //     }
-        // }
+        else if(ChosenSummary == "CholesterolSi")
+        {
+            List<string> chartLabels = DateRangeList; 
+            Dictionary<string, decimal> chartValuesSICholesterol = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesSILDL = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesSIDHDL = new Dictionary<string, decimal>();
+            Dictionary<string, decimal> chartValuesSITriglyceride = new Dictionary<string, decimal>();
+            Dictionary<string, int> recordCountsByMonth = new Dictionary<string, int>();
+            
+            foreach (var month in chartLabels)
+            {
+                chartValuesSICholesterol[month] = 0;
+                chartValuesSILDL[month] = 0;
+                chartValuesSIDHDL[month] = 0;
+                chartValuesSITriglyceride[month] = 0;
+                recordCountsByMonth[month] = 0;
+            }
+            
+            foreach (var x in CholestSi)
+            {
+                string dateLabel = x.DateRetrieved.ToString("MMMM yyyy");
+
+                // Add the record value to the corresponding month
+                chartValuesSICholesterol[dateLabel] += (decimal)x.SiCholesterol;
+                chartValuesSILDL[dateLabel] += (decimal)x.SiLdl;
+                chartValuesSIDHDL[dateLabel] += (decimal)x.SiDhdl;
+                chartValuesSITriglyceride[dateLabel] += (decimal)x.SiTriglyceride;
+                
+                recordCountsByMonth[dateLabel]++;
+            }
+            
+            foreach (var month in chartLabels)
+            {
+                
+                if (recordCountsByMonth[month] > 0)
+                {
+                    chartValuesSICholesterol[month] /= recordCountsByMonth[month];
+                    chartValuesSILDL[month] /= recordCountsByMonth[month];
+                    chartValuesSIDHDL[month] /= recordCountsByMonth[month];
+                    chartValuesSITriglyceride[month] /= recordCountsByMonth[month];
+                    // Divide other parameters by count here
+                }
+                else
+                {
+                    Console.WriteLine($"No records for {month}");
+                }
+            }
+            
+            ChartValuesSiCholesterol = chartValuesSICholesterol.Values.ToArray();
+            ChartValuesSiLDL = chartValuesSILDL.Values.ToArray();
+            ChartValuesSiDHDL = chartValuesSIDHDL.Values.ToArray();
+            ChartValuesSiTriglyceride = chartValuesSITriglyceride.Values.ToArray();
+
+            ChartLabels = chartLabels.ToArray();
+        }
 
        
         switch (user)

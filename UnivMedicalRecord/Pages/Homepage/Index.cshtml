@@ -294,6 +294,9 @@
                        case 'Cholesterol':
                            initializeCholesterolCharts();
                            break;
+                       case 'CholesterolSi':
+                           initializeCholesterolSICharts();
+                           break;    
                        default:
                            console.log('Selected summary is not recognized.');
                            break;
@@ -714,6 +717,120 @@
                    });
                }
                
+               function initializeCholesterolSICharts() {
+                   appendCanvas('chartSiCholesterol');
+                   appendCanvas('chartSiLDL');
+                   appendCanvas('chartSiDHDL');
+                   appendCanvas('chartSiTriglyceride');
+               
+                   var chartDataSiCholesterol = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'Cholesterol (SI) Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesSiCholesterol)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxSiChol = document.getElementById('chartSiCholesterol').getContext('2d');
+                   var chartSiCholesterol = new Chart(ctxSiChol, {
+                       type: 'line',
+                       data: chartDataSiCholesterol,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   // Initialize WBC chart
+                   var chartDataSiLDL = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'LDL (Si) Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesSiLDL)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxSiLDL = document.getElementById('chartSiLDL').getContext('2d');
+                   var chartSiLDL = new Chart(ctxSiLDL, {
+                       type: 'line',
+                       data: chartDataSiLDL,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   var chartDataSiDHDL = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'DHDL (Si) Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesSiDHDL)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxSiDHDL = document.getElementById('chartSiDHDL').getContext('2d');
+                   var chartSiDHDL = new Chart(ctxSiDHDL, {
+                       type: 'line',
+                       data: chartDataSiDHDL,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               
+                   // Initialize WBC chart
+                   var chartDataSiTriglyceride = {
+                       labels: @Html.Raw(Json.Serialize(Model.ChartLabels)),
+                       datasets: [{
+                           label: 'Triglyceride (Si) Values',
+                           data: @Html.Raw(Json.Serialize(Model.ChartValuesSiTriglyceride)),
+                           backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                           borderColor: 'rgba(0, 123, 255, 1)',
+                           borderWidth: 1,
+                           fill: false
+                       }]
+                   };
+               
+                   var ctxSiTriglyecride = document.getElementById('chartSiTriglyceride').getContext('2d');
+                   var chartSiTriglyceride = new Chart(ctxSiTriglyecride, {
+                       type: 'line',
+                       data: chartDataSiTriglyceride,
+                       options: {
+                           responsive: true,
+                           scales: {
+                               y: {
+                                   beginAtZero: true
+                               }
+                           }
+                       }
+                   });
+               }
+               
+               
            </script>
 
                         <div class="card" style="flex-direction: row; align-items: center; background-color: #111; box-shadow: unset">
@@ -729,6 +846,7 @@
                                 <option value="Urinalysis">Urinalysis</option>
                                 <option value="Fecalysis">Fecalysis</option>
                                 <option value="Cholesterol">Cholesterol</option>
+                                <option value="CholesterolSi">CholesterolSI</option>
                             </select>
                             <button id='viewButton' class="btn btn-dark" type="submit" asp-page-handler="Select">View</button>
                             <div id="chartContainer" style="width: 900px; display: flex; flex-wrap: wrap;">

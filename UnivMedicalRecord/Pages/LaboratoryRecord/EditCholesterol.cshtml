@@ -69,8 +69,8 @@
                         <div class="card-container">
                             <div class="form-control">
                                 <form class="form-inline" method="post">
-                                    Input the Date of the Lab Test: <input asp-for="Cholesterol.DateRetrieved" type="date" id="LabDate">
-                                    Input the Date of the Lab Test: <input asp-for="CholesterolSi.DateRetrieved" type="date" id="LabDate">
+                                    Input the Date of the Lab Test (TRAD): <input asp-for="Cholesterol.DateRetrieved" type="date" id="LabTradDate">
+                                    Input the Date of the Lab Test (SI): <input asp-for="CholesterolSi.DateRetrieved" type="date" id="LabSIDate">
                                     <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Update" type="submit">Submit</button>
                                     <input type="hidden" asp-for="Cholesterol.Id"/>
                                     <input type="hidden" asp-for="CholesterolSi.Id"/>
