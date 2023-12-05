@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3cnbpeNGrGg0oYlCXHHZV5jlkR73DonlIAo3oivcrE4=",
+  "Hash": "cn/A4+YvhR1ZWescBQFf5eCe9pxaK9KniGOLQbOg9yw=",
   "Source": "UnivMedicalRecord",
   "BasePath": "_content/UnivMedicalRecord",
   "Mode": "Default",
@@ -1003,6 +1003,23 @@
       "OriginalItemSpec": "wwwroot\\images\\320d8a68-b018-4d37-8dfa-d22380dbf6d7.png"
     },
     {
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\3357f55b-cd97-49ea-8ed3-8198c63bf908.png",
+      "SourceId": "UnivMedicalRecord",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "BasePath": "_content/UnivMedicalRecord",
+      "RelativePath": "images/3357f55b-cd97-49ea-8ed3-8198c63bf908.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3357f55b-cd97-49ea-8ed3-8198c63bf908.png"
+    },
+    {
       "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\35232ecb-9aa7-480d-b116-2bf51c03cd22.jpg",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
@@ -1224,6 +1241,23 @@
       "OriginalItemSpec": "wwwroot\\images\\80a80cbe-8487-4de0-be7c-b3f4e74f8755.jpg"
     },
     {
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\8116ccee-7450-40b4-8fe3-bec54430d277.jpg",
+      "SourceId": "UnivMedicalRecord",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "BasePath": "_content/UnivMedicalRecord",
+      "RelativePath": "images/8116ccee-7450-40b4-8fe3-bec54430d277.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8116ccee-7450-40b4-8fe3-bec54430d277.jpg"
+    },
+    {
       "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\825cf4d0-e2a6-4450-bc06-e2aeeb76c827.jpg",
       "SourceId": "UnivMedicalRecord",
       "SourceType": "Discovered",
@@ -1273,6 +1307,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\99b8e826-ef6a-42b4-82f5-5976dc1906d8.png"
+    },
+    {
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\b6fd4f59-bc9b-42bd-9616-df4158ae62a9.jpg",
+      "SourceId": "UnivMedicalRecord",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "BasePath": "_content/UnivMedicalRecord",
+      "RelativePath": "images/b6fd4f59-bc9b-42bd-9616-df4158ae62a9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b6fd4f59-bc9b-42bd-9616-df4158ae62a9.jpg"
     },
     {
       "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\bf46f341-e796-44b1-81e3-0edb066b01a1.png",
@@ -1341,6 +1392,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\dc2f0181-3741-4b30-964d-a0d8c39afbaa.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\df9ad9b1-e6ae-40d6-ad3f-84f62c0b01e0.jpg",
+      "SourceId": "UnivMedicalRecord",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\",
+      "BasePath": "_content/UnivMedicalRecord",
+      "RelativePath": "images/df9ad9b1-e6ae-40d6-ad3f-84f62c0b01e0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\df9ad9b1-e6ae-40d6-ad3f-84f62c0b01e0.jpg"
     },
     {
       "Identity": "C:\\Users\\blythePC\\RiderProjects\\univ-medical-record\\UnivMedicalRecord\\wwwroot\\images\\e3bb221f-d03d-4688-a628-1c4a8b19f6fe.png",

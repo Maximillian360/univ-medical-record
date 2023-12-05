@@ -1,0 +1,228 @@
+﻿@page
+@using UniversityMedicalRecord.Data
+@model UnivMedicalRecord.Pages.Homepage.EditCholesterolSi
+
+@{
+  ViewData["Title"] = "CholesterolSI";
+}
+<style>
+    .card-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .form-control input[type=text],
+        .form-control input[type=number]{
+        width: 75%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+    
+    
+        .form-control input[id=txtStoolRemarks],
+        .form-control input[id=txtFurtherRemarks]{
+        width: 75%;
+        padding: 5px 20px;
+        margin: 5px ;
+        box-sizing: border-box;
+        border: none;
+        border-bottom:2px solid black;
+        }    
+        
+        /*
+        #labtbl{
+      	border: 2px solid black;
+        margin-left: auto; 
+        margin-right: auto;
+    	}*/
+                       
+  </style>
+<head>
+	
+</head>
+
+  <div class="site-wrapper m-md-5">
+  <form method="post">
+      <div class="card" style="flex-direction: row; background-color: black; align-items: center">
+          <button class="btn btn-dark m-lg-3" asp-page-handler="Dashboard">Dashboard</button>
+          <button class="btn btn-dark m-lg-3" asp-page-handler="Records">Records</button>
+      </div>
+  </form>
+  	<section class="tabs-wrapper m-lg-20">
+  		<div class="tabs-container">
+  			<div class="tabs-block">
+                <div class="tabs">
+
+                    <input type="radio" name="tabs" id="tab3" checked="checked"/>
+                    <label for="tab3"><span class="material-icons"></span>Cholesterol</label>
+                    <div class="tab">
+                        <div class="card-container">
+                            <div class="form-control">
+                                <form class="form-inline" method="post">
+                                    Input the Date of the Lab Test (SI): <input asp-for="CholesterolSi.DateRetrieved" type="date" id="LabSIDate">
+                                    <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Update" type="submit">Submit</button>
+                                    <input type="hidden" asp-for="CholesterolSi.Id"/>
+                                    <table class="table" style="text-align: center">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">ANALYTE</th>
+                                            <th scope="col" colspan="2">RESULT</th>
+                                            <th scope="col" colspan="2">NORMAL RANGE</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">S.I.</th>
+                                            <th scope="col">S.I.</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        
+                                        <tr>
+                                            <td>Cholesterol*</td>
+                                            <td><input asp-for="CholesterolSi.SiCholesterol" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td> > 5.2 mmol/L</td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td>LDL*</td>
+                                            <td><input asp-for="CholesterolSi.SiLdl" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td> 2.8 - 3.4 mmol/L</td>
+                                        </tr>                                         
+                                         
+                                        <tr>
+                                            <td>dHDL*</td>
+                                            <td><input asp-for="CholesterolSi.SiDhdl" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td> > 1.0 mmol/L</td>
+                                        </tr>                                          
+                                        
+                                        <tr>
+                                            <td>Triglyceride*</td>
+                                            <td><input asp-for="CholesterolSi.SiTriglyceride" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td> < 1.7 mmol/L</td>
+                                        </tr>                  
+                                        
+                                        <tr>
+                                            <td>FBS</td>
+                                            <td><input asp-for="CholesterolSi.SiFbs" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td> 4.1 - 5.9 mmol/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>BUN</td>
+                                            <td><input asp-for="CholesterolSi.SiBun" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td> M: 3.2 - 7.1 mmol/L</td>
+                                            <td> F: 2.5 - 6.1 mmol/L</td>
+                                            
+                                        </tr>
+
+                                        <tr>
+                                            <td>Creatinine</td>
+                                            <td><input asp-for="CholesterolSi.SiCreatinine" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td> M: 71 - 133 ummol/Ll</td>
+                                            <td> F: 62 - 106 ummol/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>BUA</td>
+                                            <td><input asp-for="CholesterolSi.SiBua" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td> M: 208 - 506 ummol/L</td>
+                                            <td> F: 149 - 369 ummol/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>SGOT</td>
+                                            <td></td>
+                                            <td><input asp-for="CholesterolSi.Sgot" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td></td>
+                                            <td> M: 17 - 59 u/L</td>
+                                            <td> F: 14 - 36 u/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>SGPT</td>
+                                            <td></td>
+                                            <td><input asp-for="CholesterolSi.Sgpt" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td></td>
+                                            <td> M: 21 - 72 u/L</td>
+                                            <td> F: 9 - 52 u/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Amylase</td>
+                                            <td></td>
+                                            <td><input asp-for="CholesterolSi.Amylase" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td></td>
+                                            <td> 330 - 110 mmol/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CKMB</td>
+                                            <td></td>
+                                            <td><input asp-for="CholesterolSi.Ckmb" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td></td>
+                                            <td> up to 16 u/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Sodium</td>
+                                            <td></td>
+                                            <td><input asp-for="CholesterolSi.Sodium" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td></td>
+                                            <td> 135 - 148 mmol/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Potassium</td>
+                                            <td></td>
+                                            <td><input asp-for="CholesterolSi.Potassium" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td></td>
+                                            <td> 3.5 - 5.3 mmol/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Chloride</td>
+                                            <td></td>
+                                            <td><input asp-for="CholesterolSi.Chloride" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td></td>
+                                            <td> 98 - 107 mmol/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Ionized Calcium</td>
+                                            <td></td>
+                                            <td><input asp-for="CholesterolSi.IonizedCalcium" type="number" step=".1" min="0" class="form-control"></td>
+                                            <td></td>
+                                            <td> 1.13 - 1.31 mmol/L</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Remarks</td>
+                                            <td colspan="4"><input asp-for="CholesterolSi.Remarks" type="text" class="form-control"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Other Remarks</td>
+                                            <td colspan="4"><input asp-for="CholesterolSi.OtherRemarks" type="text" class="form-control"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  		</div>
+  	</section>
+  </div>
+

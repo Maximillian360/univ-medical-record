@@ -43,7 +43,7 @@
 							{
 								<div class="card">
 									<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
-									<p>Date:@x.DateRetrieved</p>
+									<p>Date: @x.DateRetrieved.ToString("MM-dd-yyyy")</p>
 									<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditUrinalysis" asp-route-id="@x.Id">Edit</a>
 								</div>
 							}
@@ -58,7 +58,7 @@
 							{
 								<div class="card">
 									<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
-									<p>Date:@x.DateRetrieved</p>
+									<p>Date: @x.DateRetrieved.ToString("MM-dd-yyyy")</p>
 									<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditFecalysis" asp-route-id="@x.Id">Edit</a>
 								</div>
 							}
@@ -72,32 +72,46 @@
 						{
 							<div class="card">
 								<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
-								<p>Date:@x.DateRetrieved</p>
+								<p>Date: @x.DateRetrieved.ToString("MM-dd-yyyy")</p>
 								<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditCholesterol" asp-route-id="@x.Id">Edit</a>
 							</div>
 						}
 					</div>
+					
 					<input type="radio" name="tabs" id="tab4"/>
-					<label for="tab4"><span class="material-icons"></span>CBC</label>
+                    					<label for="tab4"><span class="material-icons"></span>CholesterolSI</label>
+					<div class="tab">
+						@foreach (var x in Model.CholesterolSi)
+						{
+							<div class="card">
+								<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
+								<p>Date: @x.DateRetrieved.ToString("MM-dd-yyyy")</p>
+								<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditCholesterolSi" asp-route-id="@x.Id">Edit</a>
+							</div>
+						}
+					</div>
+					
+					<input type="radio" name="tabs" id="tab5"/>
+					<label for="tab5"><span class="material-icons"></span>CBC</label>
 					<div class="tab">
 						@foreach (var x in Model.Cbcs)
 						{
 							<div class="card">
 								<h2>@x.labResult.User.Firstname @x.labResult.User.Lastname's Record</h2>
-								<p> Date:@x.DateRetrieved</p>
+								<p> Date: @x.DateRetrieved.ToString("MM-dd-yyyy")</p>
 								<a class="btn-close-dark" asp-page="../LaboratoryRecord/EditCBC" asp-route-id="@x.Id">Edit</a>
 							</div>
 						}
 					</div>
 
-					<input type="radio" name="tabs" id="tab5"/>
-					<label for="tab5"><span class="material-icons"></span>Medical Record</label>
+					<input type="radio" name="tabs" id="tab6"/>
+					<label for="tab6"><span class="material-icons"></span>Medical Record</label>
 					<div class="tab">
 						@foreach (var x in Model.Personals)
 						{
 							<div class="card">
 								<h2>@x.user.Firstname @x.user.Lastname's Record</h2>
-								<p> ID Number:@x.IdNumber</p>
+								<p> ID Number: @x.IdNumber</p>
 								<a class="btn-close-dark" asp-page="../GeneralRecord/EditRecord" asp-route-id="@x.Id">Edit</a>
 							</div>
 						}
