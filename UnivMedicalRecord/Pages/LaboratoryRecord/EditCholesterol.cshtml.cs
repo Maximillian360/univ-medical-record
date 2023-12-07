@@ -9,14 +9,18 @@ namespace UnivMedicalRecord.Pages.Homepage;
 public class EditCholesterol : PageModel
 {
     private readonly DatabaseContext _context;
+    private readonly IWebHostEnvironment webHostEnvironment;
 
-    public EditCholesterol(DatabaseContext context)
+    public EditCholesterol(DatabaseContext context, IWebHostEnvironment hostEnvironment)
     {
         _context = context;
+        webHostEnvironment = hostEnvironment;
     }
     
     [BindProperty]
     public Cholesterol Cholesterol { get; set; }
+    [BindProperty]
+    public string? CholesPath { get; set; }
     
     //[BindProperty]
     //public CholesterolSI CholesterolSi { get; set; }
@@ -24,9 +28,10 @@ public class EditCholesterol : PageModel
     public IActionResult OnGet(int? id)
     {
         var cholesterol = _context.Cholesterols.FirstOrDefault(x => x.Id == id);
-       //var cholesterolSi = _context.CholesterolSis.FirstOrDefault(x => x.Id == id);
         Cholesterol = cholesterol;
-        //CholesterolSi = cholesterolSi;
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == id);
+        
+        CholesPath = Path.Combine("\\images", labresult.CholesterolRes);
         
         return Page();
     }

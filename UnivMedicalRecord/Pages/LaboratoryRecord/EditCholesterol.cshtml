@@ -48,7 +48,9 @@
                        
   </style>
 <head>
-	
+	<link rel="stylesheet" href="./css/site.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
   <div class="site-wrapper m-md-5">
@@ -68,8 +70,16 @@
                     <div class="tab">
                         <div class="card-container">
                             <div class="form-control">
+                            <div class="modal fade Cholesterol" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                                 <div class="modal-dialog modal-sm">
+                                                                     <div class="modal-content">
+                                                                         <img class="m-lg-4" src="@Model.CholesPath" alt="Cholesterol" style="max-width: 10.25in; max-height: 5.25in;">
+                                                                     </div>
+                                                                 </div>
+                                                             </div>
                                 <form class="form-inline" method="post">
                                     Input the Date of the Lab Test (TRAD): <input asp-for="Cholesterol.DateRetrieved" type="date" id="LabTradDate">
+                                    <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".Cholesterol">Show Laboratory Test</button>
                                     <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Update" type="submit">Submit</button>
                                     <input type="hidden" asp-for="Cholesterol.Id"/>
                                     <table class="table" style="text-align: center">

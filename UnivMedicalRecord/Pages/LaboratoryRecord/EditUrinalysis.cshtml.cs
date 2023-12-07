@@ -10,19 +10,26 @@ namespace UnivMedicalRecord.Pages.Homepage;
 public class EditUrinalysis : PageModel
 {
     private readonly DatabaseContext _context;
+    private readonly IWebHostEnvironment webHostEnvironment;
 
-    public EditUrinalysis(DatabaseContext context)
+    public EditUrinalysis(DatabaseContext context, IWebHostEnvironment hostEnvironment)
     {
         _context = context;
+        webHostEnvironment = hostEnvironment;
     }
     
     [BindProperty]
     public Urinalysis Urinalysis { get; set; }
+    [BindProperty]
+    public string? UrinalysisPath { get; set; }
     
     public IActionResult OnGet(int? id)
     {
         var urinalysis = _context.Urinalyses.FirstOrDefault(x=>x.Id == id);
         Urinalysis = urinalysis;
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == id);
+        
+        UrinalysisPath = Path.Combine("\\images", labresult.UrinalysisRes);
         return Page();
     }
 

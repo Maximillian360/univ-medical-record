@@ -48,7 +48,9 @@
                        
   </style>
 <head>
-	
+	<link rel="stylesheet" href="./css/site.css">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
   <div class="site-wrapper m-md-5">
@@ -66,9 +68,20 @@
   					<label for="tab1"><span class="material-icons"></span>Cbc</label>
                       <div class="tab">
                           <div class="form-control" display>
+                          
+                          <div class="modal fade Cbc" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-sm">
+                                                                    <div class="modal-content">
+                                                                        @{ Console.WriteLine($"CbcPath: {Model.CbcPath}"); }
+                                                                        <img class="m-lg-4" src="@Model.CbcPath" alt="Cbc" style="max-width: 10.25in; max-height: 5.25in;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                         
                               <form class="form-inline" method="post">
+                                  
                                   Input the Date of the Lab Test: <input asp-for="Cbc.DateRetrieved" type="date" id="LabDate">
+                                  <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".Cbc">Show Laboratory Test</button>
                                   <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Update" type="submit">Update</button>
                                   <input type="hidden" asp-for="Cbc.Id"/>
                                   <table class="table" style="text-align: center">

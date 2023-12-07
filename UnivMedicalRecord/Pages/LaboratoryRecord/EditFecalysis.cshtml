@@ -48,7 +48,9 @@
                        
   </style>
 <head>
-	
+	<link rel="stylesheet" href="./css/site.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
   <div class="site-wrapper m-md-5">
@@ -57,6 +59,13 @@
            <button class="btn btn-dark m-lg-3" asp-page-handler="Dashboard">Dashboard</button>
            <button class="btn btn-dark m-lg-3" asp-page-handler="Records">Records</button>
        </div>
+       <div class="modal fade fecalysis" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                               <div class="modal-dialog modal-sm">
+                                                   <div class="modal-content">
+                                                       <img class="m-lg-4" src="@Model.FecalPath" alt="Fecalysis" style="max-width: 10.25in; max-height: 5.25in;">
+                                                   </div>
+                                               </div>
+                                           </div>
    </form>
   	<section class="tabs-wrapper m-lg-20">
   		<div class="tabs-container">
@@ -71,6 +80,7 @@
                                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                     <input type="hidden" asp-for="Fecalysis.Id"/>
                                     Input the Date of the Lab Test: <input asp-for="Fecalysis.DateRetrieved" type="date">
+                                    <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".fecalysis">Show Laboratory Test</button>
                                     <button class="btn btn-dark mb-2.5" style="float: right" asp-page-handler="Update" type="submit">Update</button>
                                     <table class="table" style="text-align: center">
                                         <thead class="thead-dark">

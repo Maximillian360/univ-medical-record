@@ -9,13 +9,18 @@ namespace UnivMedicalRecord.Pages.Homepage;
 public class EditFecalysis : PageModel
 {
     private readonly DatabaseContext _context;
+    private readonly IWebHostEnvironment webHostEnvironment;
 
-    public EditFecalysis(DatabaseContext context)
+    public EditFecalysis(DatabaseContext context,  IWebHostEnvironment hostEnvironment)
     {
         _context = context;
+        webHostEnvironment = hostEnvironment;
     }
     [BindProperty]
     public Fecalysis Fecalysis { get; set; }
+    
+    [BindProperty]
+    public string? FecalPath { get; set; }
     
     
     public IActionResult OnGet(int? id)
@@ -33,6 +38,8 @@ public class EditFecalysis : PageModel
         }
         
         Fecalysis = fecalysis;
+        var labresult = _context.GetLabResult().FirstOrDefault(x => x.Id == id);
+        FecalPath =  Path.Combine("\\images", labresult.FecalysisRes);
         return Page();
     }
 
