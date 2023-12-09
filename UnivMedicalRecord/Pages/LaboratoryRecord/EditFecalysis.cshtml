@@ -81,7 +81,7 @@
                                     <input type="hidden" asp-for="Fecalysis.Id"/>
                                     Input the Date of the Lab Test: <input asp-for="Fecalysis.DateRetrieved" type="date">
                                     <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".fecalysis">Show Laboratory Test</button>
-                                    <button class="btn btn-dark mb-2.5" style="float: right" asp-page-handler="Update" type="submit">Update</button>
+                                    <button class="btn btn-dark m-lg-1" style="float: right" asp-page-handler="Update" type="submit">Update</button>
                                     <table class="table" style="text-align: center">
                                         <thead class="thead-dark">
                                         <tr>
@@ -140,11 +140,11 @@
                                         </tbody>
                                     </table>
                                     <i>Remarks:</i>
-                                    <input asp-for="Fecalysis.StoolRemarks" id="txtStoolRemarks" type="text" class="form-control">
+                                    <input asp-for="Fecalysis.StoolRemarks" id="txtStoolRemarks" type="text" class="form-control" style="width: 100%;">
                                     <br/>
                                     <h2>OTHERS</h2>
                                     <i>Remarks:</i>
-                                    <input asp-for="Fecalysis.FurtherRemarks" id="txtFurtherRemarks" type="text" class="form-control">
+                                    <input asp-for="Fecalysis.FurtherRemarks" id="txtFurtherRemarks" type="text" class="form-control" style="width: 100%;">
                                 </form>
                             </div>
                         </div>

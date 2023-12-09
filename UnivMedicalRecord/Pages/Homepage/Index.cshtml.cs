@@ -237,8 +237,8 @@ public class IndexModel : PageModel
             // Add the record value to the corresponding month
             chartValuesPh[dateLabel] += (decimal)x.Ph;
             chartValuesSpecgrav[dateLabel] += (decimal)x.Specgrav;
-            chartValuesPusCells[dateLabel] += Convert.ToDecimal(x.PusCells);
-            chartValuesRbcUrinalysis[dateLabel] += Convert.ToDecimal(x.Rbc);
+            chartValuesPusCells[dateLabel] += (decimal)x.PusCells;
+            chartValuesRbcUrinalysis[dateLabel] += (decimal)x.Rbc;
             
             // Add similar lines for other parameters (PusCells, RbcUrinalysis)
 

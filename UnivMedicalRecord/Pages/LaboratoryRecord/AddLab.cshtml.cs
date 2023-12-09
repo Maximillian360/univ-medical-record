@@ -111,9 +111,9 @@ public class AddLab : PageModel
     [BindProperty]
     public string OthersUrinalysis { get; set; }
     [BindProperty]
-    public string PusCells { get; set; }
+    public decimal PusCells { get; set; }
     [BindProperty]
-    public string RBC { get; set; }
+    public decimal RBC { get; set; }
     [BindProperty]
     public string Bacteria { get; set; }
     [BindProperty]

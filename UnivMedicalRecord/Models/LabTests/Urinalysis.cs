@@ -27,8 +27,10 @@ public class Urinalysis
     public string? Crystals { get; set; }
     public string? Casts { get; set; }
     public string? OthersUrinalysis { get; set; }
-    public string? PusCells { get; set; }
-    public string? Rbc { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? PusCells { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Rbc { get; set; }
     public string? Bacteria { get; set; }
     public string? YeastCells { get; set; }
     public string? OthersMicroAnalysis { get; set; }

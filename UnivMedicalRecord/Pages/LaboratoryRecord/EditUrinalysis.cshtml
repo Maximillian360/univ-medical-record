@@ -77,7 +77,7 @@
                             <form class="form-inline" method="post">
                                 Input the Date of the Lab Test: <input asp-for="Urinalysis.DateRetrieved" type="date" id="LabDate">
                                 <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".Urinalysis">Show Laboratory Test</button>
-                                <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Update" type="Submit">Submit</button>
+                                <button class="btn btn-dark m-lg-1" style="float: right" asp-page-handler="Update" type="Submit">Submit</button>
                                 <input type="hidden" asp-for="Urinalysis.Id"/>
                                 <table class="table" style="text-align: center">
                                     <thead class="thead-dark">
@@ -99,12 +99,12 @@
                                     </tr>
                           
                                     <tr>
-                                        <td>pH</td>
+                                        <td>pH*</td>
                                         <td><input asp-for="Urinalysis.Ph" type="number" step="0.1" min="0" class="form-control"></td>
                                     </tr>
                           
                                     <tr>
-                                        <td>Specific Gravity</td>
+                                        <td>Specific Gravity*</td>
                                         <td><input asp-for="Urinalysis.Specgrav" type="number" step="0.001" min="0" class="form-control"></td>
                                     </tr>
                           

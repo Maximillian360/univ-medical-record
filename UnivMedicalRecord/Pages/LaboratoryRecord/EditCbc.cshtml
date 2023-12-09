@@ -5,7 +5,7 @@
 @{
   ViewData["Title"] = "Cbc";
 }
-<style>
+<style xmlns="http://www.w3.org/1999/html">
     .card-container {
       display: flex;
       flex-direction: column;
@@ -82,186 +82,189 @@
                                   
                                   Input the Date of the Lab Test: <input asp-for="Cbc.DateRetrieved" type="date" id="LabDate">
                                   <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".Cbc">Show Laboratory Test</button>
-                                  <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Update" type="submit">Update</button>
+                                  <button class="btn btn-dark m-lg-1" style="float: right" asp-page-handler="Update" type="submit">Update</button>
                                   <input type="hidden" asp-for="Cbc.Id"/>
                                   <table class="table" style="text-align: center">
                                       <thead class="thead-dark">
                                       <tr>
                                           <th scope="col">EXAMINATIONS</th>
-                                          <th scope="col">RESULTS</th>
-                                          <th scope="col">NORMAL RANGE</th>
+                                          <th scope="col" colspan="2">RESULTS</th>
+                                          <th scope="col" colspan="2">NORMAL RANGE</th>
                                       </tr>
                                       </thead>
                                       <tbody>
                                       
                                       <tr>
                                           <td>RBC Count*</td>
-                                          <td><input asp-for="Cbc.Rbc" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>M: 4.5 - 6.2 x 10/L
-                                              F: 4.2 - 5.4 x 10/L</td>
+                                          <td><input asp-for="Cbc.Rbc" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> M: 4.5 - 6.2 x 10/L<br/>
+                                               F: 4.2 - 5.4 x 10/L</td>
                                       </tr>                                      
                                       
                                       <tr>
                                           <td>WBC Count*</td>
-                                          <td><input asp-for="Cbc.Wbc" type="number" step=".1" min="0" class="form-control"/>
-                                          <td>5.0 - 10.0 x 10/L</td>
+                                          <td><input asp-for="Cbc.Wbc" type="number" step=".1" min="0" class="form-control" style="width: 100%;"/>
+                                          <td colspan="2"> 5.0 - 10.0 x 10/L</td>
                                       </tr>
 
                                       <tr>
                                           <td>Platelets*</td>
-                                          <td><input asp-for="Cbc.Plt" type="number" min="0" class="form-control"></td>
-                                          <td>A: 150 - 450 x 10/L
-                                              NB: 84 - 450 x 10/L</td>
+                                          <td><input asp-for="Cbc.Plt" type="number" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> A: 150 - 450 x 10/L<br/>
+                                               NB: 84 - 450 x 10/L</td>
                                       </tr>
                                       
                                       <tr>
                                           <td>Hemoglobin*</td>
-                                          <td><input asp-for="Cbc.Hb" type="number" step=".1" min="0" class="form-control"></td>
-                                          <td>M: 140.0 - 180.0G/L
-                                              F: 120.0 - 160.0G/L
-                                              C: 100.0 - 140.0G/L
-                                              NB: 140.0 - 230.0G/L</td>
+                                          <td><input asp-for="Cbc.Hb" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> M: 140.0 - 180.0G/L
+                                              <br/>
+                                               F: 120.0 - 160.0G/L
+                                              <br/>
+                                               C: 100.0 - 140.0G/L
+                                              <br/>
+                                               NB: 140.0 - 230.0G/L</td>
                                       </tr>
 
                                       <tr>
                                           <td>Blast</td>
-                                          <td><input asp-for="Cbc.Blast" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Blast" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Promyelocyte</td>
-                                          <td><input asp-for="Cbc.Promyelocyte" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Promyelocyte" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Myelocyte</td>
-                                          <td><input asp-for="Cbc.Myelocyte" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Myelocyte" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Metamyelocyte</td>
-                                          <td><input asp-for="Cbc.Metamyelocyte" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Metamyelocyte" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Stab</td>
-                                          <td><input asp-for="Cbc.Stab" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>0.01 - 0.05</td>
+                                          <td><input asp-for="Cbc.Stab" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> 0.01 - 0.05</td>
                                       </tr>
 
                                       <tr>
                                           <td>Segmenter</td>
-                                          <td><input asp-for="Cbc.Segmenter" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>0.50 - 0.70</td>
+                                          <td><input asp-for="Cbc.Segmenter" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> 0.50 - 0.70</td>
                                       </tr>
 
                                       <tr>
                                           <td>Lymphocyte</td>
-                                          <td><input asp-for="Cbc.Lymphocyte" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>0.20 - 0.40</td>
+                                          <td><input asp-for="Cbc.Lymphocyte" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> 0.20 - 0.40</td>
                                       </tr>
 
                                       <tr>
                                           <td>Monocyte</td>
-                                          <td><input asp-for="Cbc.Monocyte" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>0.01 - 0.06</td>
+                                          <td><input asp-for="Cbc.Monocyte" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> 0.01 - 0.06</td>
                                       </tr>
 
                                       <tr>
                                           <td>Eosinophil</td>
-                                          <td><input asp-for="Cbc.Eosinophil" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>0.01 - 0.05</td>
+                                          <td><input asp-for="Cbc.Eosinophil" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> 0.01 - 0.05</td>
                                       </tr>
 
                                       <tr>
                                           <td>Basophil</td>
-                                          <td><input asp-for="Cbc.Basophil" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>0.0 - 0.01</td>
+                                          <td><input asp-for="Cbc.Basophil" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> 0.0 - 0.01</td>
                                       </tr>
 
                                       <tr>
                                           <td>Hematocrit</td>
-                                          <td><input asp-for="Cbc.Hct" type="number" step=".01" min="0" class="form-control"></td>
-                                          <td>M: 0.40 - 0.54
-                                              F: 0.37 - 0.47</td>
+                                          <td><input asp-for="Cbc.Hct" type="number" step=".01" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> M: 0.40 - 0.54<br/>
+                                               F: 0.37 - 0.47</td>
                                       </tr>
 
                                       <tr>
                                           <td>ESR</td>
-                                          <td><input asp-for="Cbc.Esr" type="number" min="0" class="form-control"></td>
-                                          <td>M: 1-10mm/hr
-                                              F: 0-20mm/hr</td>
+                                          <td><input asp-for="Cbc.Esr" type="number" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> M: 1-10mm/hr<br/>
+                                               F: 0-20mm/hr</td>
                                       </tr>
 
                                       <tr>
                                           <td>Reticulocyte</td>
-                                          <td><input asp-for="Cbc.Reticulocyte" type="number" min="0" class="form-control"></td>
-                                          <td>A: 5 - 15 x 10/L
-                                              NB: 15 - 65 x 10/L</td>
+                                          <td><input asp-for="Cbc.Reticulocyte" type="number" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> A: 5 - 15 x 10/L<br/>
+                                               NB: 15 - 65 x 10/L</td>
                                       </tr>
 
                                       <tr>
                                           <td>Bleeding Time</td>
-                                          <td><input asp-for="Cbc.BleedingTime" type="number" min="0" class="form-control"></td>
-                                          <td>1 - 5 minutes</td>
+                                          <td><input asp-for="Cbc.BleedingTime" type="number" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> 1 - 5 minutes</td>
                                       </tr>
 
                                       <tr>
                                           <td>Clotting Time</td>
-                                          <td><input asp-for="Cbc.ClottingTime" type="number" min="0" class="form-control"></td>
-                                          <td>2 - 7 minutes</td>
+                                          <td><input asp-for="Cbc.ClottingTime" type="number" min="0" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"> 2 - 7 minutes</td>
                                       </tr>
 
                                       <tr>
                                           <td>Malaria</td>
-                                          <td><input asp-for="Cbc.Malaria" type="text" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Malaria" type="text" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Red Cell Morphology</td>
-                                          <td><input asp-for="Cbc.RedCellMorphology" type="text" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.RedCellMorphology" type="text" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Test</td>
-                                          <td><input asp-for="Cbc.Test" type="text" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Test" type="text" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Control</td>
-                                          <td><input asp-for="Cbc.Control" type="text" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Control" type="text" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>%Activity</td>
-                                          <td><input asp-for="Cbc.Activity" type="number" min="0" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Activity" type="number" min="0" class="form-control" style="width: 100%;"></td>\
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Patient Ratio</td>
-                                          <td><input asp-for="Cbc.PatientRatio" type="text" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.PatientRatio" type="text" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>INR</td>
-                                          <td><input asp-for="Cbc.Inr" type="text" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.Inr" type="text" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
 
                                       <tr>
                                           <td>Blood Type</td>
-                                          <td><input asp-for="Cbc.BloodType" type="text" class="form-control"></td>
-                                          <td></td>
+                                          <td><input asp-for="Cbc.BloodType" type="text" class="form-control" style="width: 100%;"></td>
+                                          <td colspan="2"></td>
                                       </tr>
                                       </tbody>
                                   </table>

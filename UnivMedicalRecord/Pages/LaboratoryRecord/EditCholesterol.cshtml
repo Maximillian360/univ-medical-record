@@ -80,7 +80,7 @@
                                 <form class="form-inline" method="post">
                                     Input the Date of the Lab Test (TRAD): <input asp-for="Cholesterol.DateRetrieved" type="date" id="LabTradDate">
                                     <button type="button" class="btn btn-dark m-lg-1" style="float: right" data-toggle="modal" data-target=".Cholesterol">Show Laboratory Test</button>
-                                    <button class="btn btn-dark mb-4" style="float: right" asp-page-handler="Update" type="submit">Submit</button>
+                                    <button class="btn btn-dark m-lg-1" style="float: right" asp-page-handler="Update" type="submit">Submit</button>
                                     <input type="hidden" asp-for="Cholesterol.Id"/>
                                     <table class="table" style="text-align: center">
                                         <thead class="thead-dark">
@@ -90,73 +90,70 @@
                                             <th scope="col" colspan="2">NORMAL RANGE</th>
                                         </tr>
                                         <tr>
-                                            <th scope="col"></th>
-                                            <th scope="col">Traditional</th>
-                                            <th scope="col">Traditional</th>
+                                            <th scope="col" colspan="4">Traditional</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         
                                         <tr>
                                             <td>Cholesterol*</td>
-                                            <td><input asp-for="Cholesterol.TradCholesterol" type="number" step=".1" min="0" class="form-control"></td>
-                                            <td> < 200 mg/dl</td>
+                                            <td><input asp-for="Cholesterol.TradCholesterol" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                            <td colspan="2"> < 200 mg/dl</td>
                                         </tr> 
                                         
                                         <tr>
                                             <td>LDL*</td>
-                                            <td><input asp-for="Cholesterol.TradLdl" type="number" step=".1" min="0" class="form-control"></td>
-                                            <td>110 - 130 mg/dl</td>
+                                            <td><input asp-for="Cholesterol.TradLdl" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                            <td colspan="2"> 110 - 130 mg/dl</td>
                                         </tr>                                         
                                          
                                         <tr>
                                             <td>dHDL*</td>
-                                            <td><input asp-for="Cholesterol.TradDhdl" type="number" step=".1" min="0" class="form-control"></td>
-                                            <td> > 40 mg/dl</td>
+                                            <td><input asp-for="Cholesterol.TradDhdl" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                            <td colspan="2"> > 40 mg/dl</td>
                                         </tr>                                          
                                         
                                         <tr>
                                             <td>Triglyceride*</td>
-                                            <td><input asp-for="Cholesterol.TradTriglyceride" type="number" step=".1" min="0" class="form-control"></td>
-                                            <td> < 150 mg/dl</td>
+                                            <td><input asp-for="Cholesterol.TradTriglyceride" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                            <td colspan="2"> < 150 mg/dl</td>
                                         </tr>                  
                                         
                                         <tr>
                                             <td>FBS</td>
-                                            <td><input asp-for="Cholesterol.TradFbs" type="number" step=".1" min="0" class="form-control"></td>
-                                            <td> 74 - 106 mg/dl</td>
+                                            <td><input asp-for="Cholesterol.TradFbs" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                            <td colspan="2"> 74 - 106 mg/dl</td>
                                         </tr>
 
                                         <tr>
                                             <td>BUN</td>
-                                            <td><input asp-for="Cholesterol.TradBun" type="number" step=".1" min="0" class="form-control"></td>
-                                            <td> M: 9 - 20 mg/dl</td>
-                                            <td> F: 3.2 - 7.1 mg/dl</td>
+                                            <td><input asp-for="Cholesterol.TradBun" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                            <td colspan="2"> M: 9 - 20 mg/dl<br/>
+                                                 F: 3.2 - 7.1 mg/dl</td>
                                         </tr>
 
                                         <tr>
                                             <td>Creatinine</td>
-                                            <td><input asp-for="Cholesterol.TradCreatinine" type="number" step=".1" min="0" class="form-control"></td>
-                                            <td> M: 0.8 - 1.5 mg/dl
-                                                </td>
-                                            <td> F: 0.7 - 1.2 mg/dl</td>
+                                            <td><input asp-for="Cholesterol.TradCreatinine" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                            <td colspan="2"> M: 0.8 - 1.5 mg/dl<br/>
+                                                 F: 0.7 - 1.2 mg/dl</td>
                                         </tr>
 
                                         <tr>
                                             <td>BUA</td>
-                                            <td><input asp-for="Cholesterol.TradBua" type="number" step=".1" min="0" class="form-control"></td>
-                                            <td> M: 3.5 - 8.5 mg/dl</td>
-                                            <td> F: 2.5 - 6.2 mg/dl</td>
+                                            <td><input asp-for="Cholesterol.TradBua" type="number" step=".1" min="0" class="form-control" style="width: 100%;"></td>
+                                            <td colspan="2"> M: 3.5 - 8.5 mg/dl<br/>
+                                                 F: 2.5 - 6.2 mg/dl</td>
                                         </tr>
 
                                         <tr>
                                             <td>Remarks</td>
-                                            <td colspan="4"><input asp-for="Cholesterol.Remarks" type="text" class="form-control"></td>
+                                            <td colspan="4"><input asp-for="Cholesterol.Remarks" type="text" class="form-control" style="width: 100%;" /></td>
                                         </tr>
 
                                         <tr>
                                             <td>Other Remarks</td>
-                                            <td colspan="4"><input asp-for="Cholesterol.OtherRemarks" type="text" class="form-control"></td>
+                                            <td colspan="4"><input asp-for="Cholesterol.OtherRemarks" type="text" class="form-control" style="width: 100%;" /></td>
                                         </tr>
                                         </tbody>
                                     </table>
