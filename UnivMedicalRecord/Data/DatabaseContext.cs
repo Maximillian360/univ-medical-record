@@ -132,6 +132,8 @@ public class DatabaseContext: DbContext
         var labresult = LabResults.Include(x => x.User).ToList();
         return labresult;
     }
+    
+ 
     public bool AddUser(User user)
     {
         Users.Add(user);

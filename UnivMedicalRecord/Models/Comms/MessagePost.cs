@@ -13,4 +13,5 @@ public class MessagePost
     [DataType(DataType.Date)]
     public DateTime Date { get; set; }
     
+    
 }

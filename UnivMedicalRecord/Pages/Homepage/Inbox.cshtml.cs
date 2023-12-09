@@ -30,7 +30,11 @@ public class Inbox : PageModel
     
     public IQueryable<User> requestUser { get; set; }
     
-    public IActionResult OnGet()
+    [BindProperty]
+    public string? ImageOnePath { get; set; }
+    
+    
+    public IActionResult OnGet(int? id)
     {
         
         var encryptionService = new StringEncryptionService();
@@ -51,8 +55,13 @@ public class Inbox : PageModel
             DateRecieved.Add(msg.Date.ToLongDateString());
             MessageRecieved.Add(decrypted);
             MessageId.Add(msg.Id);
+            
+
+            return Page();
 
         }
+        
+        
 
       
         
@@ -65,6 +74,9 @@ public class Inbox : PageModel
                 Type = $"{user.Type}";
                 return Page();
         }
+        
+        
+        
         
     }
 

@@ -40,7 +40,6 @@ public class AddLabResult : PageModel
     public IActionResult OnGet()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
-        var labresult = _context.LabResults.FirstOrDefault(x => x.User == user);
         IsRequested = user.IsRequested;
         return Page();
     }
@@ -48,7 +47,6 @@ public class AddLabResult : PageModel
     public IActionResult OnPostSave()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
-        var labresult = _context.LabResults.FirstOrDefault(x => x.User == user);
         IsRequested = user.IsRequested;
         
         var imageDirectory = Path.Combine(webHostEnvironment.WebRootPath, "images");
@@ -92,7 +90,6 @@ public class AddLabResult : PageModel
         var CholSistream = new FileStream(CholSifilePath, FileMode.Create);
         CholesterolSi?.CopyToAsync(CholSistream);
         
-       
 
         var labresults = new LabResult()
         {

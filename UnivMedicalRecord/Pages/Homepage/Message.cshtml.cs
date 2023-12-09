@@ -10,10 +10,12 @@ namespace UnivMedicalRecord.Pages.Homepage;
 public class Message : PageModel
 {
     private readonly DatabaseContext _context;
+    private readonly IWebHostEnvironment webHostEnvironment;
 
-    public Message(DatabaseContext context)
+    public Message(DatabaseContext context, IWebHostEnvironment hostEnvironment)
     {
         _context = context;
+        webHostEnvironment = hostEnvironment;
     }
     
     [BindProperty]
@@ -25,7 +27,7 @@ public class Message : PageModel
     [Display(Name = "Message")]
     public string message { get; set; }
     public IQueryable<User> ListOfRecipient { get; set; }
-
+    
     public IActionResult OnGet()
     {
         var user = HttpContext.Session.GetLoggedInUser(_context);
@@ -50,7 +52,6 @@ public class Message : PageModel
         var encrypted = encryptionService.Encrypt(message,
             passphrase);
         
-        
         var newmessage = new MessagePost()
         {
             Date = DateTime.Today,
@@ -58,11 +59,12 @@ public class Message : PageModel
             Recipient = Recipient,
             message = encrypted,
         };
-
+        
         _context.WriteMessage(newmessage);
         _context.SaveChanges();
         return RedirectToPage("./Inbox");
     }
+    
 
     public IActionResult OnPostDiscard()
     {

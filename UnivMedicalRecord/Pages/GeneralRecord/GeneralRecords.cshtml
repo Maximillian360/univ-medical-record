@@ -22,286 +22,11 @@ form {
     background-color: #fff;
     width: 1000px;
     max-width: max-content;
-    height: 1000px;
+    max-height: max-content;
     margin: 50px auto;
     padding: 40px 20px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
-@* *@
-@* /* Add this style to target all text and number input fields */ *@
-@* form input[type="text"], *@
-@* form input[type="number"] { *@
-@*     width: 100%; *@
-@*     padding: 10px; *@
-@*     border: none; *@
-@*     border-bottom: 2px solid black; *@
-@*     margin-bottom: 15px; *@
-@* } *@
-@* *@
-@* /* You can keep the other styles for specific input fields if needed */ *@
-@* /* For example, the styles for radio buttons and specific inputs */ *@
-@* *@
-@* /* Additional styling for buttons */ *@
-@* .btn { *@
-@*     margin: 5px; *@
-@*     padding: 10px 20px; *@
-@* } *@
-@* *@
-@* /* Optional: Style the radio button labels */ *@
-@* label[for^="radio"], *@
-@* label[for^="motherRadio"], *@
-@* label[for^="fatherRadio"], *@
-@* label[for^="guardianRadio"] { *@
-@*     margin-right: 15px; *@
-@* } *@
-@* *@
-@* *@
-@*   *@
-@*         /*body {*/ *@
-@*         /*           background-color: #8080;*/ *@
-@*         /*           font-family: sans-serif;*/ *@
-@*         /*           //text-align: center;*/ *@
-@*         /*       }*/ *@
-@*          *@
-@*         /*       form {*/ *@
-@*         /*           background-color: #fff;*/ *@
-@*         /*           width: 1000px;*/ *@
-@*         /*           max-width: max-content;*/ *@
-@*         /*           height: 1000px;*/ *@
-@*         /*           margin: 50px auto;*/ *@
-@*         /*           padding: 40px 20px;*/ *@
-@*         /*           box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);*/ *@
-@*         /*       }*/ *@
-@*         /*   	*/ *@
-@*         /*   	.gen-records{*/ *@
-@*         /*   	text-align: center;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*   	input[id="name"]{*/ *@
-@*         /*   	width: 330px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*     	input[id="age"]{*/ *@
-@*         /*   	width: 70px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="email"]{*/ *@
-@*         /*   	width: 340px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="id"]{*/ *@
-@*         /*   	width: 350px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="mobile"]{*/ *@
-@*         /*   	width: 200px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="doctor"]{*/ *@
-@*         /*   	width: 325px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="insurance"]{*/ *@
-@*         /*   	width: 300px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="dob"]{*/ *@
-@*         /*   	width: 175px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="birthplace"]{*/ *@
-@*         /*   	width: 275px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="address"]{*/ *@
-@*         /*   	width: 325px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*   input[type="radio"]{*/ *@
-@*         /*   margin-left: 10px;*/ *@
-@*         /*   margin-right: 5px;*/ *@
-@*         /*   }*/ *@
-@* 		 *@
-@*         /*   	input[id="motherName"]{*/ *@
-@*         /*   	width: 225px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*      	input[id="motherAddress"]{*/ *@
-@*         /*   	width: 360px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="motherOccupation"]{*/ *@
-@*         /*   	width: 190px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*   	input[id="motherNumber"]{*/ *@
-@*         /*   	width: 210px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*   */ *@
-@*         /*   	input[id="fatherName"]{*/ *@
-@*         /*   	width: 225px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*      	input[id="fatherAddress"]{*/ *@
-@*         /*   	width: 360px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="fatherOccupation"]{*/ *@
-@*         /*   	width: 190px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*   	input[id="fatherNumber"]{*/ *@
-@*         /*   	width: 210px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*   */ *@
-@*         /*   */ *@
-@*         /*   	input[id="guardianName"]{*/ *@
-@*         /*   	width: 225px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*      	input[id="guardianAddress"]{*/ *@
-@*         /*   	width: 360px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="guardianOccupation"]{*/ *@
-@*         /*   	width: 190px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*   	input[id="guardianRelation"]{*/ *@
-@*         /*   	width: 210px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*       input[id="illness"]{*/ *@
-@*         /*   	width: 700px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*         /*   	input[id="allergy"]{*/ *@
-@*         /*   	width: 700px;*/ *@
-@*         /*   	padding: 10px 10px 10px 10px;*/ *@
-@*         /*       border: none;*/ *@
-@*        	/*	border-bottom: 2px solid black;*/ *@
-@*         /*   	margin-right: 30px;*/ *@
-@*         /*   	margin-left: 5px;*/ *@
-@*         /*   	}*/ *@
-@*         /*   */ *@
-@*          *@
 
 h3 {
     color: #333;
@@ -325,14 +50,20 @@ th, td {
 label {
     display: block;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
 input, select {
-    width: 100%;
-    padding: 8px;
+    width: calc(100% - 10px);
     margin-bottom: 10px;
     box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
+
 
 button {
     background-color: #333;
@@ -367,7 +98,7 @@ button:hover {
 	<form class="mt-3" style="height: unset; width: unset; background-color: unset; padding: unset; margin: auto; box-shadow: unset; align-self: center" method="post">
 		<div class="card" style="flex-direction: row; background-color: black; width: 1000px; align-items: center">
 			<button class="btn btn-dark m-lg-3" asp-page-handler="Dashboard">Dashboard</button>
-			<button class="btn btn-dark m-lg-3" asp-page-handler="Lab Test">Records</button>
+			@* <button class="btn btn-dark m-lg-3" asp-page-handler="Lab Test">Records</button> *@
 			<button class="btn btn-dark m-lg-3" asp-page-handler="Inbox">Inbox</button>
 		</div>
 	</form>
@@ -387,12 +118,20 @@ button:hover {
 					<td> <label  for="age">Age</label>
 						<input asp-for="Age" type=number id="age" min="0">
 					</td>
-					<td> <div class="mt-3" style="float:left">
-							<label>Gender*</label>
-							<input asp-for="Gender" type="radio" value="Male" id="radio1">Male
-							<input asp-for="Gender" type="radio" value="Female" id="radio2">Female
-						</div>
-					</td>
+					<td>
+                        <div class="mt-3 d-flex align-items-center">
+                            <label class="me-3">Gender*</label>
+                            <div class="form-check form-check-inline">
+                                <input asp-for="Gender" type="radio" value="Male" id="radio1" class="form-check-input">
+                                <label class="form-check-label" for="radio1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input asp-for="Gender" type="radio" value="Female" id="radio2" class="form-check-input">
+                                <label class="form-check-label" for="radio2">Female</label>
+                            </div>
+                        </div>
+                    </td>
+
 				</tr>
 				<tr>
 					<td> <label for="email">Email</label>
@@ -413,7 +152,7 @@ button:hover {
 						<input asp-for="Insurance" type="text" id="insurance">
 					</td>
 					<td> <label for="dob">Date of Birth*</label>
-						<input asp-for="Date" type=date id="dob">
+						<input asp-for="Date" type=date id="dob" value="@DateTime.Now.ToString("yyyy-MM-dd")">
 					</td>
 				</tr>
 				<tr>
@@ -421,7 +160,7 @@ button:hover {
 						<input asp-for="BirthPlace" type="text" id="birthplace">
 					</td>
 					<td>  <label for="address">Address*</label>
-						<input asp-for="Address" class="mb-5" type="text" id="address"> 
+						<input asp-for="Address" type="text" id="address"> 
 					</td>
 				</tr>
 				</tbody>
@@ -452,14 +191,28 @@ button:hover {
 				<input asp-for="MobileNumber" type="text" id="motherNumber">
 			</td>
     
-			<td> <div class="mt-3">
-					<label>Mother's Civil Status:</label>
-					<input asp-for="MotherStatus" value="Married" type="radio" id="motherRadio1">Married
-					<input asp-for="MotherStatus" value="Single" type="radio" id="motherRadio2">Single
-					<input asp-for="MotherStatus" value="Separated" type="radio" id="motherRadio3">Separated
-					<input asp-for="MotherStatus" value="Widowed" type="radio" id="motherRadio4">Widowed
-				</div>
-			</td>
+			<td>
+                <div class="mt-3 d-flex align-items-center">
+                    <label class="me-3">Mother's Civil Status:</label>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="MotherStatus" value="Married" type="radio" id="motherRadio1" class="form-check-input">
+                        <label class="form-check-label" for="motherRadio1">Married</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="MotherStatus" value="Single" type="radio" id="motherRadio2" class="form-check-input">
+                        <label class="form-check-label" for="motherRadio2">Single</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="MotherStatus" value="Separated" type="radio" id="motherRadio3" class="form-check-input">
+                        <label class="form-check-label" for="motherRadio3">Separated</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="MotherStatus" value="Widowed" type="radio" id="motherRadio4" class="form-check-input">
+                        <label class="form-check-label" for="motherRadio4">Widowed</label>
+                    </div>
+                </div>
+            </td>
+
 		</tr>  
 		</tbody>
 	</table>
@@ -485,14 +238,28 @@ button:hover {
 				<input asp-for="FatherNumber" type="text" id="fatherNumber">
 			</td>
     
-			<td> <div >
-					<label>Father's Civil Status: </label>
-					<input asp-for="FatherStatus" value="Married" type="radio">Married
-					<input asp-for="FatherStatus" value="Single" type="radio" >Single
-					<input asp-for="FatherStatus" value="Separated" type="radio">Separated
-					<input asp-for="FatherStatus" value="Widowed" type="radio" >Widowed
-				</div>
-			</td>
+			<td>
+                <div class="mt-3 d-flex align-items-center">
+                    <label class="me-3">Father's Civil Status:</label>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="FatherStatus" value="Married" type="radio" class="form-check-input">
+                        <label class="form-check-label">Married</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="FatherStatus" value="Single" type="radio" class="form-check-input">
+                        <label class="form-check-label">Single</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="FatherStatus" value="Separated" type="radio" class="form-check-input">
+                        <label class="form-check-label">Separated</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="FatherStatus" value="Widowed" type="radio" class="form-check-input">
+                        <label class="form-check-label">Widowed</label>
+                    </div>
+                </div>
+            </td>
+
 		</tr>  
 		</tbody>
 	</table>
@@ -517,15 +284,27 @@ button:hover {
 			<td> <label for="guardianRelation">Guardian's Relation</label>
 				<input asp-for="GuardianRelation" type="text" id="guardianRelation">
 			</td>
-    
-			<td> <div style="float:left">
-					<label>Guardian's Civil Status: </label>
-					<input asp-for="GuardianStatus" value="Married" type="radio">Married
-					<input asp-for="GuardianStatus" value="Single" type="radio" >Single
-					<input asp-for="GuardianStatus" value="Separated" type="radio">Separated
-					<input asp-for="GuardianStatus" value="Widowed" type="radio" >Widowed
-				</div>
-			</td>
+			<td>
+                <div class="mt-3 d-flex align-items-center">
+                    <label class="me-3">Guardian's Civil Status:</label>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="GuardianStatus" value="Married" type="radio" class="form-check-input">
+                        <label class="form-check-label">Married</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="GuardianStatus" value="Single" type="radio" class="form-check-input">
+                        <label class="form-check-label">Single</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="GuardianStatus" value="Separated" type="radio" class="form-check-input">
+                        <label class="form-check-label">Separated</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="GuardianStatus" value="Widowed" type="radio" class="form-check-input">
+                        <label class="form-check-label">Widowed</label>
+                    </div>
+                </div>
+            </td>
 		</tr>  
 		</tbody>
 	</table>

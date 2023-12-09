@@ -46,26 +46,24 @@
                         <div class="card-container">
                             <div class="form-control">
                                 <form class="form-inline" method="post" enctype="multipart/form-data">
-                                    <label  style=" width: unset; display: unset;align-items: unset; justify-content: unset;padding: unset; cursor: unset;  font-weight: unset; margin-right: unset;background-color: unset; color: unset;">
-                                        Urinalysis:
-                                    </label>
-                                    @Html.TextBoxFor(Model => Model.Urinalysis, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png,.jpg", onchange = "previewImage(event)"})
+                               <label  style=" width: unset; display: unset;align-items: unset; justify-content: unset;padding: unset; cursor: unset;  font-weight: unset; margin-right: unset;background-color: unset; color: unset;"> Urinalysis: </label>
+                                                                   @Html.TextBoxFor(Model => Model.Urinalysis, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png", onchange = "previewImage(event)"})     
                                     <br/>
                                      <label  style=" width: unset; display: unset;align-items: unset; justify-content: unset;padding: unset; cursor: unset;  font-weight: unset; margin-right: unset;background-color: unset; color: unset;">Fecalysis: </label>
                                    
-                                    @Html.TextBoxFor(Model => Model.Fecalysis, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png,.jpg", onchange = "previewImage(event)" })
+                                    @Html.TextBoxFor(Model => Model.Fecalysis, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png", onchange = "previewImage(event)" })
                                     <br/>
                                      <label style=" width: unset; display: unset;align-items: unset; justify-content: unset;padding: unset; cursor: unset;  font-weight: unset; margin-right: unset;background-color: unset; color: unset;">Complete Blood Count: </label>
                                      
-                                    @Html.TextBoxFor(Model => Model.Cbc, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png,.jpg", onchange = "previewImage(event)" })
+                                    @Html.TextBoxFor(Model => Model.Cbc, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png", onchange = "previewImage(event)" })
                                     <br/>
                                      <label style=" width: unset; display: unset;align-items: unset; justify-content: unset;padding: unset; cursor: unset;  font-weight: unset; margin-right: unset;background-color: unset; color: unset;">Cholesterol </label>
                                   
-                                    @Html.TextBoxFor(Model => Model.Cholesterol, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png,.jpg", onchange = "previewImage(event)" })
+                                    @Html.TextBoxFor(Model => Model.Cholesterol, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png", onchange = "previewImage(event)" })
                                     <br/>
                                     <label style=" width: unset; display: unset;align-items: unset; justify-content: unset;padding: unset; cursor: unset;  font-weight: unset; margin-right: unset;background-color: unset; color: unset;">Cholesterol (SI) </label>
                                                                       
-                                    @Html.TextBoxFor(Model => Model.CholesterolSi, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png,.jpg", onchange = "previewImage(event)" })
+                                    @Html.TextBoxFor(Model => Model.CholesterolSi, new { @class = "form-control", type = "file", style = "margin:auto;", accept = ".png", onchange = "previewImage(event)" })
                                     <br/>
                                     @if (Model.IsRequested == true)
                                     {

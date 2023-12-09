@@ -86,8 +86,6 @@ public class IndexModel : PageModel
         PendingLab = pendinglab;
         LabList = lablist;
         Users = userList;
-       
-       
         
         switch (user)
         {
