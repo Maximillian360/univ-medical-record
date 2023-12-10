@@ -15,7 +15,7 @@ public class Urinalysis
     public string? Appearance { get; set; }
     [Column(TypeName = "decimal(18,2)")]
     public decimal? Ph { get; set; }
-    [Column(TypeName = "decimal(18,2)")]
+    [Column(TypeName = "decimal(18,3)")]
     public decimal? Specgrav { get; set; }
     public string? EpithelialCells { get; set; }
     public string? MucusThread { get; set; }

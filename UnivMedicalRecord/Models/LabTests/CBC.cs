@@ -54,7 +54,8 @@ public class CBC
     public string? RedCellMorphology { get; set; }
     public string? Test { get; set; }
     public string? Control { get; set; }
-    public string? Activity { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Activity { get; set; }
     public string? PatientRatio { get; set; }
     public string? Inr { get; set; }
     public string? BloodType { get; set; }

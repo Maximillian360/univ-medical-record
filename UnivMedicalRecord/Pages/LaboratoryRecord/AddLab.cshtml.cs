@@ -74,7 +74,7 @@ public class AddLab : PageModel
     [BindProperty]
     public string Control { get; set; }
     [BindProperty]
-    public string Activity { get; set; }
+    public decimal Activity { get; set; }
     [BindProperty]
     public string PatientRatio { get; set; }
     [BindProperty]
@@ -87,9 +87,9 @@ public class AddLab : PageModel
     [BindProperty]
     public string Appearance { get; set; }
     [BindProperty]
-    public int Ph { get; set; }
+    public decimal Ph { get; set; }
     [BindProperty]
-    public int Specgrav { get; set; }
+    public decimal Specgrav { get; set; }
     [BindProperty]
     public string EpithelialCells { get; set; }
     [BindProperty]
